@@ -1,0 +1,51 @@
+#! /bin/bash
+
+######### Functional Genomics Final Project- Abbey, Hannah, Sarah Grace, Taylor 
+
+########## Load Modules
+source /opt/asn/etc/asn-bash-profiles-special/modules.sh
+module load sra
+module load fastqc/0.10.1
+
+##########  Define variables and make directories
+###Currently keyed to Taylor's account
+MyID=aubclsb0323          ## Example: MyID=aubtss
+
+## Make variable that represents YOUR working directory(WD) in scratch, your Raw data directory (DD) and the pre or postcleaned status (CS).
+DD=/scratch/$MyID/FinalProject/HumanRawData             ## Example: DD=/scratch/$MyID/PracticeRNAseq/RawData
+WD=/scratch/$MyID/FinalProject  ## Example: WD=/scratch/$MyID/PracticeRNAseq
+CS=PreCleanQualityHuman
+
+##  make the directories in SCRATCH for holding the raw data
+## -p tells it to make any upper level directories that are not there. Notice how this will also make the WD.
+mkdir -p $DD
+## move to the Data Directory
+cd $DD
+##########  Download data files from NCBI: SRA using the Run IDs
+  ### from SRA use the SRA tool kit - see NCBI website https://www.ncbi.nlm.nih.gov/sra/docs/sradownload/
+        ## this downloads the SRA file and converts to fastq
+        ## -F   Defline contains only original sequence name.
+        ## -I   Append read id after spot id as 'accession.spot.readid' on defline.
+        ## splits the files into R1 and R2 (forward reads, reverse reads)
+
+vdb-config --interactive
+
+
+
+##### Extra ####
+## If you data comes with multiple R1 and R2 files per individual. You can contatenate them together using "cat" before running FASTQC
+## see examples below for one file. You will probably want to use a loop to process through all the files.
+#cat SRR6819014*_R1_*.fastq.gz > SRR6819014_All_R1.fastq.gz
+#cat SRR6819014*_R2_*.fastq.gz > SRR6819014_All_R2.fastq.gz
+
+
+############## FASTQC to assess quality of the sequence data
+## FastQC: run on each of the data files that have 'All' to check the quality of the data
+## The output from this analysis is a folder of results and a zipped file of results
+mkdir $WD/$CS
+fastqc *.fastq --outdir=$WD/$CS
+
+#######  Tarball the directory containing the FASTQC results so we can easily bring it back to our computer to evaluate.
+## when finished use scp or rsync to bring the tarballed .gz results file to your computer and open the .html file to evaluate the quality of your raw data.
+cd $WD/$CS
+tar cvzf $CS.tar.gz $WD/$CS/*

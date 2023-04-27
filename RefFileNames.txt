@@ -1,0 +1,2 @@
+Mus_musculus.GRCm39.109.chr.gtf.gz
+Mus_musculus.GRCm39.dna.primary_assembly.fa.gz

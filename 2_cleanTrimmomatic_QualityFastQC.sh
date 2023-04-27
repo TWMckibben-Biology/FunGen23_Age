@@ -36,12 +36,12 @@ module load fastqc/0.10.1
 
 ## STOP. You need to replace the [number] with YOUR paths to 
 ##       make variables for your ASC ID so the directories are automatically made in YOUR directory
-MyID=[1]                        ## Example: MyID=aubtss
+MyID=aubclsb0323                        ## Example: MyID=aubtss
 
 # Variables: raw data directory (DD), working directory(WD), cleaned status (CS), name of file containing the adpaters.
-WD=[2]                          ## Example: WD=/scratch/$MyID/PracticeRNAseq
-DD=[3]                          ## Example: DD=/scratch/$MyID/PracticeRNAseq/RawData
-CD=[4]                          ## Example: CD=/scratch/$MyID/PracticeRNAseq/CleanData
+WD=/scratch/$MyID/FinalProject                          ## Example: WD=/scratch/$MyID/PracticeRNAseq
+DD=/scratch/$MyID/FinalProject/RawData                          ## Example: DD=/scratch/$MyID/PracticeRNAseq/RawData
+CD=/scratch/$MyID/FinalProject/CleanData                          ## Example: CD=/scratch/$MyID/PracticeRNAseq/CleanData
 CS=PostCleanQuality
 adapters=AdaptersToTrim_All.fa  ## This is a fasta file that has a list of adapters commonly used in NGS sequencing. 
 					## You will likely need to edit this for other projects based on how your libraries 
