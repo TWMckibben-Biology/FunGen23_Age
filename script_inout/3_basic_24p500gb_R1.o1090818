@@ -1,0 +1,1953 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: 3_basic.sh
+  The time limit is 360:00:00 HH:MM:SS.
+  The target directory is: /home/aubclsb0323/FunGen23_Age
+  The working directory is:  /scratch-local/aubclsb0323.3_basic_24p500gb_R1.1090818
+  The memory limit is: 500gb
+  The job will start running after: 2023-04-30T20:35:55
+  Job Name: 3_basic_24p500gb_R1
+  Virtual queue: bigmem
+  QOS: --qos=bigmem
+  Constraints: --constraint=dmc
+  Using  24  cores on master node  dmc82
+  Node list:  dmc82
+  Nodes:  dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82 dmc82
+  Command typed:
+/apps/scripts/run_script 3_basic.sh     
+  Queue submit command:
+sbatch --qos=bigmem -J 3_basic_24p500gb_R1 --begin=2023-04-30T20:35:55 --requeue --mail-user=twm0009@auburn.edu -o 3_basic_24p500gb_R1.o1090818 -t 360:00:00 -N 1-1 -n 24 --mem-per-cpu=20833mb --constraint=dmc 
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffcompare"
+   Try: "module spider gffcompare" to see how to load the module(s).
+
+
+
+
+Lmod is automatically replacing "anaconda/2-2019.10" with "python/2.7.1".
+
+
+The following have been reloaded with a version change:
+  1) gcc/7.3.0 => gcc/4.5.2
+
+
+The following have been reloaded with a version change:
+  1) gcc/4.5.2 => gcc/9.3.0
+
+
+The following have been reloaded with a version change:
+  1) gcc/9.3.0 => gcc/4.5.2     2) samtools/1.13 => samtools/0.1.19
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffread"
+   Try: "module spider gffread" to see how to load the module(s).
+
+
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffcompare"
+   Try: "module spider gffcompare" to see how to load the module(s).
+
+
+
++ MyID=aubclsb0323
++ WD=/scratch/aubclsb0323/FinalProject
++ CLEAND=/scratch/aubclsb0323/FinalProject/CleanData2
++ REFD=/scratch/aubclsb0323/FinalProject/GRCm39
++ MAPD=/scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ COUNTSD=/scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ RESULTSD=/home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ REF=GRCm39_basic
++ mkdir -p /scratch/aubclsb0323/FinalProject/GRCm39
++ mkdir -p /scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ mkdir -p /scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ mkdir -p /home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ mkdir -p /scratch/aubclsb0323/FinalProject/CleanData2
++ cd /scratch/aubclsb0323/FinalProject/GRCm39
++ extract_splice_sites.py GRCm39_basic.gtf
++ extract_exons.py GRCm39_basic.gtf
++ hisat2-build --ss GRCm39_basic.ss --exon GRCm39_basic.exon GRCm39_basic.fa GRCm39_basic
+Settings:
+  Output files: "GRCm39_basic.*.ht2"
+  Line rate: 7 (line is 128 bytes)
+  Lines per side: 1 (side is 128 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Local offset rate: 3 (one in 8)
+  Local fTable chars: 6
+  Local sequence length: 57344
+  Local sequence overlap between two consecutive indexes: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  GRCm39_basic.fa
+Reading reference sizes
+  Time reading reference sizes: 00:00:17
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:12
+  Time to read SNPs and splice sites: 00:00:03
+Generation 0 (2654860823 -> 2654860823 nodes, 0 ranks
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 12
+RESIZED NODES: 0
+MADE NEW NODES: 23
+Generation 1 (2655096204 -> 2655096204 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 7
+RESIZED NODES: 0
+MADE NEW NODES: 29
+Generation 2 (2655567017 -> 2655567017 nodes, 0 ranks
+COUNTED NEW NODES: 10
+COUNTED TEMP NODES: 0
+RESIZED NODES: 17
+RESIZED NODES: 0
+MADE NEW NODES: 10
+Generation 3 (2656508978 -> 2656508978 nodes, 0 ranks
+BUILT FROM_INDEX: 28
+COUNTED NEW NODES: 11
+COUNTED TEMP NODES: 0
+RESIZED NODES: 8
+RESIZED NODES: 0
+MADE NEW NODES: 31
+RESIZE NODES: 65
+SORT NODES: 305
+MERGE, UPDATE RANK: 64
+Generation 4 (2658395102 -> 2657950223 nodes, 1094865375 ranks
+ALLOCATE FROM_TABLE: 22
+BUILD TABLE: 214
+BUILD INDEX: 25
+COUNTED NEW NODES: 118
+COUNTED TEMP NODES: 0
+RESIZED NODES: 15
+RESIZED NODES: 0
+MADE NEW NODES: 433
+MERGEUPDATERANK: 70
+TOTAL TIME: 897
+Generation 5 (2659813448 -> 2657736044 nodes, 2234490024 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 206
+BUILD INDEX: 24
+COUNTED NEW NODES: 49
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 139
+MERGEUPDATERANK: 42
+TOTAL TIME: 460
+Generation 6 (2657917132 -> 2657853975 nodes, 2399237080 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 218
+BUILD INDEX: 14
+COUNTED NEW NODES: 28
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 104
+MERGEUPDATERANK: 63
+TOTAL TIME: 427
+Generation 7 (2658037033 -> 2657969688 nodes, 2490985482 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 269
+BUILD INDEX: 28
+COUNTED NEW NODES: 32
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 45
+MERGEUPDATERANK: 24
+TOTAL TIME: 398
+Generation 8 (2658145085 -> 2658061580 nodes, 2547144201 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 221
+BUILD INDEX: 19
+COUNTED NEW NODES: 16
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 71
+MERGEUPDATERANK: 39
+TOTAL TIME: 366
+Generation 9 (2658217946 -> 2658137960 nodes, 2589240820 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 214
+BUILD INDEX: 20
+COUNTED NEW NODES: 22
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 40
+MERGEUPDATERANK: 23
+TOTAL TIME: 319
+Generation 10 (2658281155 -> 2658222132 nodes, 2618486450 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 215
+BUILD INDEX: 20
+COUNTED NEW NODES: 15
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 46
+MERGEUPDATERANK: 21
+TOTAL TIME: 317
+Generation 11 (2658369825 -> 2658318708 nodes, 2635917964 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 259
+BUILD INDEX: 20
+COUNTED NEW NODES: 20
+COUNTED TEMP NODES: 0
+RESIZED NODES: 21
+RESIZED NODES: 0
+MADE NEW NODES: 41
+MERGEUPDATERANK: 34
+TOTAL TIME: 395
+Generation 12 (2658476537 -> 2658426085 nodes, 2645027672 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 225
+BUILD INDEX: 21
+COUNTED NEW NODES: 17
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 39
+MERGEUPDATERANK: 21
+TOTAL TIME: 323
+Generation 13 (2658615354 -> 2658551916 nodes, 2650389062 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 231
+BUILD INDEX: 20
+COUNTED NEW NODES: 15
+COUNTED TEMP NODES: 0
+RESIZED NODES: 24
+RESIZED NODES: 0
+MADE NEW NODES: 16
+MERGEUPDATERANK: 21
+TOTAL TIME: 327
+Generation 14 (2658753961 -> 2658698828 nodes, 2654213932 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 240
+BUILD INDEX: 20
+COUNTED NEW NODES: 16
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 33
+MERGEUPDATERANK: 22
+TOTAL TIME: 331
+Generation 15 (2658950321 -> 2658848383 nodes, 2657230157 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 230
+BUILD INDEX: 20
+COUNTED NEW NODES: 16
+COUNTED TEMP NODES: 0
+RESIZED NODES: 12
+RESIZED NODES: 0
+MADE NEW NODES: 12
+MERGEUPDATERANK: 26
+TOTAL TIME: 316
+Generation 16 (2659086912 -> 2658975234 nodes, 2658687028 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 139
+BUILD INDEX: 9
+COUNTED NEW NODES: 8
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 10
+MERGEUPDATERANK: 20
+TOTAL TIME: 186
+Generation 17 (2659090665 -> 2659082921 nodes, 2659078780 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 148
+BUILD INDEX: 10
+COUNTED NEW NODES: 8
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 10
+MERGEUPDATERANK: 19
+TOTAL TIME: 195
+Generation 18 (2659082921 -> 2659082921 nodes, 2659082921 ranks
+Generating edges... 
+NODE.TO -> GENOME POS: 14
+BUILD FROM_INDEX 7
+COUNTED NEW EDGES: 31
+MADE NEW EDGES: 46
+SORTED NEW EDGES: 157
+RE-SORTED NODES: 176
+PROCESS EDGES: 23
+REMOVE Y: 6
+SORT, Make index: 150
+TOTAL: 610
+Allocating ftab, absorbFtab
+Entering GFM loop
+Exited GFM loop
+fchr[A]: 0
+fchr[C]: 775062644
+fchr[G]: 1329183500
+fchr[T]: 1883346235
+fchr[$]: 2659319877
+Exiting GFM::buildToDisk()
+Returning from initFromVector
+Wrote 1640704558 bytes to primary GFM file: GRCm39_basic.1.ht2
+Wrote 664770736 bytes to secondary GFM file: GRCm39_basic.2.ht2
+Re-opening _in1 and _in2 as input streams
+Returning from GFM constructor
+Returning from initFromVector
+Wrote 1517570533 bytes to primary GFM file: GRCm39_basic.5.ht2
+Wrote 676074752 bytes to secondary GFM file: GRCm39_basic.6.ht2
+Re-opening _in5 and _in5 as input streams
+Returning from HierEbwt constructor
+Headers:
+    len: 2654621783
+    gbwtLen: 2659319878
+    nodes: 2659082920
+    sz: 1327310892
+    gbwtSz: 1329659940
+    lineRate: 7
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 0
+    eftabSz: 0
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 166192683
+    offsSz: 664770732
+    lineSz: 128
+    sideSz: 128
+    sideGbwtSz: 104
+    sideGbwtLen: 208
+    numSides: 12785192
+    numLines: 12785192
+    gbwtTotLen: 1636504576
+    gbwtTotSz: 1636504576
+    reverse: 0
+    linearFM: No
+Total time for call to driver() for forward index: 03:04:00
++ cd /scratch/aubclsb0323/FinalProject/CleanData2
++ cp /scratch/aubclsb0323/FinalProject/CleanData/SRR11102034_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102034_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102035_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102035_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102036_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102036_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102037_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102037_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102038_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102038_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102039_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102039_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102040_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102040_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102041_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102041_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102042_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102042_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102043_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102043_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102044_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102044_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102045_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102045_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102046_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102046_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102047_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102047_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102048_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102048_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102049_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102049_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102050_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102050_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102051_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102051_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102052_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102052_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102053_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102053_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102054_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102054_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102055_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102055_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102056_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102056_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102057_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102057_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102058_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102058_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102059_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102059_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102060_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102060_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102061_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102061_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102062_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102062_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102063_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102063_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102064_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102064_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102065_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102065_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102066_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102066_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102067_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102067_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102068_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102068_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102069_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102069_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102070_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102070_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102071_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102071_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102072_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102072_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102073_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102073_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102074_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102074_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102075_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102075_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102076_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102076_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102077_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102077_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102078_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102078_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102079_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102079_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102080_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102080_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102081_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102081_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102082_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102082_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102083_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102083_2_paired.fastq .
++ ls
++ grep .fastq
++ sort
++ cut -d _ -f 1
++ uniq
++ cd /scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ mv /scratch/aubclsb0323/FinalProject/CleanData2/list .
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102034_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102034_2_paired.fastq -S SRR11102034.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16944115 reads; of these:
+  16944115 (100.00%) were paired; of these:
+    1615688 (9.54%) aligned concordantly 0 times
+    12588376 (74.29%) aligned concordantly exactly 1 time
+    2740051 (16.17%) aligned concordantly >1 times
+    ----
+    1615688 pairs aligned concordantly 0 times; of these:
+      996576 (61.68%) aligned discordantly 1 time
+    ----
+    619112 pairs aligned 0 times concordantly or discordantly; of these:
+      1238224 mates make up the pairs; of these:
+        396438 (32.02%) aligned 0 times
+        246540 (19.91%) aligned exactly 1 time
+        595246 (48.07%) aligned >1 times
+98.83% overall alignment rate
++ samtools view -@ 6 -bS SRR11102034.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102034.bam SRR11102034_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102034_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102034
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102034/SRR11102034.gtf -l SRR11102034 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102034_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102035_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102035_2_paired.fastq -S SRR11102035.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+20638495 reads; of these:
+  20638495 (100.00%) were paired; of these:
+    1818264 (8.81%) aligned concordantly 0 times
+    15753688 (76.33%) aligned concordantly exactly 1 time
+    3066543 (14.86%) aligned concordantly >1 times
+    ----
+    1818264 pairs aligned concordantly 0 times; of these:
+      1147117 (63.09%) aligned discordantly 1 time
+    ----
+    671147 pairs aligned 0 times concordantly or discordantly; of these:
+      1342294 mates make up the pairs; of these:
+        475519 (35.43%) aligned 0 times
+        277662 (20.69%) aligned exactly 1 time
+        589113 (43.89%) aligned >1 times
+98.85% overall alignment rate
++ samtools view -@ 6 -bS SRR11102035.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102035.bam SRR11102035_sorted
+[bam_sort_core] merging from 24 files...
++ samtools flagstat SRR11102035_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102035
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102035/SRR11102035.gtf -l SRR11102035 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102035_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102036_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102036_2_paired.fastq -S SRR11102036.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+23401359 reads; of these:
+  23401359 (100.00%) were paired; of these:
+    2244224 (9.59%) aligned concordantly 0 times
+    16140515 (68.97%) aligned concordantly exactly 1 time
+    5016620 (21.44%) aligned concordantly >1 times
+    ----
+    2244224 pairs aligned concordantly 0 times; of these:
+      1334774 (59.48%) aligned discordantly 1 time
+    ----
+    909450 pairs aligned 0 times concordantly or discordantly; of these:
+      1818900 mates make up the pairs; of these:
+        489009 (26.88%) aligned 0 times
+        332972 (18.31%) aligned exactly 1 time
+        996919 (54.81%) aligned >1 times
+98.96% overall alignment rate
++ samtools view -@ 6 -bS SRR11102036.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102036.bam SRR11102036_sorted
+[bam_sort_core] merging from 24 files...
++ samtools flagstat SRR11102036_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102036
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102036/SRR11102036.gtf -l SRR11102036 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102036_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102037_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102037_2_paired.fastq -S SRR11102037.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+21066777 reads; of these:
+  21066777 (100.00%) were paired; of these:
+    1937056 (9.19%) aligned concordantly 0 times
+    14639181 (69.49%) aligned concordantly exactly 1 time
+    4490540 (21.32%) aligned concordantly >1 times
+    ----
+    1937056 pairs aligned concordantly 0 times; of these:
+      1115962 (57.61%) aligned discordantly 1 time
+    ----
+    821094 pairs aligned 0 times concordantly or discordantly; of these:
+      1642188 mates make up the pairs; of these:
+        409865 (24.96%) aligned 0 times
+        306509 (18.66%) aligned exactly 1 time
+        925814 (56.38%) aligned >1 times
+99.03% overall alignment rate
++ samtools view -@ 6 -bS SRR11102037.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102037.bam SRR11102037_sorted
+[bam_sort_core] merging from 24 files...
++ samtools flagstat SRR11102037_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102037
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102037/SRR11102037.gtf -l SRR11102037 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102037_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102038_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102038_2_paired.fastq -S SRR11102038.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17293071 reads; of these:
+  17293071 (100.00%) were paired; of these:
+    1626180 (9.40%) aligned concordantly 0 times
+    12417542 (71.81%) aligned concordantly exactly 1 time
+    3249349 (18.79%) aligned concordantly >1 times
+    ----
+    1626180 pairs aligned concordantly 0 times; of these:
+      968170 (59.54%) aligned discordantly 1 time
+    ----
+    658010 pairs aligned 0 times concordantly or discordantly; of these:
+      1316020 mates make up the pairs; of these:
+        387870 (29.47%) aligned 0 times
+        238854 (18.15%) aligned exactly 1 time
+        689296 (52.38%) aligned >1 times
+98.88% overall alignment rate
++ samtools view -@ 6 -bS SRR11102038.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102038.bam SRR11102038_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102038_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102038
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102038/SRR11102038.gtf -l SRR11102038 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102038_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102039_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102039_2_paired.fastq -S SRR11102039.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+24113102 reads; of these:
+  24113102 (100.00%) were paired; of these:
+    1975304 (8.19%) aligned concordantly 0 times
+    17374825 (72.06%) aligned concordantly exactly 1 time
+    4762973 (19.75%) aligned concordantly >1 times
+    ----
+    1975304 pairs aligned concordantly 0 times; of these:
+      1164928 (58.97%) aligned discordantly 1 time
+    ----
+    810376 pairs aligned 0 times concordantly or discordantly; of these:
+      1620752 mates make up the pairs; of these:
+        471261 (29.08%) aligned 0 times
+        304161 (18.77%) aligned exactly 1 time
+        845330 (52.16%) aligned >1 times
+99.02% overall alignment rate
++ samtools view -@ 6 -bS SRR11102039.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102039.bam SRR11102039_sorted
+[bam_sort_core] merging from 24 files...
++ samtools flagstat SRR11102039_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102039
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102039/SRR11102039.gtf -l SRR11102039 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102039_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102040_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102040_2_paired.fastq -S SRR11102040.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+20171078 reads; of these:
+  20171078 (100.00%) were paired; of these:
+    1744995 (8.65%) aligned concordantly 0 times
+    14682557 (72.79%) aligned concordantly exactly 1 time
+    3743526 (18.56%) aligned concordantly >1 times
+    ----
+    1744995 pairs aligned concordantly 0 times; of these:
+      1018503 (58.37%) aligned discordantly 1 time
+    ----
+    726492 pairs aligned 0 times concordantly or discordantly; of these:
+      1452984 mates make up the pairs; of these:
+        493244 (33.95%) aligned 0 times
+        263573 (18.14%) aligned exactly 1 time
+        696167 (47.91%) aligned >1 times
+98.78% overall alignment rate
++ samtools view -@ 6 -bS SRR11102040.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102040.bam SRR11102040_sorted
+[bam_sort_core] merging from 24 files...
++ samtools flagstat SRR11102040_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102040
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102040/SRR11102040.gtf -l SRR11102040 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102040_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102041_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102041_2_paired.fastq -S SRR11102041.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+19834613 reads; of these:
+  19834613 (100.00%) were paired; of these:
+    1530958 (7.72%) aligned concordantly 0 times
+    15269374 (76.98%) aligned concordantly exactly 1 time
+    3034281 (15.30%) aligned concordantly >1 times
+    ----
+    1530958 pairs aligned concordantly 0 times; of these:
+      988428 (64.56%) aligned discordantly 1 time
+    ----
+    542530 pairs aligned 0 times concordantly or discordantly; of these:
+      1085060 mates make up the pairs; of these:
+        355004 (32.72%) aligned 0 times
+        215972 (19.90%) aligned exactly 1 time
+        514084 (47.38%) aligned >1 times
+99.11% overall alignment rate
++ samtools view -@ 6 -bS SRR11102041.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102041.bam SRR11102041_sorted
+[bam_sort_core] merging from 24 files...
++ samtools flagstat SRR11102041_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102041
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102041/SRR11102041.gtf -l SRR11102041 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102041_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102042_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102042_2_paired.fastq -S SRR11102042.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16581261 reads; of these:
+  16581261 (100.00%) were paired; of these:
+    1292585 (7.80%) aligned concordantly 0 times
+    12810989 (77.26%) aligned concordantly exactly 1 time
+    2477687 (14.94%) aligned concordantly >1 times
+    ----
+    1292585 pairs aligned concordantly 0 times; of these:
+      806077 (62.36%) aligned discordantly 1 time
+    ----
+    486508 pairs aligned 0 times concordantly or discordantly; of these:
+      973016 mates make up the pairs; of these:
+        350018 (35.97%) aligned 0 times
+        203777 (20.94%) aligned exactly 1 time
+        419221 (43.08%) aligned >1 times
+98.94% overall alignment rate
++ samtools view -@ 6 -bS SRR11102042.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102042.bam SRR11102042_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102042_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102042
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102042/SRR11102042.gtf -l SRR11102042 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102042_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102043_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102043_2_paired.fastq -S SRR11102043.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16129689 reads; of these:
+  16129689 (100.00%) were paired; of these:
+    1671038 (10.36%) aligned concordantly 0 times
+    11958742 (74.14%) aligned concordantly exactly 1 time
+    2499909 (15.50%) aligned concordantly >1 times
+    ----
+    1671038 pairs aligned concordantly 0 times; of these:
+      998323 (59.74%) aligned discordantly 1 time
+    ----
+    672715 pairs aligned 0 times concordantly or discordantly; of these:
+      1345430 mates make up the pairs; of these:
+        487025 (36.20%) aligned 0 times
+        267757 (19.90%) aligned exactly 1 time
+        590648 (43.90%) aligned >1 times
+98.49% overall alignment rate
++ samtools view -@ 6 -bS SRR11102043.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102043.bam SRR11102043_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102043_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102043
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102043/SRR11102043.gtf -l SRR11102043 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102043_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102044_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102044_2_paired.fastq -S SRR11102044.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16859818 reads; of these:
+  16859818 (100.00%) were paired; of these:
+    1338753 (7.94%) aligned concordantly 0 times
+    12783397 (75.82%) aligned concordantly exactly 1 time
+    2737668 (16.24%) aligned concordantly >1 times
+    ----
+    1338753 pairs aligned concordantly 0 times; of these:
+      809126 (60.44%) aligned discordantly 1 time
+    ----
+    529627 pairs aligned 0 times concordantly or discordantly; of these:
+      1059254 mates make up the pairs; of these:
+        354636 (33.48%) aligned 0 times
+        240065 (22.66%) aligned exactly 1 time
+        464553 (43.86%) aligned >1 times
+98.95% overall alignment rate
++ samtools view -@ 6 -bS SRR11102044.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102044.bam SRR11102044_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102044_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102044
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102044/SRR11102044.gtf -l SRR11102044 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102044_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102045_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102045_2_paired.fastq -S SRR11102045.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16181358 reads; of these:
+  16181358 (100.00%) were paired; of these:
+    1337990 (8.27%) aligned concordantly 0 times
+    12416291 (76.73%) aligned concordantly exactly 1 time
+    2427077 (15.00%) aligned concordantly >1 times
+    ----
+    1337990 pairs aligned concordantly 0 times; of these:
+      844929 (63.15%) aligned discordantly 1 time
+    ----
+    493061 pairs aligned 0 times concordantly or discordantly; of these:
+      986122 mates make up the pairs; of these:
+        343349 (34.82%) aligned 0 times
+        209517 (21.25%) aligned exactly 1 time
+        433256 (43.94%) aligned >1 times
+98.94% overall alignment rate
++ samtools view -@ 6 -bS SRR11102045.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102045.bam SRR11102045_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102045_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102045
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102045/SRR11102045.gtf -l SRR11102045 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102045_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102046_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102046_2_paired.fastq -S SRR11102046.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16265378 reads; of these:
+  16265378 (100.00%) were paired; of these:
+    1632925 (10.04%) aligned concordantly 0 times
+    11464092 (70.48%) aligned concordantly exactly 1 time
+    3168361 (19.48%) aligned concordantly >1 times
+    ----
+    1632925 pairs aligned concordantly 0 times; of these:
+      867004 (53.10%) aligned discordantly 1 time
+    ----
+    765921 pairs aligned 0 times concordantly or discordantly; of these:
+      1531842 mates make up the pairs; of these:
+        547617 (35.75%) aligned 0 times
+        277300 (18.10%) aligned exactly 1 time
+        706925 (46.15%) aligned >1 times
+98.32% overall alignment rate
++ samtools view -@ 6 -bS SRR11102046.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102046.bam SRR11102046_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102046_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102046
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102046/SRR11102046.gtf -l SRR11102046 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102046_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102047_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102047_2_paired.fastq -S SRR11102047.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+18341955 reads; of these:
+  18341955 (100.00%) were paired; of these:
+    1422898 (7.76%) aligned concordantly 0 times
+    13653200 (74.44%) aligned concordantly exactly 1 time
+    3265857 (17.81%) aligned concordantly >1 times
+    ----
+    1422898 pairs aligned concordantly 0 times; of these:
+      816345 (57.37%) aligned discordantly 1 time
+    ----
+    606553 pairs aligned 0 times concordantly or discordantly; of these:
+      1213106 mates make up the pairs; of these:
+        405919 (33.46%) aligned 0 times
+        267097 (22.02%) aligned exactly 1 time
+        540090 (44.52%) aligned >1 times
+98.89% overall alignment rate
++ samtools view -@ 6 -bS SRR11102047.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102047.bam SRR11102047_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102047_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102047
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102047/SRR11102047.gtf -l SRR11102047 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102047_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102048_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102048_2_paired.fastq -S SRR11102048.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+20681888 reads; of these:
+  20681888 (100.00%) were paired; of these:
+    1666533 (8.06%) aligned concordantly 0 times
+    15704618 (75.93%) aligned concordantly exactly 1 time
+    3310737 (16.01%) aligned concordantly >1 times
+    ----
+    1666533 pairs aligned concordantly 0 times; of these:
+      1001334 (60.08%) aligned discordantly 1 time
+    ----
+    665199 pairs aligned 0 times concordantly or discordantly; of these:
+      1330398 mates make up the pairs; of these:
+        488690 (36.73%) aligned 0 times
+        276296 (20.77%) aligned exactly 1 time
+        565412 (42.50%) aligned >1 times
+98.82% overall alignment rate
++ samtools view -@ 6 -bS SRR11102048.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102048.bam SRR11102048_sorted
+[bam_sort_core] merging from 24 files...
++ samtools flagstat SRR11102048_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102048
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102048/SRR11102048.gtf -l SRR11102048 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102048_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102049_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102049_2_paired.fastq -S SRR11102049.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16504265 reads; of these:
+  16504265 (100.00%) were paired; of these:
+    1265528 (7.67%) aligned concordantly 0 times
+    12039723 (72.95%) aligned concordantly exactly 1 time
+    3199014 (19.38%) aligned concordantly >1 times
+    ----
+    1265528 pairs aligned concordantly 0 times; of these:
+      729501 (57.64%) aligned discordantly 1 time
+    ----
+    536027 pairs aligned 0 times concordantly or discordantly; of these:
+      1072054 mates make up the pairs; of these:
+        321058 (29.95%) aligned 0 times
+        222825 (20.78%) aligned exactly 1 time
+        528171 (49.27%) aligned >1 times
+99.03% overall alignment rate
++ samtools view -@ 6 -bS SRR11102049.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102049.bam SRR11102049_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102049_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102049
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102049/SRR11102049.gtf -l SRR11102049 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102049_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102050_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102050_2_paired.fastq -S SRR11102050.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17265353 reads; of these:
+  17265353 (100.00%) were paired; of these:
+    1791065 (10.37%) aligned concordantly 0 times
+    13115594 (75.96%) aligned concordantly exactly 1 time
+    2358694 (13.66%) aligned concordantly >1 times
+    ----
+    1791065 pairs aligned concordantly 0 times; of these:
+      1204687 (67.26%) aligned discordantly 1 time
+    ----
+    586378 pairs aligned 0 times concordantly or discordantly; of these:
+      1172756 mates make up the pairs; of these:
+        361167 (30.80%) aligned 0 times
+        251781 (21.47%) aligned exactly 1 time
+        559808 (47.73%) aligned >1 times
+98.95% overall alignment rate
++ samtools view -@ 6 -bS SRR11102050.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102050.bam SRR11102050_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102050_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102050
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102050/SRR11102050.gtf -l SRR11102050 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102050_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102051_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102051_2_paired.fastq -S SRR11102051.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17450537 reads; of these:
+  17450537 (100.00%) were paired; of these:
+    1714290 (9.82%) aligned concordantly 0 times
+    13117935 (75.17%) aligned concordantly exactly 1 time
+    2618312 (15.00%) aligned concordantly >1 times
+    ----
+    1714290 pairs aligned concordantly 0 times; of these:
+      1033800 (60.30%) aligned discordantly 1 time
+    ----
+    680490 pairs aligned 0 times concordantly or discordantly; of these:
+      1360980 mates make up the pairs; of these:
+        488884 (35.92%) aligned 0 times
+        282342 (20.75%) aligned exactly 1 time
+        589754 (43.33%) aligned >1 times
+98.60% overall alignment rate
++ samtools view -@ 6 -bS SRR11102051.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102051.bam SRR11102051_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102051_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102051
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102051/SRR11102051.gtf -l SRR11102051 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102051_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102052_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102052_2_paired.fastq -S SRR11102052.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17172864 reads; of these:
+  17172864 (100.00%) were paired; of these:
+    1750283 (10.19%) aligned concordantly 0 times
+    12884418 (75.03%) aligned concordantly exactly 1 time
+    2538163 (14.78%) aligned concordantly >1 times
+    ----
+    1750283 pairs aligned concordantly 0 times; of these:
+      1132060 (64.68%) aligned discordantly 1 time
+    ----
+    618223 pairs aligned 0 times concordantly or discordantly; of these:
+      1236446 mates make up the pairs; of these:
+        425654 (34.43%) aligned 0 times
+        245797 (19.88%) aligned exactly 1 time
+        564995 (45.70%) aligned >1 times
+98.76% overall alignment rate
++ samtools view -@ 6 -bS SRR11102052.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102052.bam SRR11102052_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102052_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102052
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102052/SRR11102052.gtf -l SRR11102052 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102052_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102053_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102053_2_paired.fastq -S SRR11102053.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+21969640 reads; of these:
+  21969640 (100.00%) were paired; of these:
+    1942790 (8.84%) aligned concordantly 0 times
+    15655802 (71.26%) aligned concordantly exactly 1 time
+    4371048 (19.90%) aligned concordantly >1 times
+    ----
+    1942790 pairs aligned concordantly 0 times; of these:
+      1114897 (57.39%) aligned discordantly 1 time
+    ----
+    827893 pairs aligned 0 times concordantly or discordantly; of these:
+      1655786 mates make up the pairs; of these:
+        502230 (30.33%) aligned 0 times
+        301269 (18.19%) aligned exactly 1 time
+        852287 (51.47%) aligned >1 times
+98.86% overall alignment rate
++ samtools view -@ 6 -bS SRR11102053.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102053.bam SRR11102053_sorted
+[bam_sort_core] merging from 24 files...
++ samtools flagstat SRR11102053_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102053
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102053/SRR11102053.gtf -l SRR11102053 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102053_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102054_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102054_2_paired.fastq -S SRR11102054.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17263786 reads; of these:
+  17263786 (100.00%) were paired; of these:
+    1672372 (9.69%) aligned concordantly 0 times
+    12957326 (75.05%) aligned concordantly exactly 1 time
+    2634088 (15.26%) aligned concordantly >1 times
+    ----
+    1672372 pairs aligned concordantly 0 times; of these:
+      1047735 (62.65%) aligned discordantly 1 time
+    ----
+    624637 pairs aligned 0 times concordantly or discordantly; of these:
+      1249274 mates make up the pairs; of these:
+        439946 (35.22%) aligned 0 times
+        242020 (19.37%) aligned exactly 1 time
+        567308 (45.41%) aligned >1 times
+98.73% overall alignment rate
++ samtools view -@ 6 -bS SRR11102054.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102054.bam SRR11102054_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102054_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102054
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102054/SRR11102054.gtf -l SRR11102054 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102054_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102055_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102055_2_paired.fastq -S SRR11102055.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+18912027 reads; of these:
+  18912027 (100.00%) were paired; of these:
+    1608160 (8.50%) aligned concordantly 0 times
+    14567876 (77.03%) aligned concordantly exactly 1 time
+    2735991 (14.47%) aligned concordantly >1 times
+    ----
+    1608160 pairs aligned concordantly 0 times; of these:
+      1004410 (62.46%) aligned discordantly 1 time
+    ----
+    603750 pairs aligned 0 times concordantly or discordantly; of these:
+      1207500 mates make up the pairs; of these:
+        480283 (39.77%) aligned 0 times
+        233847 (19.37%) aligned exactly 1 time
+        493370 (40.86%) aligned >1 times
+98.73% overall alignment rate
++ samtools view -@ 6 -bS SRR11102055.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102055.bam SRR11102055_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102055_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102055
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102055/SRR11102055.gtf -l SRR11102055 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102055_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102056_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102056_2_paired.fastq -S SRR11102056.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16591567 reads; of these:
+  16591567 (100.00%) were paired; of these:
+    1567971 (9.45%) aligned concordantly 0 times
+    12057640 (72.67%) aligned concordantly exactly 1 time
+    2965956 (17.88%) aligned concordantly >1 times
+    ----
+    1567971 pairs aligned concordantly 0 times; of these:
+      942314 (60.10%) aligned discordantly 1 time
+    ----
+    625657 pairs aligned 0 times concordantly or discordantly; of these:
+      1251314 mates make up the pairs; of these:
+        401231 (32.06%) aligned 0 times
+        230462 (18.42%) aligned exactly 1 time
+        619621 (49.52%) aligned >1 times
+98.79% overall alignment rate
++ samtools view -@ 6 -bS SRR11102056.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102056.bam SRR11102056_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102056_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102056
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102056/SRR11102056.gtf -l SRR11102056 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102056_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102057_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102057_2_paired.fastq -S SRR11102057.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17878848 reads; of these:
+  17878848 (100.00%) were paired; of these:
+    1692696 (9.47%) aligned concordantly 0 times
+    13446887 (75.21%) aligned concordantly exactly 1 time
+    2739265 (15.32%) aligned concordantly >1 times
+    ----
+    1692696 pairs aligned concordantly 0 times; of these:
+      1060308 (62.64%) aligned discordantly 1 time
+    ----
+    632388 pairs aligned 0 times concordantly or discordantly; of these:
+      1264776 mates make up the pairs; of these:
+        443677 (35.08%) aligned 0 times
+        240808 (19.04%) aligned exactly 1 time
+        580291 (45.88%) aligned >1 times
+98.76% overall alignment rate
++ samtools view -@ 6 -bS SRR11102057.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102057.bam SRR11102057_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102057_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102057
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102057/SRR11102057.gtf -l SRR11102057 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102057_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102058_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102058_2_paired.fastq -S SRR11102058.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17225227 reads; of these:
+  17225227 (100.00%) were paired; of these:
+    1587626 (9.22%) aligned concordantly 0 times
+    13251718 (76.93%) aligned concordantly exactly 1 time
+    2385883 (13.85%) aligned concordantly >1 times
+    ----
+    1587626 pairs aligned concordantly 0 times; of these:
+      1014636 (63.91%) aligned discordantly 1 time
+    ----
+    572990 pairs aligned 0 times concordantly or discordantly; of these:
+      1145980 mates make up the pairs; of these:
+        403312 (35.19%) aligned 0 times
+        251531 (21.95%) aligned exactly 1 time
+        491137 (42.86%) aligned >1 times
+98.83% overall alignment rate
++ samtools view -@ 6 -bS SRR11102058.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102058.bam SRR11102058_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102058_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102058
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102058/SRR11102058.gtf -l SRR11102058 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102058_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102059_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102059_2_paired.fastq -S SRR11102059.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17071431 reads; of these:
+  17071431 (100.00%) were paired; of these:
+    1758446 (10.30%) aligned concordantly 0 times
+    12837416 (75.20%) aligned concordantly exactly 1 time
+    2475569 (14.50%) aligned concordantly >1 times
+    ----
+    1758446 pairs aligned concordantly 0 times; of these:
+      1140810 (64.88%) aligned discordantly 1 time
+    ----
+    617636 pairs aligned 0 times concordantly or discordantly; of these:
+      1235272 mates make up the pairs; of these:
+        380850 (30.83%) aligned 0 times
+        262474 (21.25%) aligned exactly 1 time
+        591948 (47.92%) aligned >1 times
+98.88% overall alignment rate
++ samtools view -@ 6 -bS SRR11102059.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102059.bam SRR11102059_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102059_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102059
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102059/SRR11102059.gtf -l SRR11102059 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102059_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102060_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102060_2_paired.fastq -S SRR11102060.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17446782 reads; of these:
+  17446782 (100.00%) were paired; of these:
+    1790215 (10.26%) aligned concordantly 0 times
+    12793557 (73.33%) aligned concordantly exactly 1 time
+    2863010 (16.41%) aligned concordantly >1 times
+    ----
+    1790215 pairs aligned concordantly 0 times; of these:
+      1088613 (60.81%) aligned discordantly 1 time
+    ----
+    701602 pairs aligned 0 times concordantly or discordantly; of these:
+      1403204 mates make up the pairs; of these:
+        478887 (34.13%) aligned 0 times
+        273576 (19.50%) aligned exactly 1 time
+        650741 (46.38%) aligned >1 times
+98.63% overall alignment rate
++ samtools view -@ 6 -bS SRR11102060.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102060.bam SRR11102060_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102060_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102060
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102060/SRR11102060.gtf -l SRR11102060 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102060_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102061_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102061_2_paired.fastq -S SRR11102061.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16647002 reads; of these:
+  16647002 (100.00%) were paired; of these:
+    1676364 (10.07%) aligned concordantly 0 times
+    12445241 (74.76%) aligned concordantly exactly 1 time
+    2525397 (15.17%) aligned concordantly >1 times
+    ----
+    1676364 pairs aligned concordantly 0 times; of these:
+      1057959 (63.11%) aligned discordantly 1 time
+    ----
+    618405 pairs aligned 0 times concordantly or discordantly; of these:
+      1236810 mates make up the pairs; of these:
+        404176 (32.68%) aligned 0 times
+        258634 (20.91%) aligned exactly 1 time
+        574000 (46.41%) aligned >1 times
+98.79% overall alignment rate
++ samtools view -@ 6 -bS SRR11102061.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102061.bam SRR11102061_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102061_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102061
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102061/SRR11102061.gtf -l SRR11102061 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102061_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102062_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102062_2_paired.fastq -S SRR11102062.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16652570 reads; of these:
+  16652570 (100.00%) were paired; of these:
+    1567327 (9.41%) aligned concordantly 0 times
+    11878541 (71.33%) aligned concordantly exactly 1 time
+    3206702 (19.26%) aligned concordantly >1 times
+    ----
+    1567327 pairs aligned concordantly 0 times; of these:
+      888903 (56.71%) aligned discordantly 1 time
+    ----
+    678424 pairs aligned 0 times concordantly or discordantly; of these:
+      1356848 mates make up the pairs; of these:
+        407738 (30.05%) aligned 0 times
+        278394 (20.52%) aligned exactly 1 time
+        670716 (49.43%) aligned >1 times
+98.78% overall alignment rate
++ samtools view -@ 6 -bS SRR11102062.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102062.bam SRR11102062_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102062_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102062
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102062/SRR11102062.gtf -l SRR11102062 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102062_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102063_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102063_2_paired.fastq -S SRR11102063.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16985655 reads; of these:
+  16985655 (100.00%) were paired; of these:
+    1607078 (9.46%) aligned concordantly 0 times
+    12132720 (71.43%) aligned concordantly exactly 1 time
+    3245857 (19.11%) aligned concordantly >1 times
+    ----
+    1607078 pairs aligned concordantly 0 times; of these:
+      935717 (58.22%) aligned discordantly 1 time
+    ----
+    671361 pairs aligned 0 times concordantly or discordantly; of these:
+      1342722 mates make up the pairs; of these:
+        403225 (30.03%) aligned 0 times
+        257100 (19.15%) aligned exactly 1 time
+        682397 (50.82%) aligned >1 times
+98.81% overall alignment rate
++ samtools view -@ 6 -bS SRR11102063.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102063.bam SRR11102063_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102063_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102063
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102063/SRR11102063.gtf -l SRR11102063 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102063_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102064_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102064_2_paired.fastq -S SRR11102064.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16461137 reads; of these:
+  16461137 (100.00%) were paired; of these:
+    1738474 (10.56%) aligned concordantly 0 times
+    11998203 (72.89%) aligned concordantly exactly 1 time
+    2724460 (16.55%) aligned concordantly >1 times
+    ----
+    1738474 pairs aligned concordantly 0 times; of these:
+      1073434 (61.75%) aligned discordantly 1 time
+    ----
+    665040 pairs aligned 0 times concordantly or discordantly; of these:
+      1330080 mates make up the pairs; of these:
+        394205 (29.64%) aligned 0 times
+        274174 (20.61%) aligned exactly 1 time
+        661701 (49.75%) aligned >1 times
+98.80% overall alignment rate
++ samtools view -@ 6 -bS SRR11102064.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102064.bam SRR11102064_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102064_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102064
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102064/SRR11102064.gtf -l SRR11102064 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102064_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102065_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102065_2_paired.fastq -S SRR11102065.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16463144 reads; of these:
+  16463144 (100.00%) were paired; of these:
+    1625074 (9.87%) aligned concordantly 0 times
+    11898695 (72.27%) aligned concordantly exactly 1 time
+    2939375 (17.85%) aligned concordantly >1 times
+    ----
+    1625074 pairs aligned concordantly 0 times; of these:
+      974198 (59.95%) aligned discordantly 1 time
+    ----
+    650876 pairs aligned 0 times concordantly or discordantly; of these:
+      1301752 mates make up the pairs; of these:
+        396912 (30.49%) aligned 0 times
+        252464 (19.39%) aligned exactly 1 time
+        652376 (50.12%) aligned >1 times
+98.79% overall alignment rate
++ samtools view -@ 6 -bS SRR11102065.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102065.bam SRR11102065_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102065_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102065
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102065/SRR11102065.gtf -l SRR11102065 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102065_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102066_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102066_2_paired.fastq -S SRR11102066.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+18622634 reads; of these:
+  18622634 (100.00%) were paired; of these:
+    1676819 (9.00%) aligned concordantly 0 times
+    14331840 (76.96%) aligned concordantly exactly 1 time
+    2613975 (14.04%) aligned concordantly >1 times
+    ----
+    1676819 pairs aligned concordantly 0 times; of these:
+      1089606 (64.98%) aligned discordantly 1 time
+    ----
+    587213 pairs aligned 0 times concordantly or discordantly; of these:
+      1174426 mates make up the pairs; of these:
+        398857 (33.96%) aligned 0 times
+        254111 (21.64%) aligned exactly 1 time
+        521458 (44.40%) aligned >1 times
+98.93% overall alignment rate
++ samtools view -@ 6 -bS SRR11102066.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102066.bam SRR11102066_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102066_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102066
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102066/SRR11102066.gtf -l SRR11102066 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102066_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102067_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102067_2_paired.fastq -S SRR11102067.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17255869 reads; of these:
+  17255869 (100.00%) were paired; of these:
+    1548802 (8.98%) aligned concordantly 0 times
+    13111401 (75.98%) aligned concordantly exactly 1 time
+    2595666 (15.04%) aligned concordantly >1 times
+    ----
+    1548802 pairs aligned concordantly 0 times; of these:
+      948469 (61.24%) aligned discordantly 1 time
+    ----
+    600333 pairs aligned 0 times concordantly or discordantly; of these:
+      1200666 mates make up the pairs; of these:
+        431055 (35.90%) aligned 0 times
+        253274 (21.09%) aligned exactly 1 time
+        516337 (43.00%) aligned >1 times
+98.75% overall alignment rate
++ samtools view -@ 6 -bS SRR11102067.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102067.bam SRR11102067_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102067_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102067
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102067/SRR11102067.gtf -l SRR11102067 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102067_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102068_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102068_2_paired.fastq -S SRR11102068.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16530845 reads; of these:
+  16530845 (100.00%) were paired; of these:
+    1498195 (9.06%) aligned concordantly 0 times
+    12615074 (76.31%) aligned concordantly exactly 1 time
+    2417576 (14.62%) aligned concordantly >1 times
+    ----
+    1498195 pairs aligned concordantly 0 times; of these:
+      955506 (63.78%) aligned discordantly 1 time
+    ----
+    542689 pairs aligned 0 times concordantly or discordantly; of these:
+      1085378 mates make up the pairs; of these:
+        386088 (35.57%) aligned 0 times
+        223155 (20.56%) aligned exactly 1 time
+        476135 (43.87%) aligned >1 times
+98.83% overall alignment rate
++ samtools view -@ 6 -bS SRR11102068.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102068.bam SRR11102068_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102068_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102068
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102068/SRR11102068.gtf -l SRR11102068 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102068_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102069_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102069_2_paired.fastq -S SRR11102069.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17413246 reads; of these:
+  17413246 (100.00%) were paired; of these:
+    1540470 (8.85%) aligned concordantly 0 times
+    13310258 (76.44%) aligned concordantly exactly 1 time
+    2562518 (14.72%) aligned concordantly >1 times
+    ----
+    1540470 pairs aligned concordantly 0 times; of these:
+      934001 (60.63%) aligned discordantly 1 time
+    ----
+    606469 pairs aligned 0 times concordantly or discordantly; of these:
+      1212938 mates make up the pairs; of these:
+        458743 (37.82%) aligned 0 times
+        248474 (20.49%) aligned exactly 1 time
+        505721 (41.69%) aligned >1 times
+98.68% overall alignment rate
++ samtools view -@ 6 -bS SRR11102069.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102069.bam SRR11102069_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102069_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102069
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102069/SRR11102069.gtf -l SRR11102069 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102069_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102070_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102070_2_paired.fastq -S SRR11102070.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17188556 reads; of these:
+  17188556 (100.00%) were paired; of these:
+    1590915 (9.26%) aligned concordantly 0 times
+    12307368 (71.60%) aligned concordantly exactly 1 time
+    3290273 (19.14%) aligned concordantly >1 times
+    ----
+    1590915 pairs aligned concordantly 0 times; of these:
+      893877 (56.19%) aligned discordantly 1 time
+    ----
+    697038 pairs aligned 0 times concordantly or discordantly; of these:
+      1394076 mates make up the pairs; of these:
+        443158 (31.79%) aligned 0 times
+        264466 (18.97%) aligned exactly 1 time
+        686452 (49.24%) aligned >1 times
+98.71% overall alignment rate
++ samtools view -@ 6 -bS SRR11102070.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102070.bam SRR11102070_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102070_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102070
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102070/SRR11102070.gtf -l SRR11102070 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102070_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102071_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102071_2_paired.fastq -S SRR11102071.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16714706 reads; of these:
+  16714706 (100.00%) were paired; of these:
+    1302668 (7.79%) aligned concordantly 0 times
+    12295468 (73.56%) aligned concordantly exactly 1 time
+    3116570 (18.65%) aligned concordantly >1 times
+    ----
+    1302668 pairs aligned concordantly 0 times; of these:
+      739587 (56.77%) aligned discordantly 1 time
+    ----
+    563081 pairs aligned 0 times concordantly or discordantly; of these:
+      1126162 mates make up the pairs; of these:
+        373117 (33.13%) aligned 0 times
+        225921 (20.06%) aligned exactly 1 time
+        527124 (46.81%) aligned >1 times
+98.88% overall alignment rate
++ samtools view -@ 6 -bS SRR11102071.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102071.bam SRR11102071_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102071_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102071
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102071/SRR11102071.gtf -l SRR11102071 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102071_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102072_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102072_2_paired.fastq -S SRR11102072.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16719562 reads; of these:
+  16719562 (100.00%) were paired; of these:
+    1391330 (8.32%) aligned concordantly 0 times
+    12272082 (73.40%) aligned concordantly exactly 1 time
+    3056150 (18.28%) aligned concordantly >1 times
+    ----
+    1391330 pairs aligned concordantly 0 times; of these:
+      771567 (55.46%) aligned discordantly 1 time
+    ----
+    619763 pairs aligned 0 times concordantly or discordantly; of these:
+      1239526 mates make up the pairs; of these:
+        430972 (34.77%) aligned 0 times
+        243364 (19.63%) aligned exactly 1 time
+        565190 (45.60%) aligned >1 times
+98.71% overall alignment rate
++ samtools view -@ 6 -bS SRR11102072.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102072.bam SRR11102072_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102072_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102072
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102072/SRR11102072.gtf -l SRR11102072 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102072_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102073_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102073_2_paired.fastq -S SRR11102073.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17069758 reads; of these:
+  17069758 (100.00%) were paired; of these:
+    1230672 (7.21%) aligned concordantly 0 times
+    12855646 (75.31%) aligned concordantly exactly 1 time
+    2983440 (17.48%) aligned concordantly >1 times
+    ----
+    1230672 pairs aligned concordantly 0 times; of these:
+      723425 (58.78%) aligned discordantly 1 time
+    ----
+    507247 pairs aligned 0 times concordantly or discordantly; of these:
+      1014494 mates make up the pairs; of these:
+        341472 (33.66%) aligned 0 times
+        207164 (20.42%) aligned exactly 1 time
+        465858 (45.92%) aligned >1 times
+99.00% overall alignment rate
++ samtools view -@ 6 -bS SRR11102073.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102073.bam SRR11102073_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102073_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102073
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102073/SRR11102073.gtf -l SRR11102073 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102073_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102074_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102074_2_paired.fastq -S SRR11102074.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16985201 reads; of these:
+  16985201 (100.00%) were paired; of these:
+    1390616 (8.19%) aligned concordantly 0 times
+    13084050 (77.03%) aligned concordantly exactly 1 time
+    2510535 (14.78%) aligned concordantly >1 times
+    ----
+    1390616 pairs aligned concordantly 0 times; of these:
+      850102 (61.13%) aligned discordantly 1 time
+    ----
+    540514 pairs aligned 0 times concordantly or discordantly; of these:
+      1081028 mates make up the pairs; of these:
+        410313 (37.96%) aligned 0 times
+        220165 (20.37%) aligned exactly 1 time
+        450550 (41.68%) aligned >1 times
+98.79% overall alignment rate
++ samtools view -@ 6 -bS SRR11102074.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102074.bam SRR11102074_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102074_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102074
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102074/SRR11102074.gtf -l SRR11102074 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102074_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102075_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102075_2_paired.fastq -S SRR11102075.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16176246 reads; of these:
+  16176246 (100.00%) were paired; of these:
+    1416388 (8.76%) aligned concordantly 0 times
+    12663200 (78.28%) aligned concordantly exactly 1 time
+    2096658 (12.96%) aligned concordantly >1 times
+    ----
+    1416388 pairs aligned concordantly 0 times; of these:
+      929280 (65.61%) aligned discordantly 1 time
+    ----
+    487108 pairs aligned 0 times concordantly or discordantly; of these:
+      974216 mates make up the pairs; of these:
+        351796 (36.11%) aligned 0 times
+        211287 (21.69%) aligned exactly 1 time
+        411133 (42.20%) aligned >1 times
+98.91% overall alignment rate
++ samtools view -@ 6 -bS SRR11102075.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102075.bam SRR11102075_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102075_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102075
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102075/SRR11102075.gtf -l SRR11102075 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102075_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102076_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102076_2_paired.fastq -S SRR11102076.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+18932697 reads; of these:
+  18932697 (100.00%) were paired; of these:
+    1636111 (8.64%) aligned concordantly 0 times
+    14471841 (76.44%) aligned concordantly exactly 1 time
+    2824745 (14.92%) aligned concordantly >1 times
+    ----
+    1636111 pairs aligned concordantly 0 times; of these:
+      1012910 (61.91%) aligned discordantly 1 time
+    ----
+    623201 pairs aligned 0 times concordantly or discordantly; of these:
+      1246402 mates make up the pairs; of these:
+        427027 (34.26%) aligned 0 times
+        271156 (21.76%) aligned exactly 1 time
+        548219 (43.98%) aligned >1 times
+98.87% overall alignment rate
++ samtools view -@ 6 -bS SRR11102076.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102076.bam SRR11102076_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102076_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102076
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102076/SRR11102076.gtf -l SRR11102076 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102076_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102077_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102077_2_paired.fastq -S SRR11102077.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16814544 reads; of these:
+  16814544 (100.00%) were paired; of these:
+    1742728 (10.36%) aligned concordantly 0 times
+    12452318 (74.06%) aligned concordantly exactly 1 time
+    2619498 (15.58%) aligned concordantly >1 times
+    ----
+    1742728 pairs aligned concordantly 0 times; of these:
+      804770 (46.18%) aligned discordantly 1 time
+    ----
+    937958 pairs aligned 0 times concordantly or discordantly; of these:
+      1875916 mates make up the pairs; of these:
+        844393 (45.01%) aligned 0 times
+        384035 (20.47%) aligned exactly 1 time
+        647488 (34.52%) aligned >1 times
+97.49% overall alignment rate
++ samtools view -@ 6 -bS SRR11102077.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102077.bam SRR11102077_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102077_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102077
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102077/SRR11102077.gtf -l SRR11102077 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102077_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102078_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102078_2_paired.fastq -S SRR11102078.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17599813 reads; of these:
+  17599813 (100.00%) were paired; of these:
+    1756899 (9.98%) aligned concordantly 0 times
+    13297719 (75.56%) aligned concordantly exactly 1 time
+    2545195 (14.46%) aligned concordantly >1 times
+    ----
+    1756899 pairs aligned concordantly 0 times; of these:
+      889571 (50.63%) aligned discordantly 1 time
+    ----
+    867328 pairs aligned 0 times concordantly or discordantly; of these:
+      1734656 mates make up the pairs; of these:
+        755915 (43.58%) aligned 0 times
+        369071 (21.28%) aligned exactly 1 time
+        609670 (35.15%) aligned >1 times
+97.85% overall alignment rate
++ samtools view -@ 6 -bS SRR11102078.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102078.bam SRR11102078_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102078_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102078
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102078/SRR11102078.gtf -l SRR11102078 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102078_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102079_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102079_2_paired.fastq -S SRR11102079.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16913217 reads; of these:
+  16913217 (100.00%) were paired; of these:
+    1531714 (9.06%) aligned concordantly 0 times
+    12807783 (75.73%) aligned concordantly exactly 1 time
+    2573720 (15.22%) aligned concordantly >1 times
+    ----
+    1531714 pairs aligned concordantly 0 times; of these:
+      948262 (61.91%) aligned discordantly 1 time
+    ----
+    583452 pairs aligned 0 times concordantly or discordantly; of these:
+      1166904 mates make up the pairs; of these:
+        385226 (33.01%) aligned 0 times
+        251721 (21.57%) aligned exactly 1 time
+        529957 (45.42%) aligned >1 times
+98.86% overall alignment rate
++ samtools view -@ 6 -bS SRR11102079.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102079.bam SRR11102079_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102079_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102079
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102079/SRR11102079.gtf -l SRR11102079 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102079_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102080_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102080_2_paired.fastq -S SRR11102080.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17322585 reads; of these:
+  17322585 (100.00%) were paired; of these:
+    1476409 (8.52%) aligned concordantly 0 times
+    12859933 (74.24%) aligned concordantly exactly 1 time
+    2986243 (17.24%) aligned concordantly >1 times
+    ----
+    1476409 pairs aligned concordantly 0 times; of these:
+      867452 (58.75%) aligned discordantly 1 time
+    ----
+    608957 pairs aligned 0 times concordantly or discordantly; of these:
+      1217914 mates make up the pairs; of these:
+        391091 (32.11%) aligned 0 times
+        261008 (21.43%) aligned exactly 1 time
+        565815 (46.46%) aligned >1 times
+98.87% overall alignment rate
++ samtools view -@ 6 -bS SRR11102080.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102080.bam SRR11102080_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102080_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102080
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102080/SRR11102080.gtf -l SRR11102080 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102080_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102081_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102081_2_paired.fastq -S SRR11102081.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16855162 reads; of these:
+  16855162 (100.00%) were paired; of these:
+    1499067 (8.89%) aligned concordantly 0 times
+    12593988 (74.72%) aligned concordantly exactly 1 time
+    2762107 (16.39%) aligned concordantly >1 times
+    ----
+    1499067 pairs aligned concordantly 0 times; of these:
+      904707 (60.35%) aligned discordantly 1 time
+    ----
+    594360 pairs aligned 0 times concordantly or discordantly; of these:
+      1188720 mates make up the pairs; of these:
+        394491 (33.19%) aligned 0 times
+        244088 (20.53%) aligned exactly 1 time
+        550141 (46.28%) aligned >1 times
+98.83% overall alignment rate
++ samtools view -@ 6 -bS SRR11102081.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102081.bam SRR11102081_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102081_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102081
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102081/SRR11102081.gtf -l SRR11102081 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102081_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102082_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102082_2_paired.fastq -S SRR11102082.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17665146 reads; of these:
+  17665146 (100.00%) were paired; of these:
+    1629186 (9.22%) aligned concordantly 0 times
+    13057834 (73.92%) aligned concordantly exactly 1 time
+    2978126 (16.86%) aligned concordantly >1 times
+    ----
+    1629186 pairs aligned concordantly 0 times; of these:
+      984412 (60.42%) aligned discordantly 1 time
+    ----
+    644774 pairs aligned 0 times concordantly or discordantly; of these:
+      1289548 mates make up the pairs; of these:
+        399114 (30.95%) aligned 0 times
+        264772 (20.53%) aligned exactly 1 time
+        625662 (48.52%) aligned >1 times
+98.87% overall alignment rate
++ samtools view -@ 6 -bS SRR11102082.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102082.bam SRR11102082_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102082_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102082
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102082/SRR11102082.gtf -l SRR11102082 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102082_sorted.bam
++ read i
++ hisat2 -p 24 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102083_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102083_2_paired.fastq -S SRR11102083.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16329931 reads; of these:
+  16329931 (100.00%) were paired; of these:
+    1555970 (9.53%) aligned concordantly 0 times
+    12600386 (77.16%) aligned concordantly exactly 1 time
+    2173575 (13.31%) aligned concordantly >1 times
+    ----
+    1555970 pairs aligned concordantly 0 times; of these:
+      1008661 (64.83%) aligned discordantly 1 time
+    ----
+    547309 pairs aligned 0 times concordantly or discordantly; of these:
+      1094618 mates make up the pairs; of these:
+        395159 (36.10%) aligned 0 times
+        223331 (20.40%) aligned exactly 1 time
+        476128 (43.50%) aligned >1 times
+98.79% overall alignment rate
++ samtools view -@ 6 -bS SRR11102083.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102083.bam SRR11102083_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102083_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102083
++ stringtie -p 24 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102083/SRR11102083.gtf -l SRR11102083 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102083_sorted.bam
++ read i
++ cp SRR11102034_Stats.txt SRR11102035_Stats.txt SRR11102036_Stats.txt SRR11102037_Stats.txt SRR11102038_Stats.txt SRR11102039_Stats.txt SRR11102040_Stats.txt SRR11102041_Stats.txt SRR11102042_Stats.txt SRR11102043_Stats.txt SRR11102044_Stats.txt SRR11102045_Stats.txt SRR11102046_Stats.txt SRR11102047_Stats.txt SRR11102048_Stats.txt SRR11102049_Stats.txt SRR11102050_Stats.txt SRR11102051_Stats.txt SRR11102052_Stats.txt SRR11102053_Stats.txt SRR11102054_Stats.txt SRR11102055_Stats.txt SRR11102056_Stats.txt SRR11102057_Stats.txt SRR11102058_Stats.txt SRR11102059_Stats.txt SRR11102060_Stats.txt SRR11102061_Stats.txt SRR11102062_Stats.txt SRR11102063_Stats.txt SRR11102064_Stats.txt SRR11102065_Stats.txt SRR11102066_Stats.txt SRR11102067_Stats.txt SRR11102068_Stats.txt SRR11102069_Stats.txt SRR11102070_Stats.txt SRR11102071_Stats.txt SRR11102072_Stats.txt SRR11102073_Stats.txt SRR11102074_Stats.txt SRR11102075_Stats.txt SRR11102076_Stats.txt SRR11102077_Stats.txt SRR11102078_Stats.txt SRR11102079_Stats.txt SRR11102080_Stats.txt SRR11102081_Stats.txt SRR11102082_Stats.txt SRR11102083_Stats.txt /home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ cd /scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ python /home/aubclsb0323/class_shared/prepDE.py -i /scratch/aubclsb0323/FinalProject/Counts_StringTie_6
+0 SRR11102034
+1 SRR11102035
+2 SRR11102036
+3 SRR11102037
+4 SRR11102038
+5 SRR11102039
+6 SRR11102040
+7 SRR11102041
+8 SRR11102042
+9 SRR11102043
+10 SRR11102044
+11 SRR11102045
+12 SRR11102046
+13 SRR11102047
+14 SRR11102048
+15 SRR11102049
+16 SRR11102050
+17 SRR11102051
+18 SRR11102052
+19 SRR11102053
+20 SRR11102054
+21 SRR11102055
+22 SRR11102056
+23 SRR11102057
+24 SRR11102058
+25 SRR11102059
+26 SRR11102060
+27 SRR11102061
+28 SRR11102062
+29 SRR11102063
+30 SRR11102064
+31 SRR11102065
+32 SRR11102066
+33 SRR11102067
+34 SRR11102068
+35 SRR11102069
+36 SRR11102070
+37 SRR11102071
+38 SRR11102072
+39 SRR11102073
+40 SRR11102074
+41 SRR11102075
+42 SRR11102076
+43 SRR11102077
+44 SRR11102078
+45 SRR11102079
+46 SRR11102080
+47 SRR11102081
+48 SRR11102082
+49 SRR11102083
++ cp gene_count_matrix.csv transcript_count_matrix.csv /home/aubclsb0323/FunGen23_Age/Counts_H_S_6

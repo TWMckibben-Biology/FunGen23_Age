@@ -1,0 +1,551 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: 3_30s_basic.sh
+  The time limit is 360:00:00 HH:MM:SS.
+  The target directory is: /home/aubclsb0323/FunGen23_Age
+  The working directory is:  /scratch-local/aubclsb0323.3_30s_basic_bigmem_R2.1090681
+  The memory limit is: 360gb
+  The job will start running after: 2023-04-30T12:50:17
+  Job Name: 3_30s_basic_bigmem_R2
+  Virtual queue: bigmem
+  QOS: --qos=bigmem
+  Constraints: --constraint=dmc
+  Using  3  cores on master node  dmc86
+  Node list:  dmc86
+  Nodes:  dmc86 dmc86 dmc86
+  Command typed:
+/apps/scripts/run_script 3_30s_basic.sh     
+  Queue submit command:
+sbatch --qos=bigmem -J 3_30s_basic_bigmem_R2 --begin=2023-04-30T12:50:17 --requeue --mail-user=twm0009@auburn.edu -o 3_30s_basic_bigmem_R2.o1090681 -t 360:00:00 -N 1-1 -n 3 --mem-per-cpu=120000mb --constraint=dmc 
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffcompare"
+   Try: "module spider gffcompare" to see how to load the module(s).
+
+
+
+
+Lmod is automatically replacing "anaconda/2-2019.10" with "python/2.7.1".
+
+
+The following have been reloaded with a version change:
+  1) gcc/7.3.0 => gcc/4.5.2
+
+
+The following have been reloaded with a version change:
+  1) gcc/4.5.2 => gcc/9.3.0
+
+
+The following have been reloaded with a version change:
+  1) gcc/9.3.0 => gcc/4.5.2     2) samtools/1.13 => samtools/0.1.19
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffread"
+   Try: "module spider gffread" to see how to load the module(s).
+
+
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffcompare"
+   Try: "module spider gffcompare" to see how to load the module(s).
+
+
+
++ MyID=aubclsb0323
++ WD=/scratch/aubclsb0323/FinalProject
++ CLEAND=/scratch/aubclsb0323/FinalProject/CleanData2
++ REFD=/scratch/aubclsb0323/FinalProject/GRCm39
++ MAPD=/scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ COUNTSD=/scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ RESULTSD=/home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ REF=GRCm39_basic
++ mkdir -p /scratch/aubclsb0323/FinalProject/GRCm39
++ mkdir -p /scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ mkdir -p /scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ mkdir -p /home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ mkdir -p /scratch/aubclsb0323/FinalProject/CleanData2
++ cd /scratch/aubclsb0323/FinalProject/GRCm39
++ extract_splice_sites.py GRCm39_basic.gtf
++ extract_exons.py GRCm39_basic.gtf
++ hisat2-build --ss GRCm39_basic.ss --exon GRCm39_basic.exon GRCm39_basic.fa GRCm39_basic
+Settings:
+  Output files: "GRCm39_basic.*.ht2"
+  Line rate: 7 (line is 128 bytes)
+  Lines per side: 1 (side is 128 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Local offset rate: 3 (one in 8)
+  Local fTable chars: 6
+  Local sequence length: 57344
+  Local sequence overlap between two consecutive indexes: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  GRCm39_basic.fa
+Reading reference sizes
+  Time reading reference sizes: 00:00:19
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:11
+  Time to read SNPs and splice sites: 00:00:02
+Generation 0 (2654860823 -> 2654860823 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 15
+RESIZED NODES: 0
+MADE NEW NODES: 10
+Generation 1 (2655096204 -> 2655096204 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 16
+RESIZED NODES: 0
+MADE NEW NODES: 16
+Generation 2 (2655567017 -> 2655567017 nodes, 0 ranks
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 15
+RESIZED NODES: 0
+MADE NEW NODES: 16
+Generation 3 (2656508978 -> 2656508978 nodes, 0 ranks
+BUILT FROM_INDEX: 6
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 16
+RESIZED NODES: 0
+MADE NEW NODES: 17
+RESIZE NODES: 54
+SORT NODES: 294
+MERGE, UPDATE RANK: 79
+Generation 4 (2658395102 -> 2657950223 nodes, 1094865375 ranks
+ALLOCATE FROM_TABLE: 14
+BUILD TABLE: 149
+BUILD INDEX: 11
+COUNTED NEW NODES: 64
+COUNTED TEMP NODES: 0
+RESIZED NODES: 5
+RESIZED NODES: 0
+MADE NEW NODES: 237
+MERGEUPDATERANK: 53
+TOTAL TIME: 533
+Generation 5 (2659813448 -> 2657736044 nodes, 2234490024 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 142
+BUILD INDEX: 11
+COUNTED NEW NODES: 16
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 61
+MERGEUPDATERANK: 38
+TOTAL TIME: 268
+Generation 6 (2657917132 -> 2657853975 nodes, 2399237080 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 150
+BUILD INDEX: 11
+COUNTED NEW NODES: 16
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 41
+MERGEUPDATERANK: 26
+TOTAL TIME: 244
+Generation 7 (2658037033 -> 2657969688 nodes, 2490985482 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 142
+BUILD INDEX: 11
+COUNTED NEW NODES: 8
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 31
+MERGEUPDATERANK: 31
+TOTAL TIME: 223
+Generation 8 (2658145085 -> 2658061580 nodes, 2547144201 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 140
+BUILD INDEX: 11
+COUNTED NEW NODES: 14
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 18
+MERGEUPDATERANK: 23
+TOTAL TIME: 206
+Generation 9 (2658217946 -> 2658137960 nodes, 2589240820 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 135
+BUILD INDEX: 10
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 20
+MERGEUPDATERANK: 28
+TOTAL TIME: 198
+Generation 10 (2658281155 -> 2658222132 nodes, 2618486450 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 136
+BUILD INDEX: 10
+COUNTED NEW NODES: 11
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 10
+MERGEUPDATERANK: 21
+TOTAL TIME: 188
+Generation 11 (2658369825 -> 2658318708 nodes, 2635917964 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 134
+BUILD INDEX: 10
+COUNTED NEW NODES: 4
+COUNTED TEMP NODES: 0
+RESIZED NODES: 15
+RESIZED NODES: 0
+MADE NEW NODES: 14
+MERGEUPDATERANK: 22
+TOTAL TIME: 199
+Generation 12 (2658476537 -> 2658426085 nodes, 2645027672 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 171
+BUILD INDEX: 10
+COUNTED NEW NODES: 10
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 7
+MERGEUPDATERANK: 19
+TOTAL TIME: 217
+Generation 13 (2658615354 -> 2658551916 nodes, 2650389062 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 136
+BUILD INDEX: 10
+COUNTED NEW NODES: 3
+COUNTED TEMP NODES: 0
+RESIZED NODES: 5
+RESIZED NODES: 0
+MADE NEW NODES: 6
+MERGEUPDATERANK: 19
+TOTAL TIME: 179
+Generation 14 (2658753961 -> 2658698828 nodes, 2654213932 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 134
+BUILD INDEX: 10
+COUNTED NEW NODES: 2
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 5
+MERGEUPDATERANK: 20
+TOTAL TIME: 171
+Generation 15 (2658950321 -> 2658848383 nodes, 2657230157 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 134
+BUILD INDEX: 11
+COUNTED NEW NODES: 2
+COUNTED TEMP NODES: 0
+RESIZED NODES: 4
+RESIZED NODES: 0
+MADE NEW NODES: 4
+MERGEUPDATERANK: 19
+TOTAL TIME: 174
+Generation 16 (2659086912 -> 2658975234 nodes, 2658687028 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 136
+BUILD INDEX: 10
+COUNTED NEW NODES: 2
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 4
+MERGEUPDATERANK: 19
+TOTAL TIME: 171
+Generation 17 (2659090665 -> 2659082921 nodes, 2659078780 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 135
+BUILD INDEX: 10
+COUNTED NEW NODES: 3
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 4
+MERGEUPDATERANK: 19
+TOTAL TIME: 171
+Generation 18 (2659082921 -> 2659082921 nodes, 2659082921 ranks
+Generating edges... 
+NODE.TO -> GENOME POS: 9
+BUILD FROM_INDEX 6
+COUNTED NEW EDGES: 40
+MADE NEW EDGES: 61
+SORTED NEW EDGES: 194
+RE-SORTED NODES: 241
+PROCESS EDGES: 35
+REMOVE Y: 12
+SORT, Make index: 196
+TOTAL: 794
+Allocating ftab, absorbFtab
+Entering GFM loop
+Exited GFM loop
+fchr[A]: 0
+fchr[C]: 775062644
+fchr[G]: 1329183500
+fchr[T]: 1883346235
+fchr[$]: 2659319877
+Exiting GFM::buildToDisk()
+Returning from initFromVector
+Wrote 1640704558 bytes to primary GFM file: GRCm39_basic.1.ht2
+Wrote 664770736 bytes to secondary GFM file: GRCm39_basic.2.ht2
+Re-opening _in1 and _in2 as input streams
+Returning from GFM constructor
+Returning from initFromVector
+Wrote 1517570533 bytes to primary GFM file: GRCm39_basic.5.ht2
+Wrote 676074752 bytes to secondary GFM file: GRCm39_basic.6.ht2
+Re-opening _in5 and _in5 as input streams
+Returning from HierEbwt constructor
+Headers:
+    len: 2654621783
+    gbwtLen: 2659319878
+    nodes: 2659082920
+    sz: 1327310892
+    gbwtSz: 1329659940
+    lineRate: 7
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 0
+    eftabSz: 0
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 166192683
+    offsSz: 664770732
+    lineSz: 128
+    sideSz: 128
+    sideGbwtSz: 104
+    sideGbwtLen: 208
+    numSides: 12785192
+    numLines: 12785192
+    gbwtTotLen: 1636504576
+    gbwtTotSz: 1636504576
+    reverse: 0
+    linearFM: No
+Total time for call to driver() for forward index: 02:32:06
++ cd /scratch/aubclsb0323/FinalProject/CleanData2
++ cp /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102034_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102034_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102035_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102035_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102036_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102036_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102037_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102037_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102038_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102038_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102039_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102039_2_paired.fastq .
++ ls
++ grep .fastq
++ sort
++ cut -d _ -f 1
++ uniq
++ cd /scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ mv /scratch/aubclsb0323/FinalProject/CleanData2/list .
++ read i
++ hisat2 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102034_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102034_2_paired.fastq -S SRR11102034.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+16944115 reads; of these:
+  16944115 (100.00%) were paired; of these:
+    1615678 (9.54%) aligned concordantly 0 times
+    12588284 (74.29%) aligned concordantly exactly 1 time
+    2740153 (16.17%) aligned concordantly >1 times
+    ----
+    1615678 pairs aligned concordantly 0 times; of these:
+      996564 (61.68%) aligned discordantly 1 time
+    ----
+    619114 pairs aligned 0 times concordantly or discordantly; of these:
+      1238228 mates make up the pairs; of these:
+        396427 (32.02%) aligned 0 times
+        246533 (19.91%) aligned exactly 1 time
+        595268 (48.07%) aligned >1 times
+98.83% overall alignment rate
++ samtools view -@ 6 -bS SRR11102034.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102034.bam SRR11102034_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102034_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102034
+mkdir: cannot create directory '/scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102034': File exists
++ stringtie -p 3 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102034/SRR11102034.gtf -l SRR11102034 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102034_sorted.bam
++ read i
++ hisat2 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102035_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102035_2_paired.fastq -S SRR11102035.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+20638495 reads; of these:
+  20638495 (100.00%) were paired; of these:
+    1818270 (8.81%) aligned concordantly 0 times
+    15753561 (76.33%) aligned concordantly exactly 1 time
+    3066664 (14.86%) aligned concordantly >1 times
+    ----
+    1818270 pairs aligned concordantly 0 times; of these:
+      1147110 (63.09%) aligned discordantly 1 time
+    ----
+    671160 pairs aligned 0 times concordantly or discordantly; of these:
+      1342320 mates make up the pairs; of these:
+        475526 (35.43%) aligned 0 times
+        277671 (20.69%) aligned exactly 1 time
+        589123 (43.89%) aligned >1 times
+98.85% overall alignment rate
++ samtools view -@ 6 -bS SRR11102035.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102035.bam SRR11102035_sorted
+[bam_sort_core] merging from 24 files...
++ samtools flagstat SRR11102035_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102035
+mkdir: cannot create directory '/scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102035': File exists
++ stringtie -p 3 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102035/SRR11102035.gtf -l SRR11102035 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102035_sorted.bam
++ read i
++ hisat2 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102036_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102036_2_paired.fastq -S SRR11102036.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+23401359 reads; of these:
+  23401359 (100.00%) were paired; of these:
+    2244217 (9.59%) aligned concordantly 0 times
+    16140429 (68.97%) aligned concordantly exactly 1 time
+    5016713 (21.44%) aligned concordantly >1 times
+    ----
+    2244217 pairs aligned concordantly 0 times; of these:
+      1334763 (59.48%) aligned discordantly 1 time
+    ----
+    909454 pairs aligned 0 times concordantly or discordantly; of these:
+      1818908 mates make up the pairs; of these:
+        488998 (26.88%) aligned 0 times
+        332974 (18.31%) aligned exactly 1 time
+        996936 (54.81%) aligned >1 times
+98.96% overall alignment rate
++ samtools view -@ 6 -bS SRR11102036.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102036.bam SRR11102036_sorted
+[bam_sort_core] merging from 24 files...
++ samtools flagstat SRR11102036_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102036
+mkdir: cannot create directory '/scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102036': File exists
++ stringtie -p 3 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102036/SRR11102036.gtf -l SRR11102036 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102036_sorted.bam
++ read i
++ hisat2 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102037_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102037_2_paired.fastq -S SRR11102037.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+21066777 reads; of these:
+  21066777 (100.00%) were paired; of these:
+    1937050 (9.19%) aligned concordantly 0 times
+    14639104 (69.49%) aligned concordantly exactly 1 time
+    4490623 (21.32%) aligned concordantly >1 times
+    ----
+    1937050 pairs aligned concordantly 0 times; of these:
+      1115951 (57.61%) aligned discordantly 1 time
+    ----
+    821099 pairs aligned 0 times concordantly or discordantly; of these:
+      1642198 mates make up the pairs; of these:
+        409854 (24.96%) aligned 0 times
+        306515 (18.66%) aligned exactly 1 time
+        925829 (56.38%) aligned >1 times
+99.03% overall alignment rate
++ samtools view -@ 6 -bS SRR11102037.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102037.bam SRR11102037_sorted
+[bam_sort_core] merging from 24 files...
++ samtools flagstat SRR11102037_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102037
+mkdir: cannot create directory '/scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102037': File exists
++ stringtie -p 3 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102037/SRR11102037.gtf -l SRR11102037 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102037_sorted.bam
++ read i
++ hisat2 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102038_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102038_2_paired.fastq -S SRR11102038.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+17293071 reads; of these:
+  17293071 (100.00%) were paired; of these:
+    1626171 (9.40%) aligned concordantly 0 times
+    12417452 (71.81%) aligned concordantly exactly 1 time
+    3249448 (18.79%) aligned concordantly >1 times
+    ----
+    1626171 pairs aligned concordantly 0 times; of these:
+      968157 (59.54%) aligned discordantly 1 time
+    ----
+    658014 pairs aligned 0 times concordantly or discordantly; of these:
+      1316028 mates make up the pairs; of these:
+        387859 (29.47%) aligned 0 times
+        238854 (18.15%) aligned exactly 1 time
+        689315 (52.38%) aligned >1 times
+98.88% overall alignment rate
++ samtools view -@ 6 -bS SRR11102038.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102038.bam SRR11102038_sorted
+[bam_sort_core] merging from 18 files...
++ samtools flagstat SRR11102038_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102038
+mkdir: cannot create directory '/scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102038': File exists
++ stringtie -p 3 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102038/SRR11102038.gtf -l SRR11102038 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102038_sorted.bam
++ read i
++ hisat2 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102039_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102039_2_paired.fastq -S SRR11102039.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+24113102 reads; of these:
+  24113102 (100.00%) were paired; of these:
+    1975297 (8.19%) aligned concordantly 0 times
+    17374729 (72.06%) aligned concordantly exactly 1 time
+    4763076 (19.75%) aligned concordantly >1 times
+    ----
+    1975297 pairs aligned concordantly 0 times; of these:
+      1164917 (58.97%) aligned discordantly 1 time
+    ----
+    810380 pairs aligned 0 times concordantly or discordantly; of these:
+      1620760 mates make up the pairs; of these:
+        471255 (29.08%) aligned 0 times
+        304166 (18.77%) aligned exactly 1 time
+        845339 (52.16%) aligned >1 times
+99.02% overall alignment rate
++ samtools view -@ 6 -bS SRR11102039.sam
+[samopen] SAM header is present: 61 sequences.
++ samtools sort -@ 6 SRR11102039.bam SRR11102039_sorted
+[bam_sort_core] merging from 24 files...
++ samtools flagstat SRR11102039_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102039
+mkdir: cannot create directory '/scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102039': File exists
++ stringtie -p 3 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102039/SRR11102039.gtf -l SRR11102039 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102039_sorted.bam
++ read i
++ cp SRR11102034_Stats.txt SRR11102035_Stats.txt SRR11102036_Stats.txt SRR11102037_Stats.txt SRR11102038_Stats.txt SRR11102039_Stats.txt /home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ cd /scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ python /home/aubclsb0323/class_shared/prepDE.py -i /scratch/aubclsb0323/FinalProject/Counts_StringTie_6
+0 SRR11102034
+1 SRR11102035
+2 SRR11102036
+3 SRR11102037
+4 SRR11102038
+5 SRR11102039
++ cp gene_count_matrix.csv transcript_count_matrix.csv /home/aubclsb0323/FunGen23_Age/Counts_H_S_6

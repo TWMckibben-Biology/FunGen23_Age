@@ -1,0 +1,191 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: 2_50s.sh
+  The time limit is 12:00:00 HH:MM:SS.
+  The target directory is: /home/aubclsb0323/FunGen23_Age
+  The working directory is:  /scratch-local/aubclsb0323.2_50s.1090577
+  The memory limit is: 18gb
+  The job will start running after: 2023-04-29T16:44:36
+  Job Name: 2_50s
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  6  cores on master node  dmc78
+  Node list:  dmc78
+  Nodes:  dmc78 dmc78 dmc78 dmc78 dmc78 dmc78
+  Command typed:
+/apps/scripts/run_script 2_50s.sh     
+  Queue submit command:
+sbatch --qos=class -J 2_50s --begin=2023-04-29T16:44:36 --requeue --mail-user=twm0009@auburn.edu -o 2_50s.o1090577 -t 12:00:00 -N 1-1 -n 6 --mem-per-cpu=3000mb --constraint=dmc 
+mkdir: cannot create directory '/scratch/aubclsb0323/FinalProject/CleanData': File exists
+mkdir: cannot create directory '/scratch/aubclsb0323/FinalProject/PostCleanQuality': File exists
+TrimmomaticPE: Started with arguments:
+ -threads 6 -phred33 SRR11102050_1.fastq SRR11102050_2.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102050_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102050_1_unpaired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102050_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102050_2_unpaired.fastq ILLUMINACLIP:AdaptersToTrim_All.fa:2:35:10 HEADCROP:10 LEADING:30 TRAILING:30 SLIDINGWINDOW:6:30 MINLEN:36
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCTCGTATGCCGTCTTCTGCTTG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TTTTTTTTTTAATGATACGGCGACCACCGAGATCTACAC'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGGTTCAGCAGGAATGCCGAGACCGATCTCGTATGCCGTCTTCTGCTTG'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Medium Clipping Sequence: 'AGATGTGTATAAGAGACAG'
+Skipping duplicate Clipping Sequence: 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+Skipping duplicate Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'TTTTTTTTTTCAAGCAGAAGACGGCATACGA'
+Skipping duplicate Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'CAAGCAGAAGACGGCATACGAGATCGGTCTCGGCATTCCTGCTGAACCGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGGTTCAGCAGGAATGCCGAG'
+Skipping duplicate Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Skipping duplicate Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Using Long Clipping Sequence: 'AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+Skipping duplicate Clipping Sequence: 'AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+Skipping duplicate Clipping Sequence: 'CAAGCAGAAGACGGCATACGAGATCGGTCTCGGCATTCCTGCTGAACCGCTCTTCCGATCT'
+ILLUMINACLIP: Using 0 prefix pairs, 18 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 22715822 Both Surviving: 17265353 (76.01%) Forward Only Surviving: 2184285 (9.62%) Reverse Only Surviving: 809928 (3.57%) Dropped: 2456256 (10.81%)
+TrimmomaticPE: Completed successfully
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Started analysis of SRR11102050_1_paired.fastq
+Approx 5% complete for SRR11102050_1_paired.fastq
+Approx 10% complete for SRR11102050_1_paired.fastq
+Approx 15% complete for SRR11102050_1_paired.fastq
+Approx 20% complete for SRR11102050_1_paired.fastq
+Approx 25% complete for SRR11102050_1_paired.fastq
+Approx 30% complete for SRR11102050_1_paired.fastq
+Approx 35% complete for SRR11102050_1_paired.fastq
+Approx 40% complete for SRR11102050_1_paired.fastq
+Approx 45% complete for SRR11102050_1_paired.fastq
+Approx 50% complete for SRR11102050_1_paired.fastq
+Approx 55% complete for SRR11102050_1_paired.fastq
+Approx 60% complete for SRR11102050_1_paired.fastq
+Approx 65% complete for SRR11102050_1_paired.fastq
+Approx 70% complete for SRR11102050_1_paired.fastq
+Approx 75% complete for SRR11102050_1_paired.fastq
+Approx 80% complete for SRR11102050_1_paired.fastq
+Approx 85% complete for SRR11102050_1_paired.fastq
+Approx 90% complete for SRR11102050_1_paired.fastq
+Approx 95% complete for SRR11102050_1_paired.fastq
+Approx 100% complete for SRR11102050_1_paired.fastq
+Analysis complete for SRR11102050_1_paired.fastq
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Started analysis of SRR11102050_2_paired.fastq
+Approx 5% complete for SRR11102050_2_paired.fastq
+Approx 10% complete for SRR11102050_2_paired.fastq
+Approx 15% complete for SRR11102050_2_paired.fastq
+Approx 20% complete for SRR11102050_2_paired.fastq
+Approx 25% complete for SRR11102050_2_paired.fastq
+Approx 30% complete for SRR11102050_2_paired.fastq
+Approx 35% complete for SRR11102050_2_paired.fastq
+Approx 40% complete for SRR11102050_2_paired.fastq
+Approx 45% complete for SRR11102050_2_paired.fastq
+Approx 50% complete for SRR11102050_2_paired.fastq
+Approx 55% complete for SRR11102050_2_paired.fastq
+Approx 60% complete for SRR11102050_2_paired.fastq
+Approx 65% complete for SRR11102050_2_paired.fastq
+Approx 70% complete for SRR11102050_2_paired.fastq
+Approx 75% complete for SRR11102050_2_paired.fastq
+Approx 80% complete for SRR11102050_2_paired.fastq
+Approx 85% complete for SRR11102050_2_paired.fastq
+Approx 90% complete for SRR11102050_2_paired.fastq
+Approx 95% complete for SRR11102050_2_paired.fastq
+Approx 100% complete for SRR11102050_2_paired.fastq
+Analysis complete for SRR11102050_2_paired.fastq
+TrimmomaticPE: Started with arguments:
+ -threads 6 -phred33 SRR11102051_1.fastq SRR11102051_2.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102051_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102051_1_unpaired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102051_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/SRR11102051_2_unpaired.fastq ILLUMINACLIP:AdaptersToTrim_All.fa:2:35:10 HEADCROP:10 LEADING:30 TRAILING:30 SLIDINGWINDOW:6:30 MINLEN:36
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCTCGTATGCCGTCTTCTGCTTG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TTTTTTTTTTAATGATACGGCGACCACCGAGATCTACAC'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGGTTCAGCAGGAATGCCGAGACCGATCTCGTATGCCGTCTTCTGCTTG'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Medium Clipping Sequence: 'AGATGTGTATAAGAGACAG'
+Skipping duplicate Clipping Sequence: 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+Skipping duplicate Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'TTTTTTTTTTCAAGCAGAAGACGGCATACGA'
+Skipping duplicate Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'CAAGCAGAAGACGGCATACGAGATCGGTCTCGGCATTCCTGCTGAACCGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGGTTCAGCAGGAATGCCGAG'
+Skipping duplicate Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Skipping duplicate Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Using Long Clipping Sequence: 'AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+Skipping duplicate Clipping Sequence: 'AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+Skipping duplicate Clipping Sequence: 'CAAGCAGAAGACGGCATACGAGATCGGTCTCGGCATTCCTGCTGAACCGCTCTTCCGATCT'
+ILLUMINACLIP: Using 0 prefix pairs, 18 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 22978968 Both Surviving: 17450537 (75.94%) Forward Only Surviving: 2249802 (9.79%) Reverse Only Surviving: 789432 (3.44%) Dropped: 2489197 (10.83%)
+TrimmomaticPE: Completed successfully
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Started analysis of SRR11102051_1_paired.fastq
+Approx 5% complete for SRR11102051_1_paired.fastq
+Approx 10% complete for SRR11102051_1_paired.fastq
+Approx 15% complete for SRR11102051_1_paired.fastq
+Approx 20% complete for SRR11102051_1_paired.fastq
+Approx 25% complete for SRR11102051_1_paired.fastq
+Approx 30% complete for SRR11102051_1_paired.fastq
+Approx 35% complete for SRR11102051_1_paired.fastq
+Approx 40% complete for SRR11102051_1_paired.fastq
+Approx 45% complete for SRR11102051_1_paired.fastq
+Approx 50% complete for SRR11102051_1_paired.fastq
+Approx 55% complete for SRR11102051_1_paired.fastq
+Approx 60% complete for SRR11102051_1_paired.fastq
+Approx 65% complete for SRR11102051_1_paired.fastq
+Approx 70% complete for SRR11102051_1_paired.fastq
+Approx 75% complete for SRR11102051_1_paired.fastq
+Approx 80% complete for SRR11102051_1_paired.fastq
+Approx 85% complete for SRR11102051_1_paired.fastq
+Approx 90% complete for SRR11102051_1_paired.fastq
+Approx 95% complete for SRR11102051_1_paired.fastq
+Approx 100% complete for SRR11102051_1_paired.fastq
+Analysis complete for SRR11102051_1_paired.fastq
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Started analysis of SRR11102051_2_paired.fastq
+Approx 5% complete for SRR11102051_2_paired.fastq
+Approx 10% complete for SRR11102051_2_paired.fastq
+Approx 15% complete for SRR11102051_2_paired.fastq
+Approx 20% complete for SRR11102051_2_paired.fastq
+Approx 25% complete for SRR11102051_2_paired.fastq
+Approx 30% complete for SRR11102051_2_paired.fastq
+Approx 35% complete for SRR11102051_2_paired.fastq
+Approx 40% complete for SRR11102051_2_paired.fastq
+Approx 45% complete for SRR11102051_2_paired.fastq
+Approx 50% complete for SRR11102051_2_paired.fastq
+Approx 55% complete for SRR11102051_2_paired.fastq
+slurmstepd: error: *** JOB 1090577 ON dmc78 CANCELLED AT 2023-04-29T17:15:59 ***

@@ -1,0 +1,253 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: 3_30s_basic.sh
+  The time limit is 360:00:00 HH:MM:SS.
+  The target directory is: /home/aubclsb0323/FunGen23_Age
+  The working directory is:  /scratch-local/aubclsb0323.3_30s_basic_3p360gb.1090671
+  The memory limit is: 360gb
+  The job will start running after: 2023-04-30T12:24:41
+  Job Name: 3_30s_basic_3p360gb
+  Virtual queue: bigmem
+  QOS: --qos=bigmem
+  Constraints: --constraint=dmc
+  Using  3  cores on master node  dmc86
+  Node list:  dmc86
+  Nodes:  dmc86 dmc86 dmc86
+  Command typed:
+/apps/scripts/run_script 3_30s_basic.sh     
+  Queue submit command:
+sbatch --qos=bigmem -J 3_30s_basic_3p360gb --begin=2023-04-30T12:24:41 --requeue --mail-user=twm0009@auburn.edu -o 3_30s_basic_3p360gb.o1090671 -t 360:00:00 -N 1-1 -n 3 --mem-per-cpu=120000mb --constraint=dmc 
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffcompare"
+   Try: "module spider gffcompare" to see how to load the module(s).
+
+
+
+
+Lmod is automatically replacing "anaconda/2-2019.10" with "python/2.7.1".
+
+
+The following have been reloaded with a version change:
+  1) gcc/7.3.0 => gcc/4.5.2
+
+
+The following have been reloaded with a version change:
+  1) gcc/4.5.2 => gcc/9.3.0
+
+
+The following have been reloaded with a version change:
+  1) gcc/9.3.0 => gcc/4.5.2     2) samtools/1.13 => samtools/0.1.19
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffread"
+   Try: "module spider gffread" to see how to load the module(s).
+
+
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffcompare"
+   Try: "module spider gffcompare" to see how to load the module(s).
+
+
+
++ MyID=aubclsb0323
++ WD=/scratch/aubclsb0323/FinalProject
++ CLEAND=/scratch/aubclsb0323/FinalProject/CleanData2
++ REFD=/scratch/aubclsb0323/FinalProject/GRCm39
++ MAPD=/scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ COUNTSD=/scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ RESULTSD=/home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ REF=GRCm39_basic
++ mkdir -p /scratch/aubclsb0323/FinalProject/GRCm39
++ mkdir -p /scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ mkdir -p /scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ mkdir -p /home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ mkdir -p /scratch/aubclsb0323/FinalProject/CleanData2
++ cd /scratch/aubclsb0323/FinalProject/GRCm39
++ extract_splice_sites.py GRCm39_basic.gtf
++ extract_exons.py GRCm39_basic.gtf
++ hisat2-build --ss GRCm39_basic.ss --exon GRCm39_basic.exon GRCm39_basic.fa GRCm39_basic
+Settings:
+  Output files: "GRCm39_basic.*.ht2"
+  Line rate: 7 (line is 128 bytes)
+  Lines per side: 1 (side is 128 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Local offset rate: 3 (one in 8)
+  Local fTable chars: 6
+  Local sequence length: 57344
+  Local sequence overlap between two consecutive indexes: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  GRCm39_basic.fa
+Error: could not open GRCm39_basic.fa
+Total time for call to driver() for forward index: 00:00:00
+Error: Encountered internal HISAT2 exception (#1)
+Command: hisat2-build --wrapper basic-0 --ss GRCm39_basic.ss --exon GRCm39_basic.exon GRCm39_basic.fa GRCm39_basic 
++ cd /scratch/aubclsb0323/FinalProject/CleanData2
++ cp /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102034_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102034_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102035_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102035_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102036_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102036_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102037_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102037_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102038_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102038_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102039_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102039_2_paired.fastq .
++ ls
++ grep .fastq
++ sort
++ uniq
++ cut -d _ -f 1
++ cd /scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ mv /scratch/aubclsb0323/FinalProject/CleanData2/list .
++ read i
++ hisat2 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102034_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102034_2_paired.fastq -S SRR11102034.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Could not locate a HISAT2 index corresponding to basename "/scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /opt/asn/apps/hisat2_2.0.5/hisat2-2.0.5/hisat2-align-s --wrapper basic-0 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -S SRR11102034.sam -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102034_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102034_2_paired.fastq 
+(ERR): hisat2-align exited with value 1
++ samtools view -@ 6 -bS SRR11102034.sam
+[samopen] no @SQ lines in the header.
+[sam_read1] missing header? Abort!
++ samtools sort -@ 6 SRR11102034.bam SRR11102034_sorted
+[bam_header_read] EOF marker is absent. The input is probably truncated.
++ samtools flagstat SRR11102034_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102034
++ stringtie -p 3 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102034/SRR11102034.gtf -l SRR11102034 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102034_sorted.bam
+WARNING: no reference transcripts were found for the genomic sequences where reads were mapped!
+Please make sure the -G annotation file uses the same naming convention for the genome sequences.
++ read i
++ hisat2 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102035_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102035_2_paired.fastq -S SRR11102035.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Could not locate a HISAT2 index corresponding to basename "/scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /opt/asn/apps/hisat2_2.0.5/hisat2-2.0.5/hisat2-align-s --wrapper basic-0 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -S SRR11102035.sam -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102035_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102035_2_paired.fastq 
+(ERR): hisat2-align exited with value 1
++ samtools view -@ 6 -bS SRR11102035.sam
+[samopen] no @SQ lines in the header.
+[sam_read1] missing header? Abort!
++ samtools sort -@ 6 SRR11102035.bam SRR11102035_sorted
+[bam_header_read] EOF marker is absent. The input is probably truncated.
++ samtools flagstat SRR11102035_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102035
++ stringtie -p 3 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102035/SRR11102035.gtf -l SRR11102035 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102035_sorted.bam
+WARNING: no reference transcripts were found for the genomic sequences where reads were mapped!
+Please make sure the -G annotation file uses the same naming convention for the genome sequences.
++ read i
++ hisat2 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102036_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102036_2_paired.fastq -S SRR11102036.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Could not locate a HISAT2 index corresponding to basename "/scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /opt/asn/apps/hisat2_2.0.5/hisat2-2.0.5/hisat2-align-s --wrapper basic-0 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -S SRR11102036.sam -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102036_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102036_2_paired.fastq 
+(ERR): hisat2-align exited with value 1
++ samtools view -@ 6 -bS SRR11102036.sam
+[samopen] no @SQ lines in the header.
+[sam_read1] missing header? Abort!
++ samtools sort -@ 6 SRR11102036.bam SRR11102036_sorted
+[bam_header_read] EOF marker is absent. The input is probably truncated.
++ samtools flagstat SRR11102036_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102036
++ stringtie -p 3 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102036/SRR11102036.gtf -l SRR11102036 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102036_sorted.bam
+WARNING: no reference transcripts were found for the genomic sequences where reads were mapped!
+Please make sure the -G annotation file uses the same naming convention for the genome sequences.
++ read i
++ hisat2 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102037_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102037_2_paired.fastq -S SRR11102037.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Could not locate a HISAT2 index corresponding to basename "/scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /opt/asn/apps/hisat2_2.0.5/hisat2-2.0.5/hisat2-align-s --wrapper basic-0 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -S SRR11102037.sam -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102037_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102037_2_paired.fastq 
+(ERR): hisat2-align exited with value 1
++ samtools view -@ 6 -bS SRR11102037.sam
+[samopen] no @SQ lines in the header.
+[sam_read1] missing header? Abort!
++ samtools sort -@ 6 SRR11102037.bam SRR11102037_sorted
+[bam_header_read] EOF marker is absent. The input is probably truncated.
++ samtools flagstat SRR11102037_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102037
++ stringtie -p 3 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102037/SRR11102037.gtf -l SRR11102037 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102037_sorted.bam
+WARNING: no reference transcripts were found for the genomic sequences where reads were mapped!
+Please make sure the -G annotation file uses the same naming convention for the genome sequences.
++ read i
++ hisat2 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102038_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102038_2_paired.fastq -S SRR11102038.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Could not locate a HISAT2 index corresponding to basename "/scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /opt/asn/apps/hisat2_2.0.5/hisat2-2.0.5/hisat2-align-s --wrapper basic-0 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -S SRR11102038.sam -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102038_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102038_2_paired.fastq 
+(ERR): hisat2-align exited with value 1
++ samtools view -@ 6 -bS SRR11102038.sam
+[samopen] no @SQ lines in the header.
+[sam_read1] missing header? Abort!
++ samtools sort -@ 6 SRR11102038.bam SRR11102038_sorted
+[bam_header_read] EOF marker is absent. The input is probably truncated.
++ samtools flagstat SRR11102038_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102038
++ stringtie -p 3 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102038/SRR11102038.gtf -l SRR11102038 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102038_sorted.bam
+WARNING: no reference transcripts were found for the genomic sequences where reads were mapped!
+Please make sure the -G annotation file uses the same naming convention for the genome sequences.
++ read i
++ hisat2 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102039_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102039_2_paired.fastq -S SRR11102039.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Could not locate a HISAT2 index corresponding to basename "/scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /opt/asn/apps/hisat2_2.0.5/hisat2-2.0.5/hisat2-align-s --wrapper basic-0 -p 3 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic -S SRR11102039.sam -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102039_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102039_2_paired.fastq 
+(ERR): hisat2-align exited with value 1
++ samtools view -@ 6 -bS SRR11102039.sam
+[samopen] no @SQ lines in the header.
+[sam_read1] missing header? Abort!
++ samtools sort -@ 6 SRR11102039.bam SRR11102039_sorted
+[bam_header_read] EOF marker is absent. The input is probably truncated.
++ samtools flagstat SRR11102039_sorted.bam
++ mkdir /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102039
++ stringtie -p 3 -e -B -G /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39_basic.gtf -o /scratch/aubclsb0323/FinalProject/Counts_StringTie_6/SRR11102039/SRR11102039.gtf -l SRR11102039 /scratch/aubclsb0323/FinalProject/Map_HiSat2_6/SRR11102039_sorted.bam
+WARNING: no reference transcripts were found for the genomic sequences where reads were mapped!
+Please make sure the -G annotation file uses the same naming convention for the genome sequences.
++ read i
++ cp SRR11102034_Stats.txt SRR11102035_Stats.txt SRR11102036_Stats.txt SRR11102037_Stats.txt SRR11102038_Stats.txt SRR11102039_Stats.txt /home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ cd /scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ python /home/aubclsb0323/class_shared/prepDE.py -i /scratch/aubclsb0323/FinalProject/Counts_StringTie_6
+0 SRR11102034
+1 SRR11102035
+2 SRR11102036
+3 SRR11102037
+4 SRR11102038
+5 SRR11102039
++ cp gene_count_matrix.csv transcript_count_matrix.csv /home/aubclsb0323/FunGen23_Age/Counts_H_S_6

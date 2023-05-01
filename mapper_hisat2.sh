@@ -64,7 +64,7 @@ extract_exons.py $REF.gtf > $REF.exon
 
 #### Create a HISAT2 index for the reference genome
 
-hisat2-build --ss $REF.ss --exon $REF.exon $REF.fasta GRCm39
+hisat2-build --ss $REF.ss --exon $REF.exon $REF.fa $REF ###Our reference is a .fa file. may need to change this
 
 ########################  Map and Count the Data using HiSAT2 and StringTie  ########################
 
@@ -91,8 +91,8 @@ do
   ## HiSat2 is the mapping program
   ##  -p indicates number of processors, --dta reports alignments for StringTie --rf is the read orientation
 
-   hisat2 -p 12 --dta --phred33       \
-    -x "$REFD"/GRCm39       \
+   hisat2 -p 5 --dta --phred33       \
+    -x "$REFD"/$REF       \
     -1 "$CLEAND"/"$i"_1_paired.fastq  -2 "$CLEAND"/"$i"_2_paired.fastq      \
     -S "$i".sam
 
@@ -110,7 +110,7 @@ do
   ### Stringtie counts the reads mapped to the reference genome by sample ID
 
 mkdir "$COUNTSD"/"$i"
-stringtie -p 12 -e -B -G  "$REFD"/"$REF".gtf -o "$COUNTSD"/"$i"/"$i".gtf -l "$i"   "$MAPD"/"$i"_sorted.bam
+stringtie -p 6 -e -B -G  "$REFD"/"$REF".gtf -o "$COUNTSD"/"$i"/"$i".gtf -l "$i"   "$MAPD"/"$i"_sorted.bam
 
 done < list
 

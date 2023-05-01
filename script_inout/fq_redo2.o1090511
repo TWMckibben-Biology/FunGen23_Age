@@ -1,0 +1,1252 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: 0_1_downloadSRA_QualityCheck.sh
+  The time limit is 12:00:00 HH:MM:SS.
+  The target directory is: /home/aubclsb0323/FunGen23_Age
+  The working directory is:  /scratch-local/aubclsb0323.fq_redo2.1090511
+  The memory limit is: 36gb
+  The job will start running after: 2023-04-29T09:10:25
+  Job Name: fq_redo2
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  6  cores on master node  dmc78
+  Node list:  dmc78
+  Nodes:  dmc78 dmc78 dmc78 dmc78 dmc78 dmc78
+  Command typed:
+/apps/scripts/run_script 0_1_downloadSRA_QualityCheck.sh     
+  Queue submit command:
+sbatch --qos=class -J fq_redo2 --begin=2023-04-29T09:10:25 --requeue --mail-user=twm0009@auburn.edu -o fq_redo2.o1090511 -t 12:00:00 -N 1-1 -n 6 --mem-per-cpu=6000mb --constraint=dmc 
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Started analysis of SRR11102034_1.fastq
+Approx 5% complete for SRR11102034_1.fastq
+Approx 10% complete for SRR11102034_1.fastq
+Approx 15% complete for SRR11102034_1.fastq
+Approx 20% complete for SRR11102034_1.fastq
+Approx 25% complete for SRR11102034_1.fastq
+Approx 30% complete for SRR11102034_1.fastq
+Approx 35% complete for SRR11102034_1.fastq
+Approx 40% complete for SRR11102034_1.fastq
+Approx 45% complete for SRR11102034_1.fastq
+Approx 50% complete for SRR11102034_1.fastq
+Approx 55% complete for SRR11102034_1.fastq
+Approx 60% complete for SRR11102034_1.fastq
+Approx 65% complete for SRR11102034_1.fastq
+Approx 70% complete for SRR11102034_1.fastq
+Approx 75% complete for SRR11102034_1.fastq
+Approx 80% complete for SRR11102034_1.fastq
+Approx 85% complete for SRR11102034_1.fastq
+Approx 90% complete for SRR11102034_1.fastq
+Approx 95% complete for SRR11102034_1.fastq
+Approx 100% complete for SRR11102034_1.fastq
+Analysis complete for SRR11102034_1.fastq
+Started analysis of SRR11102034_2.fastq
+Approx 5% complete for SRR11102034_2.fastq
+Approx 10% complete for SRR11102034_2.fastq
+Approx 15% complete for SRR11102034_2.fastq
+Approx 20% complete for SRR11102034_2.fastq
+Approx 25% complete for SRR11102034_2.fastq
+Approx 30% complete for SRR11102034_2.fastq
+Approx 35% complete for SRR11102034_2.fastq
+Approx 40% complete for SRR11102034_2.fastq
+Approx 45% complete for SRR11102034_2.fastq
+Approx 50% complete for SRR11102034_2.fastq
+Approx 55% complete for SRR11102034_2.fastq
+Approx 60% complete for SRR11102034_2.fastq
+Approx 65% complete for SRR11102034_2.fastq
+Approx 70% complete for SRR11102034_2.fastq
+Approx 75% complete for SRR11102034_2.fastq
+Approx 80% complete for SRR11102034_2.fastq
+Approx 85% complete for SRR11102034_2.fastq
+Approx 90% complete for SRR11102034_2.fastq
+Approx 95% complete for SRR11102034_2.fastq
+Approx 100% complete for SRR11102034_2.fastq
+Analysis complete for SRR11102034_2.fastq
+Started analysis of SRR11102035_1.fastq
+Approx 5% complete for SRR11102035_1.fastq
+Approx 10% complete for SRR11102035_1.fastq
+Approx 15% complete for SRR11102035_1.fastq
+Approx 20% complete for SRR11102035_1.fastq
+Approx 25% complete for SRR11102035_1.fastq
+Approx 30% complete for SRR11102035_1.fastq
+Approx 35% complete for SRR11102035_1.fastq
+Approx 40% complete for SRR11102035_1.fastq
+Approx 45% complete for SRR11102035_1.fastq
+Approx 50% complete for SRR11102035_1.fastq
+Approx 55% complete for SRR11102035_1.fastq
+Approx 60% complete for SRR11102035_1.fastq
+Approx 65% complete for SRR11102035_1.fastq
+Approx 70% complete for SRR11102035_1.fastq
+Approx 75% complete for SRR11102035_1.fastq
+Approx 80% complete for SRR11102035_1.fastq
+Approx 85% complete for SRR11102035_1.fastq
+Approx 90% complete for SRR11102035_1.fastq
+Approx 95% complete for SRR11102035_1.fastq
+Approx 100% complete for SRR11102035_1.fastq
+Analysis complete for SRR11102035_1.fastq
+Started analysis of SRR11102035_2.fastq
+Approx 5% complete for SRR11102035_2.fastq
+Approx 10% complete for SRR11102035_2.fastq
+Approx 15% complete for SRR11102035_2.fastq
+Approx 20% complete for SRR11102035_2.fastq
+Approx 25% complete for SRR11102035_2.fastq
+Approx 30% complete for SRR11102035_2.fastq
+Approx 35% complete for SRR11102035_2.fastq
+Approx 40% complete for SRR11102035_2.fastq
+Approx 45% complete for SRR11102035_2.fastq
+Approx 50% complete for SRR11102035_2.fastq
+Approx 55% complete for SRR11102035_2.fastq
+Approx 60% complete for SRR11102035_2.fastq
+Approx 65% complete for SRR11102035_2.fastq
+Approx 70% complete for SRR11102035_2.fastq
+Approx 75% complete for SRR11102035_2.fastq
+Approx 80% complete for SRR11102035_2.fastq
+Approx 85% complete for SRR11102035_2.fastq
+Approx 90% complete for SRR11102035_2.fastq
+Approx 95% complete for SRR11102035_2.fastq
+Approx 100% complete for SRR11102035_2.fastq
+Analysis complete for SRR11102035_2.fastq
+Started analysis of SRR11102036_1.fastq
+Approx 5% complete for SRR11102036_1.fastq
+Approx 10% complete for SRR11102036_1.fastq
+Approx 15% complete for SRR11102036_1.fastq
+Approx 20% complete for SRR11102036_1.fastq
+Approx 25% complete for SRR11102036_1.fastq
+Approx 30% complete for SRR11102036_1.fastq
+Approx 35% complete for SRR11102036_1.fastq
+Approx 40% complete for SRR11102036_1.fastq
+Approx 45% complete for SRR11102036_1.fastq
+Approx 50% complete for SRR11102036_1.fastq
+Approx 55% complete for SRR11102036_1.fastq
+Approx 60% complete for SRR11102036_1.fastq
+Approx 65% complete for SRR11102036_1.fastq
+Approx 70% complete for SRR11102036_1.fastq
+Approx 75% complete for SRR11102036_1.fastq
+Approx 80% complete for SRR11102036_1.fastq
+Approx 85% complete for SRR11102036_1.fastq
+Approx 90% complete for SRR11102036_1.fastq
+Approx 95% complete for SRR11102036_1.fastq
+Approx 100% complete for SRR11102036_1.fastq
+Analysis complete for SRR11102036_1.fastq
+Started analysis of SRR11102036_2.fastq
+Approx 5% complete for SRR11102036_2.fastq
+Approx 10% complete for SRR11102036_2.fastq
+Approx 15% complete for SRR11102036_2.fastq
+Approx 20% complete for SRR11102036_2.fastq
+Approx 25% complete for SRR11102036_2.fastq
+Approx 30% complete for SRR11102036_2.fastq
+Approx 35% complete for SRR11102036_2.fastq
+Approx 40% complete for SRR11102036_2.fastq
+Approx 45% complete for SRR11102036_2.fastq
+Approx 50% complete for SRR11102036_2.fastq
+Approx 55% complete for SRR11102036_2.fastq
+Approx 60% complete for SRR11102036_2.fastq
+Approx 65% complete for SRR11102036_2.fastq
+Approx 70% complete for SRR11102036_2.fastq
+Approx 75% complete for SRR11102036_2.fastq
+Approx 80% complete for SRR11102036_2.fastq
+Approx 85% complete for SRR11102036_2.fastq
+Approx 90% complete for SRR11102036_2.fastq
+Approx 95% complete for SRR11102036_2.fastq
+Approx 100% complete for SRR11102036_2.fastq
+Analysis complete for SRR11102036_2.fastq
+Started analysis of SRR11102037_1.fastq
+Approx 5% complete for SRR11102037_1.fastq
+Approx 10% complete for SRR11102037_1.fastq
+Approx 15% complete for SRR11102037_1.fastq
+Approx 20% complete for SRR11102037_1.fastq
+Approx 25% complete for SRR11102037_1.fastq
+Approx 30% complete for SRR11102037_1.fastq
+Approx 35% complete for SRR11102037_1.fastq
+Approx 40% complete for SRR11102037_1.fastq
+Approx 45% complete for SRR11102037_1.fastq
+Approx 50% complete for SRR11102037_1.fastq
+Approx 55% complete for SRR11102037_1.fastq
+Approx 60% complete for SRR11102037_1.fastq
+Approx 65% complete for SRR11102037_1.fastq
+Approx 70% complete for SRR11102037_1.fastq
+Approx 75% complete for SRR11102037_1.fastq
+Approx 80% complete for SRR11102037_1.fastq
+Approx 85% complete for SRR11102037_1.fastq
+Approx 90% complete for SRR11102037_1.fastq
+Approx 95% complete for SRR11102037_1.fastq
+Approx 100% complete for SRR11102037_1.fastq
+Analysis complete for SRR11102037_1.fastq
+Started analysis of SRR11102037_2.fastq
+Approx 5% complete for SRR11102037_2.fastq
+Approx 10% complete for SRR11102037_2.fastq
+Approx 15% complete for SRR11102037_2.fastq
+Approx 20% complete for SRR11102037_2.fastq
+Approx 25% complete for SRR11102037_2.fastq
+Approx 30% complete for SRR11102037_2.fastq
+Approx 35% complete for SRR11102037_2.fastq
+Approx 40% complete for SRR11102037_2.fastq
+Approx 45% complete for SRR11102037_2.fastq
+Approx 50% complete for SRR11102037_2.fastq
+Approx 55% complete for SRR11102037_2.fastq
+Approx 60% complete for SRR11102037_2.fastq
+Approx 65% complete for SRR11102037_2.fastq
+Approx 70% complete for SRR11102037_2.fastq
+Approx 75% complete for SRR11102037_2.fastq
+Approx 80% complete for SRR11102037_2.fastq
+Approx 85% complete for SRR11102037_2.fastq
+Approx 90% complete for SRR11102037_2.fastq
+Approx 95% complete for SRR11102037_2.fastq
+Approx 100% complete for SRR11102037_2.fastq
+Analysis complete for SRR11102037_2.fastq
+Started analysis of SRR11102038_1.fastq
+Approx 5% complete for SRR11102038_1.fastq
+Approx 10% complete for SRR11102038_1.fastq
+Approx 15% complete for SRR11102038_1.fastq
+Approx 20% complete for SRR11102038_1.fastq
+Approx 25% complete for SRR11102038_1.fastq
+Approx 30% complete for SRR11102038_1.fastq
+Approx 35% complete for SRR11102038_1.fastq
+Approx 40% complete for SRR11102038_1.fastq
+Approx 45% complete for SRR11102038_1.fastq
+Approx 50% complete for SRR11102038_1.fastq
+Approx 55% complete for SRR11102038_1.fastq
+Approx 60% complete for SRR11102038_1.fastq
+Approx 65% complete for SRR11102038_1.fastq
+Approx 70% complete for SRR11102038_1.fastq
+Approx 75% complete for SRR11102038_1.fastq
+Approx 80% complete for SRR11102038_1.fastq
+Approx 85% complete for SRR11102038_1.fastq
+Approx 90% complete for SRR11102038_1.fastq
+Approx 95% complete for SRR11102038_1.fastq
+Approx 100% complete for SRR11102038_1.fastq
+Analysis complete for SRR11102038_1.fastq
+Started analysis of SRR11102038_2.fastq
+Approx 5% complete for SRR11102038_2.fastq
+Approx 10% complete for SRR11102038_2.fastq
+Approx 15% complete for SRR11102038_2.fastq
+Approx 20% complete for SRR11102038_2.fastq
+Approx 25% complete for SRR11102038_2.fastq
+Approx 30% complete for SRR11102038_2.fastq
+Approx 35% complete for SRR11102038_2.fastq
+Approx 40% complete for SRR11102038_2.fastq
+Approx 45% complete for SRR11102038_2.fastq
+Approx 50% complete for SRR11102038_2.fastq
+Approx 55% complete for SRR11102038_2.fastq
+Approx 60% complete for SRR11102038_2.fastq
+Approx 65% complete for SRR11102038_2.fastq
+Approx 70% complete for SRR11102038_2.fastq
+Approx 75% complete for SRR11102038_2.fastq
+Approx 80% complete for SRR11102038_2.fastq
+Approx 85% complete for SRR11102038_2.fastq
+Approx 90% complete for SRR11102038_2.fastq
+Approx 95% complete for SRR11102038_2.fastq
+Approx 100% complete for SRR11102038_2.fastq
+Analysis complete for SRR11102038_2.fastq
+Started analysis of SRR11102039_1.fastq
+Approx 5% complete for SRR11102039_1.fastq
+Approx 10% complete for SRR11102039_1.fastq
+Approx 15% complete for SRR11102039_1.fastq
+Approx 20% complete for SRR11102039_1.fastq
+Approx 25% complete for SRR11102039_1.fastq
+Approx 30% complete for SRR11102039_1.fastq
+Approx 35% complete for SRR11102039_1.fastq
+Approx 40% complete for SRR11102039_1.fastq
+Approx 45% complete for SRR11102039_1.fastq
+Approx 50% complete for SRR11102039_1.fastq
+Approx 55% complete for SRR11102039_1.fastq
+Approx 60% complete for SRR11102039_1.fastq
+Approx 65% complete for SRR11102039_1.fastq
+Approx 70% complete for SRR11102039_1.fastq
+Approx 75% complete for SRR11102039_1.fastq
+Approx 80% complete for SRR11102039_1.fastq
+Approx 85% complete for SRR11102039_1.fastq
+Approx 90% complete for SRR11102039_1.fastq
+Approx 95% complete for SRR11102039_1.fastq
+Approx 100% complete for SRR11102039_1.fastq
+Analysis complete for SRR11102039_1.fastq
+Started analysis of SRR11102039_2.fastq
+Approx 5% complete for SRR11102039_2.fastq
+Approx 10% complete for SRR11102039_2.fastq
+Approx 15% complete for SRR11102039_2.fastq
+Approx 20% complete for SRR11102039_2.fastq
+Approx 25% complete for SRR11102039_2.fastq
+Approx 30% complete for SRR11102039_2.fastq
+Approx 35% complete for SRR11102039_2.fastq
+Approx 40% complete for SRR11102039_2.fastq
+Approx 45% complete for SRR11102039_2.fastq
+Approx 50% complete for SRR11102039_2.fastq
+Approx 55% complete for SRR11102039_2.fastq
+Approx 60% complete for SRR11102039_2.fastq
+Approx 65% complete for SRR11102039_2.fastq
+Approx 70% complete for SRR11102039_2.fastq
+Approx 75% complete for SRR11102039_2.fastq
+Approx 80% complete for SRR11102039_2.fastq
+Approx 85% complete for SRR11102039_2.fastq
+Approx 90% complete for SRR11102039_2.fastq
+Approx 95% complete for SRR11102039_2.fastq
+Approx 100% complete for SRR11102039_2.fastq
+Analysis complete for SRR11102039_2.fastq
+Started analysis of SRR11102040_1.fastq
+Approx 5% complete for SRR11102040_1.fastq
+Approx 10% complete for SRR11102040_1.fastq
+Approx 15% complete for SRR11102040_1.fastq
+Approx 20% complete for SRR11102040_1.fastq
+Approx 25% complete for SRR11102040_1.fastq
+Approx 30% complete for SRR11102040_1.fastq
+Approx 35% complete for SRR11102040_1.fastq
+Approx 40% complete for SRR11102040_1.fastq
+Approx 45% complete for SRR11102040_1.fastq
+Approx 50% complete for SRR11102040_1.fastq
+Approx 55% complete for SRR11102040_1.fastq
+Approx 60% complete for SRR11102040_1.fastq
+Approx 65% complete for SRR11102040_1.fastq
+Approx 70% complete for SRR11102040_1.fastq
+Approx 75% complete for SRR11102040_1.fastq
+Approx 80% complete for SRR11102040_1.fastq
+Approx 85% complete for SRR11102040_1.fastq
+Approx 90% complete for SRR11102040_1.fastq
+Approx 95% complete for SRR11102040_1.fastq
+Approx 100% complete for SRR11102040_1.fastq
+Analysis complete for SRR11102040_1.fastq
+Started analysis of SRR11102040_2.fastq
+Approx 5% complete for SRR11102040_2.fastq
+Approx 10% complete for SRR11102040_2.fastq
+Approx 15% complete for SRR11102040_2.fastq
+Approx 20% complete for SRR11102040_2.fastq
+Approx 25% complete for SRR11102040_2.fastq
+Approx 30% complete for SRR11102040_2.fastq
+Approx 35% complete for SRR11102040_2.fastq
+Approx 40% complete for SRR11102040_2.fastq
+Approx 45% complete for SRR11102040_2.fastq
+Approx 50% complete for SRR11102040_2.fastq
+Approx 55% complete for SRR11102040_2.fastq
+Approx 60% complete for SRR11102040_2.fastq
+Approx 65% complete for SRR11102040_2.fastq
+Approx 70% complete for SRR11102040_2.fastq
+Approx 75% complete for SRR11102040_2.fastq
+Approx 80% complete for SRR11102040_2.fastq
+Approx 85% complete for SRR11102040_2.fastq
+Approx 90% complete for SRR11102040_2.fastq
+Approx 95% complete for SRR11102040_2.fastq
+Approx 100% complete for SRR11102040_2.fastq
+Analysis complete for SRR11102040_2.fastq
+Started analysis of SRR11102041_1.fastq
+Approx 5% complete for SRR11102041_1.fastq
+Approx 10% complete for SRR11102041_1.fastq
+Approx 15% complete for SRR11102041_1.fastq
+Approx 20% complete for SRR11102041_1.fastq
+Approx 25% complete for SRR11102041_1.fastq
+Approx 30% complete for SRR11102041_1.fastq
+Approx 35% complete for SRR11102041_1.fastq
+Approx 40% complete for SRR11102041_1.fastq
+Approx 45% complete for SRR11102041_1.fastq
+Approx 50% complete for SRR11102041_1.fastq
+Approx 55% complete for SRR11102041_1.fastq
+Approx 60% complete for SRR11102041_1.fastq
+Approx 65% complete for SRR11102041_1.fastq
+Approx 70% complete for SRR11102041_1.fastq
+Approx 75% complete for SRR11102041_1.fastq
+Approx 80% complete for SRR11102041_1.fastq
+Approx 85% complete for SRR11102041_1.fastq
+Approx 90% complete for SRR11102041_1.fastq
+Approx 95% complete for SRR11102041_1.fastq
+Approx 100% complete for SRR11102041_1.fastq
+Analysis complete for SRR11102041_1.fastq
+Started analysis of SRR11102041_2.fastq
+Approx 5% complete for SRR11102041_2.fastq
+Approx 10% complete for SRR11102041_2.fastq
+Approx 15% complete for SRR11102041_2.fastq
+Approx 20% complete for SRR11102041_2.fastq
+Approx 25% complete for SRR11102041_2.fastq
+Approx 30% complete for SRR11102041_2.fastq
+Approx 35% complete for SRR11102041_2.fastq
+Approx 40% complete for SRR11102041_2.fastq
+Approx 45% complete for SRR11102041_2.fastq
+Approx 50% complete for SRR11102041_2.fastq
+Approx 55% complete for SRR11102041_2.fastq
+Approx 60% complete for SRR11102041_2.fastq
+Approx 65% complete for SRR11102041_2.fastq
+Approx 70% complete for SRR11102041_2.fastq
+Approx 75% complete for SRR11102041_2.fastq
+Approx 80% complete for SRR11102041_2.fastq
+Approx 85% complete for SRR11102041_2.fastq
+Approx 90% complete for SRR11102041_2.fastq
+Approx 95% complete for SRR11102041_2.fastq
+Approx 100% complete for SRR11102041_2.fastq
+Analysis complete for SRR11102041_2.fastq
+Started analysis of SRR11102042_1.fastq
+Approx 5% complete for SRR11102042_1.fastq
+Approx 10% complete for SRR11102042_1.fastq
+Approx 15% complete for SRR11102042_1.fastq
+Approx 20% complete for SRR11102042_1.fastq
+Approx 25% complete for SRR11102042_1.fastq
+Approx 30% complete for SRR11102042_1.fastq
+Approx 35% complete for SRR11102042_1.fastq
+Approx 40% complete for SRR11102042_1.fastq
+Approx 45% complete for SRR11102042_1.fastq
+Approx 50% complete for SRR11102042_1.fastq
+Approx 55% complete for SRR11102042_1.fastq
+Approx 60% complete for SRR11102042_1.fastq
+Approx 65% complete for SRR11102042_1.fastq
+Approx 70% complete for SRR11102042_1.fastq
+Approx 75% complete for SRR11102042_1.fastq
+Approx 80% complete for SRR11102042_1.fastq
+Approx 85% complete for SRR11102042_1.fastq
+Approx 90% complete for SRR11102042_1.fastq
+Approx 95% complete for SRR11102042_1.fastq
+Approx 100% complete for SRR11102042_1.fastq
+Analysis complete for SRR11102042_1.fastq
+Started analysis of SRR11102042_2.fastq
+Approx 5% complete for SRR11102042_2.fastq
+Approx 10% complete for SRR11102042_2.fastq
+Approx 15% complete for SRR11102042_2.fastq
+Approx 20% complete for SRR11102042_2.fastq
+Approx 25% complete for SRR11102042_2.fastq
+Approx 30% complete for SRR11102042_2.fastq
+Approx 35% complete for SRR11102042_2.fastq
+Approx 40% complete for SRR11102042_2.fastq
+Approx 45% complete for SRR11102042_2.fastq
+Approx 50% complete for SRR11102042_2.fastq
+Approx 55% complete for SRR11102042_2.fastq
+Approx 60% complete for SRR11102042_2.fastq
+Approx 65% complete for SRR11102042_2.fastq
+Approx 70% complete for SRR11102042_2.fastq
+Approx 75% complete for SRR11102042_2.fastq
+Approx 80% complete for SRR11102042_2.fastq
+Approx 85% complete for SRR11102042_2.fastq
+Approx 90% complete for SRR11102042_2.fastq
+Approx 95% complete for SRR11102042_2.fastq
+Approx 100% complete for SRR11102042_2.fastq
+Analysis complete for SRR11102042_2.fastq
+Started analysis of SRR11102043_1.fastq
+Approx 5% complete for SRR11102043_1.fastq
+Approx 10% complete for SRR11102043_1.fastq
+Approx 15% complete for SRR11102043_1.fastq
+Approx 20% complete for SRR11102043_1.fastq
+Approx 25% complete for SRR11102043_1.fastq
+Approx 30% complete for SRR11102043_1.fastq
+Approx 35% complete for SRR11102043_1.fastq
+Approx 40% complete for SRR11102043_1.fastq
+Approx 45% complete for SRR11102043_1.fastq
+Approx 50% complete for SRR11102043_1.fastq
+Approx 55% complete for SRR11102043_1.fastq
+Approx 60% complete for SRR11102043_1.fastq
+Approx 65% complete for SRR11102043_1.fastq
+Approx 70% complete for SRR11102043_1.fastq
+Approx 75% complete for SRR11102043_1.fastq
+Approx 80% complete for SRR11102043_1.fastq
+Approx 85% complete for SRR11102043_1.fastq
+Approx 90% complete for SRR11102043_1.fastq
+Approx 95% complete for SRR11102043_1.fastq
+Approx 100% complete for SRR11102043_1.fastq
+Analysis complete for SRR11102043_1.fastq
+Started analysis of SRR11102043_2.fastq
+Approx 5% complete for SRR11102043_2.fastq
+Approx 10% complete for SRR11102043_2.fastq
+Approx 15% complete for SRR11102043_2.fastq
+Approx 20% complete for SRR11102043_2.fastq
+Approx 25% complete for SRR11102043_2.fastq
+Approx 30% complete for SRR11102043_2.fastq
+Approx 35% complete for SRR11102043_2.fastq
+Approx 40% complete for SRR11102043_2.fastq
+Approx 45% complete for SRR11102043_2.fastq
+Approx 50% complete for SRR11102043_2.fastq
+Approx 55% complete for SRR11102043_2.fastq
+Approx 60% complete for SRR11102043_2.fastq
+Approx 65% complete for SRR11102043_2.fastq
+Approx 70% complete for SRR11102043_2.fastq
+Approx 75% complete for SRR11102043_2.fastq
+Approx 80% complete for SRR11102043_2.fastq
+Approx 85% complete for SRR11102043_2.fastq
+Approx 90% complete for SRR11102043_2.fastq
+Approx 95% complete for SRR11102043_2.fastq
+Approx 100% complete for SRR11102043_2.fastq
+Analysis complete for SRR11102043_2.fastq
+Started analysis of SRR11102044_1.fastq
+Approx 5% complete for SRR11102044_1.fastq
+Approx 10% complete for SRR11102044_1.fastq
+Approx 15% complete for SRR11102044_1.fastq
+Approx 20% complete for SRR11102044_1.fastq
+Approx 25% complete for SRR11102044_1.fastq
+Approx 30% complete for SRR11102044_1.fastq
+Approx 35% complete for SRR11102044_1.fastq
+Approx 40% complete for SRR11102044_1.fastq
+Approx 45% complete for SRR11102044_1.fastq
+Approx 50% complete for SRR11102044_1.fastq
+Approx 55% complete for SRR11102044_1.fastq
+Approx 60% complete for SRR11102044_1.fastq
+Approx 65% complete for SRR11102044_1.fastq
+Approx 70% complete for SRR11102044_1.fastq
+Approx 75% complete for SRR11102044_1.fastq
+Approx 80% complete for SRR11102044_1.fastq
+Approx 85% complete for SRR11102044_1.fastq
+Approx 90% complete for SRR11102044_1.fastq
+Approx 95% complete for SRR11102044_1.fastq
+Approx 100% complete for SRR11102044_1.fastq
+Analysis complete for SRR11102044_1.fastq
+Started analysis of SRR11102044_2.fastq
+Approx 5% complete for SRR11102044_2.fastq
+Approx 10% complete for SRR11102044_2.fastq
+Approx 15% complete for SRR11102044_2.fastq
+Approx 20% complete for SRR11102044_2.fastq
+Approx 25% complete for SRR11102044_2.fastq
+Approx 30% complete for SRR11102044_2.fastq
+Approx 35% complete for SRR11102044_2.fastq
+Approx 40% complete for SRR11102044_2.fastq
+Approx 45% complete for SRR11102044_2.fastq
+Approx 50% complete for SRR11102044_2.fastq
+Approx 55% complete for SRR11102044_2.fastq
+Approx 60% complete for SRR11102044_2.fastq
+Approx 65% complete for SRR11102044_2.fastq
+Approx 70% complete for SRR11102044_2.fastq
+Approx 75% complete for SRR11102044_2.fastq
+Approx 80% complete for SRR11102044_2.fastq
+Approx 85% complete for SRR11102044_2.fastq
+Approx 90% complete for SRR11102044_2.fastq
+Approx 95% complete for SRR11102044_2.fastq
+Approx 100% complete for SRR11102044_2.fastq
+Analysis complete for SRR11102044_2.fastq
+Started analysis of SRR11102045_1.fastq
+Approx 5% complete for SRR11102045_1.fastq
+Approx 10% complete for SRR11102045_1.fastq
+Approx 15% complete for SRR11102045_1.fastq
+Approx 20% complete for SRR11102045_1.fastq
+Approx 25% complete for SRR11102045_1.fastq
+Approx 30% complete for SRR11102045_1.fastq
+Approx 35% complete for SRR11102045_1.fastq
+Approx 40% complete for SRR11102045_1.fastq
+Approx 45% complete for SRR11102045_1.fastq
+Approx 50% complete for SRR11102045_1.fastq
+Approx 55% complete for SRR11102045_1.fastq
+Approx 60% complete for SRR11102045_1.fastq
+Approx 65% complete for SRR11102045_1.fastq
+Approx 70% complete for SRR11102045_1.fastq
+Approx 75% complete for SRR11102045_1.fastq
+Approx 80% complete for SRR11102045_1.fastq
+Approx 85% complete for SRR11102045_1.fastq
+Approx 90% complete for SRR11102045_1.fastq
+Approx 95% complete for SRR11102045_1.fastq
+Approx 100% complete for SRR11102045_1.fastq
+Analysis complete for SRR11102045_1.fastq
+Started analysis of SRR11102045_2.fastq
+Approx 5% complete for SRR11102045_2.fastq
+Approx 10% complete for SRR11102045_2.fastq
+Approx 15% complete for SRR11102045_2.fastq
+Approx 20% complete for SRR11102045_2.fastq
+Approx 25% complete for SRR11102045_2.fastq
+Approx 30% complete for SRR11102045_2.fastq
+Approx 35% complete for SRR11102045_2.fastq
+Approx 40% complete for SRR11102045_2.fastq
+Approx 45% complete for SRR11102045_2.fastq
+Approx 50% complete for SRR11102045_2.fastq
+Approx 55% complete for SRR11102045_2.fastq
+Approx 60% complete for SRR11102045_2.fastq
+Approx 65% complete for SRR11102045_2.fastq
+Approx 70% complete for SRR11102045_2.fastq
+Approx 75% complete for SRR11102045_2.fastq
+Approx 80% complete for SRR11102045_2.fastq
+Approx 85% complete for SRR11102045_2.fastq
+Approx 90% complete for SRR11102045_2.fastq
+Approx 95% complete for SRR11102045_2.fastq
+Approx 100% complete for SRR11102045_2.fastq
+Analysis complete for SRR11102045_2.fastq
+Started analysis of SRR11102046_1.fastq
+Approx 5% complete for SRR11102046_1.fastq
+Approx 10% complete for SRR11102046_1.fastq
+Approx 15% complete for SRR11102046_1.fastq
+Approx 20% complete for SRR11102046_1.fastq
+Approx 25% complete for SRR11102046_1.fastq
+Approx 30% complete for SRR11102046_1.fastq
+Approx 35% complete for SRR11102046_1.fastq
+Approx 40% complete for SRR11102046_1.fastq
+Approx 45% complete for SRR11102046_1.fastq
+Approx 50% complete for SRR11102046_1.fastq
+Approx 55% complete for SRR11102046_1.fastq
+Approx 60% complete for SRR11102046_1.fastq
+Approx 65% complete for SRR11102046_1.fastq
+Approx 70% complete for SRR11102046_1.fastq
+Approx 75% complete for SRR11102046_1.fastq
+Approx 80% complete for SRR11102046_1.fastq
+Approx 85% complete for SRR11102046_1.fastq
+Approx 90% complete for SRR11102046_1.fastq
+Approx 95% complete for SRR11102046_1.fastq
+Approx 100% complete for SRR11102046_1.fastq
+Analysis complete for SRR11102046_1.fastq
+Started analysis of SRR11102046_2.fastq
+Approx 5% complete for SRR11102046_2.fastq
+Approx 10% complete for SRR11102046_2.fastq
+Approx 15% complete for SRR11102046_2.fastq
+Approx 20% complete for SRR11102046_2.fastq
+Approx 25% complete for SRR11102046_2.fastq
+Approx 30% complete for SRR11102046_2.fastq
+Approx 35% complete for SRR11102046_2.fastq
+Approx 40% complete for SRR11102046_2.fastq
+Approx 45% complete for SRR11102046_2.fastq
+Approx 50% complete for SRR11102046_2.fastq
+Approx 55% complete for SRR11102046_2.fastq
+Approx 60% complete for SRR11102046_2.fastq
+Approx 65% complete for SRR11102046_2.fastq
+Approx 70% complete for SRR11102046_2.fastq
+Approx 75% complete for SRR11102046_2.fastq
+Approx 80% complete for SRR11102046_2.fastq
+Approx 85% complete for SRR11102046_2.fastq
+Approx 90% complete for SRR11102046_2.fastq
+Approx 95% complete for SRR11102046_2.fastq
+Approx 100% complete for SRR11102046_2.fastq
+Analysis complete for SRR11102046_2.fastq
+Started analysis of SRR11102047_1.fastq
+Approx 5% complete for SRR11102047_1.fastq
+Approx 10% complete for SRR11102047_1.fastq
+Approx 15% complete for SRR11102047_1.fastq
+Approx 20% complete for SRR11102047_1.fastq
+Approx 25% complete for SRR11102047_1.fastq
+Approx 30% complete for SRR11102047_1.fastq
+Approx 35% complete for SRR11102047_1.fastq
+Approx 40% complete for SRR11102047_1.fastq
+Approx 45% complete for SRR11102047_1.fastq
+Approx 50% complete for SRR11102047_1.fastq
+Approx 55% complete for SRR11102047_1.fastq
+Approx 60% complete for SRR11102047_1.fastq
+Approx 65% complete for SRR11102047_1.fastq
+Approx 70% complete for SRR11102047_1.fastq
+Approx 75% complete for SRR11102047_1.fastq
+Approx 80% complete for SRR11102047_1.fastq
+Approx 85% complete for SRR11102047_1.fastq
+Approx 90% complete for SRR11102047_1.fastq
+Approx 95% complete for SRR11102047_1.fastq
+Approx 100% complete for SRR11102047_1.fastq
+Analysis complete for SRR11102047_1.fastq
+Started analysis of SRR11102047_2.fastq
+Approx 5% complete for SRR11102047_2.fastq
+Approx 10% complete for SRR11102047_2.fastq
+Approx 15% complete for SRR11102047_2.fastq
+Approx 20% complete for SRR11102047_2.fastq
+Approx 25% complete for SRR11102047_2.fastq
+Approx 30% complete for SRR11102047_2.fastq
+Approx 35% complete for SRR11102047_2.fastq
+Approx 40% complete for SRR11102047_2.fastq
+Approx 45% complete for SRR11102047_2.fastq
+Approx 50% complete for SRR11102047_2.fastq
+Approx 55% complete for SRR11102047_2.fastq
+Approx 60% complete for SRR11102047_2.fastq
+Approx 65% complete for SRR11102047_2.fastq
+Approx 70% complete for SRR11102047_2.fastq
+Approx 75% complete for SRR11102047_2.fastq
+Approx 80% complete for SRR11102047_2.fastq
+Approx 85% complete for SRR11102047_2.fastq
+Approx 90% complete for SRR11102047_2.fastq
+Approx 95% complete for SRR11102047_2.fastq
+Approx 100% complete for SRR11102047_2.fastq
+Analysis complete for SRR11102047_2.fastq
+Started analysis of SRR11102048_1.fastq
+Approx 5% complete for SRR11102048_1.fastq
+Approx 10% complete for SRR11102048_1.fastq
+Approx 15% complete for SRR11102048_1.fastq
+Approx 20% complete for SRR11102048_1.fastq
+Approx 25% complete for SRR11102048_1.fastq
+Approx 30% complete for SRR11102048_1.fastq
+Approx 35% complete for SRR11102048_1.fastq
+Approx 40% complete for SRR11102048_1.fastq
+Approx 45% complete for SRR11102048_1.fastq
+Approx 50% complete for SRR11102048_1.fastq
+Approx 55% complete for SRR11102048_1.fastq
+Approx 60% complete for SRR11102048_1.fastq
+Approx 65% complete for SRR11102048_1.fastq
+Approx 70% complete for SRR11102048_1.fastq
+Approx 75% complete for SRR11102048_1.fastq
+Approx 80% complete for SRR11102048_1.fastq
+Approx 85% complete for SRR11102048_1.fastq
+Approx 90% complete for SRR11102048_1.fastq
+Approx 95% complete for SRR11102048_1.fastq
+Approx 100% complete for SRR11102048_1.fastq
+Analysis complete for SRR11102048_1.fastq
+Started analysis of SRR11102048_2.fastq
+Approx 5% complete for SRR11102048_2.fastq
+Approx 10% complete for SRR11102048_2.fastq
+Approx 15% complete for SRR11102048_2.fastq
+Approx 20% complete for SRR11102048_2.fastq
+Approx 25% complete for SRR11102048_2.fastq
+Approx 30% complete for SRR11102048_2.fastq
+Approx 35% complete for SRR11102048_2.fastq
+Approx 40% complete for SRR11102048_2.fastq
+Approx 45% complete for SRR11102048_2.fastq
+Approx 50% complete for SRR11102048_2.fastq
+Approx 55% complete for SRR11102048_2.fastq
+Approx 60% complete for SRR11102048_2.fastq
+Approx 65% complete for SRR11102048_2.fastq
+Approx 70% complete for SRR11102048_2.fastq
+Approx 75% complete for SRR11102048_2.fastq
+Approx 80% complete for SRR11102048_2.fastq
+Approx 85% complete for SRR11102048_2.fastq
+Approx 90% complete for SRR11102048_2.fastq
+Approx 95% complete for SRR11102048_2.fastq
+Approx 100% complete for SRR11102048_2.fastq
+Analysis complete for SRR11102048_2.fastq
+Started analysis of SRR11102049_1.fastq
+Approx 5% complete for SRR11102049_1.fastq
+Approx 10% complete for SRR11102049_1.fastq
+Approx 15% complete for SRR11102049_1.fastq
+Approx 20% complete for SRR11102049_1.fastq
+Approx 25% complete for SRR11102049_1.fastq
+Approx 30% complete for SRR11102049_1.fastq
+Approx 35% complete for SRR11102049_1.fastq
+Approx 40% complete for SRR11102049_1.fastq
+Approx 45% complete for SRR11102049_1.fastq
+Approx 50% complete for SRR11102049_1.fastq
+Approx 55% complete for SRR11102049_1.fastq
+Approx 60% complete for SRR11102049_1.fastq
+Approx 65% complete for SRR11102049_1.fastq
+Approx 70% complete for SRR11102049_1.fastq
+Approx 75% complete for SRR11102049_1.fastq
+Approx 80% complete for SRR11102049_1.fastq
+Approx 85% complete for SRR11102049_1.fastq
+Approx 90% complete for SRR11102049_1.fastq
+Approx 95% complete for SRR11102049_1.fastq
+Approx 100% complete for SRR11102049_1.fastq
+Analysis complete for SRR11102049_1.fastq
+Started analysis of SRR11102049_2.fastq
+Approx 5% complete for SRR11102049_2.fastq
+Approx 10% complete for SRR11102049_2.fastq
+Approx 15% complete for SRR11102049_2.fastq
+Approx 20% complete for SRR11102049_2.fastq
+Approx 25% complete for SRR11102049_2.fastq
+Approx 30% complete for SRR11102049_2.fastq
+Approx 35% complete for SRR11102049_2.fastq
+Approx 40% complete for SRR11102049_2.fastq
+Approx 45% complete for SRR11102049_2.fastq
+Approx 50% complete for SRR11102049_2.fastq
+Approx 55% complete for SRR11102049_2.fastq
+Approx 60% complete for SRR11102049_2.fastq
+Approx 65% complete for SRR11102049_2.fastq
+Approx 70% complete for SRR11102049_2.fastq
+Approx 75% complete for SRR11102049_2.fastq
+Approx 80% complete for SRR11102049_2.fastq
+Approx 85% complete for SRR11102049_2.fastq
+Approx 90% complete for SRR11102049_2.fastq
+Approx 95% complete for SRR11102049_2.fastq
+Approx 100% complete for SRR11102049_2.fastq
+Analysis complete for SRR11102049_2.fastq
+Started analysis of SRR11102050_1.fastq
+Approx 5% complete for SRR11102050_1.fastq
+Approx 10% complete for SRR11102050_1.fastq
+Approx 15% complete for SRR11102050_1.fastq
+Approx 20% complete for SRR11102050_1.fastq
+Approx 25% complete for SRR11102050_1.fastq
+Approx 30% complete for SRR11102050_1.fastq
+Approx 35% complete for SRR11102050_1.fastq
+Approx 40% complete for SRR11102050_1.fastq
+Approx 45% complete for SRR11102050_1.fastq
+Approx 50% complete for SRR11102050_1.fastq
+Approx 55% complete for SRR11102050_1.fastq
+Approx 60% complete for SRR11102050_1.fastq
+Approx 65% complete for SRR11102050_1.fastq
+Approx 70% complete for SRR11102050_1.fastq
+Approx 75% complete for SRR11102050_1.fastq
+Approx 80% complete for SRR11102050_1.fastq
+Approx 85% complete for SRR11102050_1.fastq
+Approx 90% complete for SRR11102050_1.fastq
+Approx 95% complete for SRR11102050_1.fastq
+Approx 100% complete for SRR11102050_1.fastq
+Analysis complete for SRR11102050_1.fastq
+Started analysis of SRR11102050_2.fastq
+Approx 5% complete for SRR11102050_2.fastq
+Approx 10% complete for SRR11102050_2.fastq
+Approx 15% complete for SRR11102050_2.fastq
+Approx 20% complete for SRR11102050_2.fastq
+Approx 25% complete for SRR11102050_2.fastq
+Approx 30% complete for SRR11102050_2.fastq
+Approx 35% complete for SRR11102050_2.fastq
+Approx 40% complete for SRR11102050_2.fastq
+Approx 45% complete for SRR11102050_2.fastq
+Approx 50% complete for SRR11102050_2.fastq
+Approx 55% complete for SRR11102050_2.fastq
+Approx 60% complete for SRR11102050_2.fastq
+Approx 65% complete for SRR11102050_2.fastq
+Approx 70% complete for SRR11102050_2.fastq
+Approx 75% complete for SRR11102050_2.fastq
+Approx 80% complete for SRR11102050_2.fastq
+Approx 85% complete for SRR11102050_2.fastq
+Approx 90% complete for SRR11102050_2.fastq
+Approx 95% complete for SRR11102050_2.fastq
+Approx 100% complete for SRR11102050_2.fastq
+Analysis complete for SRR11102050_2.fastq
+Started analysis of SRR11102051_1.fastq
+Approx 5% complete for SRR11102051_1.fastq
+Approx 10% complete for SRR11102051_1.fastq
+Approx 15% complete for SRR11102051_1.fastq
+Approx 20% complete for SRR11102051_1.fastq
+Approx 25% complete for SRR11102051_1.fastq
+Approx 30% complete for SRR11102051_1.fastq
+Approx 35% complete for SRR11102051_1.fastq
+Approx 40% complete for SRR11102051_1.fastq
+Approx 45% complete for SRR11102051_1.fastq
+Approx 50% complete for SRR11102051_1.fastq
+Approx 55% complete for SRR11102051_1.fastq
+Approx 60% complete for SRR11102051_1.fastq
+Approx 65% complete for SRR11102051_1.fastq
+Approx 70% complete for SRR11102051_1.fastq
+Approx 75% complete for SRR11102051_1.fastq
+Approx 80% complete for SRR11102051_1.fastq
+Approx 85% complete for SRR11102051_1.fastq
+Approx 90% complete for SRR11102051_1.fastq
+Approx 95% complete for SRR11102051_1.fastq
+Approx 100% complete for SRR11102051_1.fastq
+Analysis complete for SRR11102051_1.fastq
+Started analysis of SRR11102051_2.fastq
+Approx 5% complete for SRR11102051_2.fastq
+Approx 10% complete for SRR11102051_2.fastq
+Approx 15% complete for SRR11102051_2.fastq
+Approx 20% complete for SRR11102051_2.fastq
+Approx 25% complete for SRR11102051_2.fastq
+Approx 30% complete for SRR11102051_2.fastq
+Approx 35% complete for SRR11102051_2.fastq
+Approx 40% complete for SRR11102051_2.fastq
+Approx 45% complete for SRR11102051_2.fastq
+Approx 50% complete for SRR11102051_2.fastq
+Approx 55% complete for SRR11102051_2.fastq
+Approx 60% complete for SRR11102051_2.fastq
+Approx 65% complete for SRR11102051_2.fastq
+Approx 70% complete for SRR11102051_2.fastq
+Approx 75% complete for SRR11102051_2.fastq
+Approx 80% complete for SRR11102051_2.fastq
+Approx 85% complete for SRR11102051_2.fastq
+Approx 90% complete for SRR11102051_2.fastq
+Approx 95% complete for SRR11102051_2.fastq
+Approx 100% complete for SRR11102051_2.fastq
+Analysis complete for SRR11102051_2.fastq
+Started analysis of SRR11102052_1.fastq
+Approx 5% complete for SRR11102052_1.fastq
+Approx 10% complete for SRR11102052_1.fastq
+Approx 15% complete for SRR11102052_1.fastq
+Approx 20% complete for SRR11102052_1.fastq
+Approx 25% complete for SRR11102052_1.fastq
+Approx 30% complete for SRR11102052_1.fastq
+Approx 35% complete for SRR11102052_1.fastq
+Approx 40% complete for SRR11102052_1.fastq
+Approx 45% complete for SRR11102052_1.fastq
+Approx 50% complete for SRR11102052_1.fastq
+Approx 55% complete for SRR11102052_1.fastq
+Approx 60% complete for SRR11102052_1.fastq
+Approx 65% complete for SRR11102052_1.fastq
+Approx 70% complete for SRR11102052_1.fastq
+Approx 75% complete for SRR11102052_1.fastq
+Approx 80% complete for SRR11102052_1.fastq
+Approx 85% complete for SRR11102052_1.fastq
+Approx 90% complete for SRR11102052_1.fastq
+Approx 95% complete for SRR11102052_1.fastq
+Approx 100% complete for SRR11102052_1.fastq
+Analysis complete for SRR11102052_1.fastq
+Started analysis of SRR11102052_2.fastq
+Approx 5% complete for SRR11102052_2.fastq
+Approx 10% complete for SRR11102052_2.fastq
+Approx 15% complete for SRR11102052_2.fastq
+Approx 20% complete for SRR11102052_2.fastq
+Approx 25% complete for SRR11102052_2.fastq
+Approx 30% complete for SRR11102052_2.fastq
+Approx 35% complete for SRR11102052_2.fastq
+Approx 40% complete for SRR11102052_2.fastq
+Approx 45% complete for SRR11102052_2.fastq
+Approx 50% complete for SRR11102052_2.fastq
+Approx 55% complete for SRR11102052_2.fastq
+Approx 60% complete for SRR11102052_2.fastq
+Approx 65% complete for SRR11102052_2.fastq
+Approx 70% complete for SRR11102052_2.fastq
+Approx 75% complete for SRR11102052_2.fastq
+Approx 80% complete for SRR11102052_2.fastq
+Approx 85% complete for SRR11102052_2.fastq
+Approx 90% complete for SRR11102052_2.fastq
+Approx 95% complete for SRR11102052_2.fastq
+Approx 100% complete for SRR11102052_2.fastq
+Analysis complete for SRR11102052_2.fastq
+Started analysis of SRR11102053_1.fastq
+Approx 5% complete for SRR11102053_1.fastq
+Approx 10% complete for SRR11102053_1.fastq
+Approx 15% complete for SRR11102053_1.fastq
+Approx 20% complete for SRR11102053_1.fastq
+Approx 25% complete for SRR11102053_1.fastq
+Approx 30% complete for SRR11102053_1.fastq
+Approx 35% complete for SRR11102053_1.fastq
+Approx 40% complete for SRR11102053_1.fastq
+Approx 45% complete for SRR11102053_1.fastq
+Approx 50% complete for SRR11102053_1.fastq
+Approx 55% complete for SRR11102053_1.fastq
+Approx 60% complete for SRR11102053_1.fastq
+Approx 65% complete for SRR11102053_1.fastq
+Approx 70% complete for SRR11102053_1.fastq
+Approx 75% complete for SRR11102053_1.fastq
+Approx 80% complete for SRR11102053_1.fastq
+Approx 85% complete for SRR11102053_1.fastq
+Approx 90% complete for SRR11102053_1.fastq
+Approx 95% complete for SRR11102053_1.fastq
+Approx 100% complete for SRR11102053_1.fastq
+Analysis complete for SRR11102053_1.fastq
+Started analysis of SRR11102053_2.fastq
+Approx 5% complete for SRR11102053_2.fastq
+Approx 10% complete for SRR11102053_2.fastq
+Approx 15% complete for SRR11102053_2.fastq
+Approx 20% complete for SRR11102053_2.fastq
+Approx 25% complete for SRR11102053_2.fastq
+Approx 30% complete for SRR11102053_2.fastq
+Approx 35% complete for SRR11102053_2.fastq
+Approx 40% complete for SRR11102053_2.fastq
+Approx 45% complete for SRR11102053_2.fastq
+Approx 50% complete for SRR11102053_2.fastq
+Approx 55% complete for SRR11102053_2.fastq
+Approx 60% complete for SRR11102053_2.fastq
+Approx 65% complete for SRR11102053_2.fastq
+Approx 70% complete for SRR11102053_2.fastq
+Approx 75% complete for SRR11102053_2.fastq
+Approx 80% complete for SRR11102053_2.fastq
+Approx 85% complete for SRR11102053_2.fastq
+Approx 90% complete for SRR11102053_2.fastq
+Approx 95% complete for SRR11102053_2.fastq
+Approx 100% complete for SRR11102053_2.fastq
+Analysis complete for SRR11102053_2.fastq
+Started analysis of SRR11102054_1.fastq
+Approx 5% complete for SRR11102054_1.fastq
+Approx 10% complete for SRR11102054_1.fastq
+Approx 15% complete for SRR11102054_1.fastq
+Approx 20% complete for SRR11102054_1.fastq
+Approx 25% complete for SRR11102054_1.fastq
+Approx 30% complete for SRR11102054_1.fastq
+Approx 35% complete for SRR11102054_1.fastq
+Approx 40% complete for SRR11102054_1.fastq
+Approx 45% complete for SRR11102054_1.fastq
+Approx 50% complete for SRR11102054_1.fastq
+Approx 55% complete for SRR11102054_1.fastq
+Approx 60% complete for SRR11102054_1.fastq
+Approx 65% complete for SRR11102054_1.fastq
+Approx 70% complete for SRR11102054_1.fastq
+Approx 75% complete for SRR11102054_1.fastq
+Approx 80% complete for SRR11102054_1.fastq
+Approx 85% complete for SRR11102054_1.fastq
+Approx 90% complete for SRR11102054_1.fastq
+Approx 95% complete for SRR11102054_1.fastq
+Approx 100% complete for SRR11102054_1.fastq
+Analysis complete for SRR11102054_1.fastq
+Started analysis of SRR11102054_2.fastq
+Approx 5% complete for SRR11102054_2.fastq
+Approx 10% complete for SRR11102054_2.fastq
+Approx 15% complete for SRR11102054_2.fastq
+Approx 20% complete for SRR11102054_2.fastq
+Approx 25% complete for SRR11102054_2.fastq
+Approx 30% complete for SRR11102054_2.fastq
+Approx 35% complete for SRR11102054_2.fastq
+Approx 40% complete for SRR11102054_2.fastq
+Approx 45% complete for SRR11102054_2.fastq
+Approx 50% complete for SRR11102054_2.fastq
+Approx 55% complete for SRR11102054_2.fastq
+Approx 60% complete for SRR11102054_2.fastq
+Approx 65% complete for SRR11102054_2.fastq
+Approx 70% complete for SRR11102054_2.fastq
+Approx 75% complete for SRR11102054_2.fastq
+Approx 80% complete for SRR11102054_2.fastq
+Approx 85% complete for SRR11102054_2.fastq
+Approx 90% complete for SRR11102054_2.fastq
+Approx 95% complete for SRR11102054_2.fastq
+Approx 100% complete for SRR11102054_2.fastq
+Analysis complete for SRR11102054_2.fastq
+Started analysis of SRR11102055_1.fastq
+Approx 5% complete for SRR11102055_1.fastq
+Approx 10% complete for SRR11102055_1.fastq
+Approx 15% complete for SRR11102055_1.fastq
+Approx 20% complete for SRR11102055_1.fastq
+Approx 25% complete for SRR11102055_1.fastq
+Approx 30% complete for SRR11102055_1.fastq
+Approx 35% complete for SRR11102055_1.fastq
+Approx 40% complete for SRR11102055_1.fastq
+Approx 45% complete for SRR11102055_1.fastq
+Approx 50% complete for SRR11102055_1.fastq
+Approx 55% complete for SRR11102055_1.fastq
+Approx 60% complete for SRR11102055_1.fastq
+Approx 65% complete for SRR11102055_1.fastq
+Approx 70% complete for SRR11102055_1.fastq
+Approx 75% complete for SRR11102055_1.fastq
+Approx 80% complete for SRR11102055_1.fastq
+Approx 85% complete for SRR11102055_1.fastq
+Approx 90% complete for SRR11102055_1.fastq
+Approx 95% complete for SRR11102055_1.fastq
+Approx 100% complete for SRR11102055_1.fastq
+Analysis complete for SRR11102055_1.fastq
+Started analysis of SRR11102055_2.fastq
+Approx 5% complete for SRR11102055_2.fastq
+Approx 10% complete for SRR11102055_2.fastq
+Approx 15% complete for SRR11102055_2.fastq
+Approx 20% complete for SRR11102055_2.fastq
+Approx 25% complete for SRR11102055_2.fastq
+Approx 30% complete for SRR11102055_2.fastq
+Approx 35% complete for SRR11102055_2.fastq
+Approx 40% complete for SRR11102055_2.fastq
+Approx 45% complete for SRR11102055_2.fastq
+Approx 50% complete for SRR11102055_2.fastq
+Approx 55% complete for SRR11102055_2.fastq
+Approx 60% complete for SRR11102055_2.fastq
+Approx 65% complete for SRR11102055_2.fastq
+Approx 70% complete for SRR11102055_2.fastq
+Approx 75% complete for SRR11102055_2.fastq
+Approx 80% complete for SRR11102055_2.fastq
+Approx 85% complete for SRR11102055_2.fastq
+Approx 90% complete for SRR11102055_2.fastq
+Approx 95% complete for SRR11102055_2.fastq
+Approx 100% complete for SRR11102055_2.fastq
+Analysis complete for SRR11102055_2.fastq
+Started analysis of SRR11102056_1.fastq
+Approx 5% complete for SRR11102056_1.fastq
+Approx 10% complete for SRR11102056_1.fastq
+Approx 15% complete for SRR11102056_1.fastq
+Approx 20% complete for SRR11102056_1.fastq
+Approx 25% complete for SRR11102056_1.fastq
+Approx 30% complete for SRR11102056_1.fastq
+Approx 35% complete for SRR11102056_1.fastq
+Approx 40% complete for SRR11102056_1.fastq
+Approx 45% complete for SRR11102056_1.fastq
+Approx 50% complete for SRR11102056_1.fastq
+Approx 55% complete for SRR11102056_1.fastq
+Approx 60% complete for SRR11102056_1.fastq
+Approx 65% complete for SRR11102056_1.fastq
+Approx 70% complete for SRR11102056_1.fastq
+Approx 75% complete for SRR11102056_1.fastq
+Approx 80% complete for SRR11102056_1.fastq
+Approx 85% complete for SRR11102056_1.fastq
+Approx 90% complete for SRR11102056_1.fastq
+Approx 95% complete for SRR11102056_1.fastq
+Approx 100% complete for SRR11102056_1.fastq
+Analysis complete for SRR11102056_1.fastq
+Started analysis of SRR11102056_2.fastq
+Approx 5% complete for SRR11102056_2.fastq
+Approx 10% complete for SRR11102056_2.fastq
+Approx 15% complete for SRR11102056_2.fastq
+Approx 20% complete for SRR11102056_2.fastq
+Approx 25% complete for SRR11102056_2.fastq
+Approx 30% complete for SRR11102056_2.fastq
+Approx 35% complete for SRR11102056_2.fastq
+Approx 40% complete for SRR11102056_2.fastq
+Approx 45% complete for SRR11102056_2.fastq
+Approx 50% complete for SRR11102056_2.fastq
+Approx 55% complete for SRR11102056_2.fastq
+Approx 60% complete for SRR11102056_2.fastq
+Approx 65% complete for SRR11102056_2.fastq
+Approx 70% complete for SRR11102056_2.fastq
+Approx 75% complete for SRR11102056_2.fastq
+Approx 80% complete for SRR11102056_2.fastq
+Approx 85% complete for SRR11102056_2.fastq
+Approx 90% complete for SRR11102056_2.fastq
+Approx 95% complete for SRR11102056_2.fastq
+Approx 100% complete for SRR11102056_2.fastq
+Analysis complete for SRR11102056_2.fastq
+Started analysis of SRR11102057_1.fastq
+Approx 5% complete for SRR11102057_1.fastq
+Approx 10% complete for SRR11102057_1.fastq
+Approx 15% complete for SRR11102057_1.fastq
+Approx 20% complete for SRR11102057_1.fastq
+Approx 25% complete for SRR11102057_1.fastq
+Approx 30% complete for SRR11102057_1.fastq
+Approx 35% complete for SRR11102057_1.fastq
+Approx 40% complete for SRR11102057_1.fastq
+Approx 45% complete for SRR11102057_1.fastq
+Approx 50% complete for SRR11102057_1.fastq
+Approx 55% complete for SRR11102057_1.fastq
+Approx 60% complete for SRR11102057_1.fastq
+Approx 65% complete for SRR11102057_1.fastq
+Approx 70% complete for SRR11102057_1.fastq
+Approx 75% complete for SRR11102057_1.fastq
+Approx 80% complete for SRR11102057_1.fastq
+Approx 85% complete for SRR11102057_1.fastq
+Approx 90% complete for SRR11102057_1.fastq
+Approx 95% complete for SRR11102057_1.fastq
+Approx 100% complete for SRR11102057_1.fastq
+Analysis complete for SRR11102057_1.fastq
+Started analysis of SRR11102057_2.fastq
+Approx 5% complete for SRR11102057_2.fastq
+Approx 10% complete for SRR11102057_2.fastq
+Approx 15% complete for SRR11102057_2.fastq
+Approx 20% complete for SRR11102057_2.fastq
+Approx 25% complete for SRR11102057_2.fastq
+Approx 30% complete for SRR11102057_2.fastq
+Approx 35% complete for SRR11102057_2.fastq
+Approx 40% complete for SRR11102057_2.fastq
+Approx 45% complete for SRR11102057_2.fastq
+Approx 50% complete for SRR11102057_2.fastq
+Approx 55% complete for SRR11102057_2.fastq
+Approx 60% complete for SRR11102057_2.fastq
+Approx 65% complete for SRR11102057_2.fastq
+Approx 70% complete for SRR11102057_2.fastq
+Approx 75% complete for SRR11102057_2.fastq
+Approx 80% complete for SRR11102057_2.fastq
+Approx 85% complete for SRR11102057_2.fastq
+Approx 90% complete for SRR11102057_2.fastq
+Approx 95% complete for SRR11102057_2.fastq
+Approx 100% complete for SRR11102057_2.fastq
+Analysis complete for SRR11102057_2.fastq
+Started analysis of SRR11102058_1.fastq
+Approx 5% complete for SRR11102058_1.fastq
+Approx 10% complete for SRR11102058_1.fastq
+Approx 15% complete for SRR11102058_1.fastq
+Approx 20% complete for SRR11102058_1.fastq
+Approx 25% complete for SRR11102058_1.fastq
+Approx 30% complete for SRR11102058_1.fastq
+Approx 35% complete for SRR11102058_1.fastq
+Approx 40% complete for SRR11102058_1.fastq
+Approx 45% complete for SRR11102058_1.fastq
+Approx 50% complete for SRR11102058_1.fastq
+Approx 55% complete for SRR11102058_1.fastq
+Approx 60% complete for SRR11102058_1.fastq
+Approx 65% complete for SRR11102058_1.fastq
+Approx 70% complete for SRR11102058_1.fastq
+Approx 75% complete for SRR11102058_1.fastq
+Approx 80% complete for SRR11102058_1.fastq
+Approx 85% complete for SRR11102058_1.fastq
+Approx 90% complete for SRR11102058_1.fastq
+Approx 95% complete for SRR11102058_1.fastq
+Approx 100% complete for SRR11102058_1.fastq
+Analysis complete for SRR11102058_1.fastq
+Started analysis of SRR11102058_2.fastq
+Approx 5% complete for SRR11102058_2.fastq
+Approx 10% complete for SRR11102058_2.fastq
+Approx 15% complete for SRR11102058_2.fastq
+Approx 20% complete for SRR11102058_2.fastq
+Approx 25% complete for SRR11102058_2.fastq
+Approx 30% complete for SRR11102058_2.fastq
+Approx 35% complete for SRR11102058_2.fastq
+Approx 40% complete for SRR11102058_2.fastq
+Approx 45% complete for SRR11102058_2.fastq
+Approx 50% complete for SRR11102058_2.fastq
+Approx 55% complete for SRR11102058_2.fastq
+Approx 60% complete for SRR11102058_2.fastq
+Approx 65% complete for SRR11102058_2.fastq
+Approx 70% complete for SRR11102058_2.fastq
+Approx 75% complete for SRR11102058_2.fastq
+Approx 80% complete for SRR11102058_2.fastq
+Approx 85% complete for SRR11102058_2.fastq
+Approx 90% complete for SRR11102058_2.fastq
+Approx 95% complete for SRR11102058_2.fastq
+Approx 100% complete for SRR11102058_2.fastq
+Analysis complete for SRR11102058_2.fastq
+Started analysis of SRR11102059_1.fastq
+Approx 5% complete for SRR11102059_1.fastq
+Approx 10% complete for SRR11102059_1.fastq
+Approx 15% complete for SRR11102059_1.fastq
+Approx 20% complete for SRR11102059_1.fastq
+Approx 25% complete for SRR11102059_1.fastq
+Approx 30% complete for SRR11102059_1.fastq
+Approx 35% complete for SRR11102059_1.fastq
+Approx 40% complete for SRR11102059_1.fastq
+Approx 45% complete for SRR11102059_1.fastq
+Approx 50% complete for SRR11102059_1.fastq
+Approx 55% complete for SRR11102059_1.fastq
+Approx 60% complete for SRR11102059_1.fastq
+Approx 65% complete for SRR11102059_1.fastq
+Approx 70% complete for SRR11102059_1.fastq
+Approx 75% complete for SRR11102059_1.fastq
+Approx 80% complete for SRR11102059_1.fastq
+Approx 85% complete for SRR11102059_1.fastq
+Approx 90% complete for SRR11102059_1.fastq
+Approx 95% complete for SRR11102059_1.fastq
+Approx 100% complete for SRR11102059_1.fastq
+Analysis complete for SRR11102059_1.fastq
+Started analysis of SRR11102059_2.fastq
+Approx 5% complete for SRR11102059_2.fastq
+Approx 10% complete for SRR11102059_2.fastq
+Approx 15% complete for SRR11102059_2.fastq
+Approx 20% complete for SRR11102059_2.fastq
+Approx 25% complete for SRR11102059_2.fastq
+Approx 30% complete for SRR11102059_2.fastq
+Approx 35% complete for SRR11102059_2.fastq
+Approx 40% complete for SRR11102059_2.fastq
+Approx 45% complete for SRR11102059_2.fastq
+Approx 50% complete for SRR11102059_2.fastq
+Approx 55% complete for SRR11102059_2.fastq
+Approx 60% complete for SRR11102059_2.fastq
+Approx 65% complete for SRR11102059_2.fastq
+Approx 70% complete for SRR11102059_2.fastq
+Approx 75% complete for SRR11102059_2.fastq
+Approx 80% complete for SRR11102059_2.fastq
+Approx 85% complete for SRR11102059_2.fastq
+Approx 90% complete for SRR11102059_2.fastq
+Approx 95% complete for SRR11102059_2.fastq
+Approx 100% complete for SRR11102059_2.fastq
+Analysis complete for SRR11102059_2.fastq
+Started analysis of SRR11102060_1.fastq
+Approx 5% complete for SRR11102060_1.fastq
+Approx 10% complete for SRR11102060_1.fastq
+Approx 15% complete for SRR11102060_1.fastq
+Approx 20% complete for SRR11102060_1.fastq
+Approx 25% complete for SRR11102060_1.fastq
+Approx 30% complete for SRR11102060_1.fastq
+Approx 35% complete for SRR11102060_1.fastq
+Approx 40% complete for SRR11102060_1.fastq
+Approx 45% complete for SRR11102060_1.fastq
+Approx 50% complete for SRR11102060_1.fastq
+Approx 55% complete for SRR11102060_1.fastq
+Approx 60% complete for SRR11102060_1.fastq
+Approx 65% complete for SRR11102060_1.fastq
+Approx 70% complete for SRR11102060_1.fastq
+Approx 75% complete for SRR11102060_1.fastq
+Approx 80% complete for SRR11102060_1.fastq
+Approx 85% complete for SRR11102060_1.fastq
+Approx 90% complete for SRR11102060_1.fastq
+Approx 95% complete for SRR11102060_1.fastq
+Approx 100% complete for SRR11102060_1.fastq
+Analysis complete for SRR11102060_1.fastq
+Started analysis of SRR11102060_2.fastq
+Approx 5% complete for SRR11102060_2.fastq
+Approx 10% complete for SRR11102060_2.fastq
+Approx 15% complete for SRR11102060_2.fastq
+Approx 20% complete for SRR11102060_2.fastq
+Approx 25% complete for SRR11102060_2.fastq
+Approx 30% complete for SRR11102060_2.fastq
+Approx 35% complete for SRR11102060_2.fastq
+Approx 40% complete for SRR11102060_2.fastq
+Approx 45% complete for SRR11102060_2.fastq
+Approx 50% complete for SRR11102060_2.fastq
+Approx 55% complete for SRR11102060_2.fastq
+Approx 60% complete for SRR11102060_2.fastq
+Approx 65% complete for SRR11102060_2.fastq
+Approx 70% complete for SRR11102060_2.fastq
+Approx 75% complete for SRR11102060_2.fastq
+Approx 80% complete for SRR11102060_2.fastq
+Approx 85% complete for SRR11102060_2.fastq
+Approx 90% complete for SRR11102060_2.fastq
+Approx 95% complete for SRR11102060_2.fastq
+Approx 100% complete for SRR11102060_2.fastq
+Analysis complete for SRR11102060_2.fastq
+Started analysis of SRR11102061_1.fastq
+Approx 5% complete for SRR11102061_1.fastq
+Approx 10% complete for SRR11102061_1.fastq
+Approx 15% complete for SRR11102061_1.fastq
+Approx 20% complete for SRR11102061_1.fastq
+Approx 25% complete for SRR11102061_1.fastq
+Approx 30% complete for SRR11102061_1.fastq
+Approx 35% complete for SRR11102061_1.fastq
+Approx 40% complete for SRR11102061_1.fastq
+Approx 45% complete for SRR11102061_1.fastq
+Approx 50% complete for SRR11102061_1.fastq
+Approx 55% complete for SRR11102061_1.fastq
+Approx 60% complete for SRR11102061_1.fastq
+Approx 65% complete for SRR11102061_1.fastq
+Approx 70% complete for SRR11102061_1.fastq
+Approx 75% complete for SRR11102061_1.fastq
+Approx 80% complete for SRR11102061_1.fastq
+Approx 85% complete for SRR11102061_1.fastq
+Approx 90% complete for SRR11102061_1.fastq
+Approx 95% complete for SRR11102061_1.fastq
+Approx 100% complete for SRR11102061_1.fastq
+Analysis complete for SRR11102061_1.fastq
+Started analysis of SRR11102061_2.fastq
+Approx 5% complete for SRR11102061_2.fastq
+Approx 10% complete for SRR11102061_2.fastq
+Approx 15% complete for SRR11102061_2.fastq
+Approx 20% complete for SRR11102061_2.fastq
+Approx 25% complete for SRR11102061_2.fastq
+Approx 30% complete for SRR11102061_2.fastq
+Approx 35% complete for SRR11102061_2.fastq
+Approx 40% complete for SRR11102061_2.fastq
+Approx 45% complete for SRR11102061_2.fastq
+Approx 50% complete for SRR11102061_2.fastq
+Approx 55% complete for SRR11102061_2.fastq
+slurmstepd: error: *** JOB 1090511 ON dmc78 CANCELLED AT 2023-04-29T16:28:03 ***

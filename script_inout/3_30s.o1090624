@@ -1,0 +1,368 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: 3_30s.sh
+  The time limit is 360:00:00 HH:MM:SS.
+  The target directory is: /home/aubclsb0323/FunGen23_Age
+  The working directory is:  /scratch-local/aubclsb0323.3_30s.1090624
+  The memory limit is: 120gb
+  The job will start running after: 2023-04-29T22:58:50
+  Job Name: 3_30s
+  Virtual queue: large
+  QOS: --qos=large
+  Constraints: --constraint=dmc
+  Using  6  cores on master node  dmc13
+  Node list:  dmc13
+  Nodes:  dmc13 dmc13 dmc13 dmc13 dmc13 dmc13
+  Command typed:
+/apps/scripts/run_script 3_30s.sh     
+  Queue submit command:
+sbatch --qos=large -J 3_30s --begin=2023-04-29T22:58:50 --requeue --mail-user=twm0009@auburn.edu -o 3_30s.o1090624 -t 360:00:00 -N 1-1 -n 6 --mem-per-cpu=20000mb --constraint=dmc 
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffcompare"
+   Try: "module spider gffcompare" to see how to load the module(s).
+
+
+
+
+Lmod is automatically replacing "anaconda/2-2019.10" with "python/2.7.1".
+
+
+The following have been reloaded with a version change:
+  1) gcc/7.3.0 => gcc/4.5.2
+
+
+The following have been reloaded with a version change:
+  1) gcc/4.5.2 => gcc/9.3.0
+
+
+The following have been reloaded with a version change:
+  1) gcc/9.3.0 => gcc/4.5.2     2) samtools/1.13 => samtools/0.1.19
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffread"
+   Try: "module spider gffread" to see how to load the module(s).
+
+
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffcompare"
+   Try: "module spider gffcompare" to see how to load the module(s).
+
+
+
++ MyID=aubclsb0323
++ WD=/scratch/aubclsb0323/FinalProject
++ CLEAND=/scratch/aubclsb0323/FinalProject/CleanData2
++ REFD=/scratch/aubclsb0323/FinalProject/GRCm39
++ MAPD=/scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ COUNTSD=/scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ RESULTSD=/home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ REF=GRCm39
++ mkdir -p /scratch/aubclsb0323/FinalProject/GRCm39
++ mkdir -p /scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ mkdir -p /scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ mkdir -p /home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ mkdir -p /scratch/aubclsb0323/FinalProject/CleanData2
++ cd /scratch/aubclsb0323/FinalProject/GRCm39
++ hisat2-build --ss GRCm39.ss --exon GRCm39.exon GRCm39.fa GRCm39
+Settings:
+  Output files: "GRCm39.*.ht2"
+  Line rate: 7 (line is 128 bytes)
+  Lines per side: 1 (side is 128 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Local offset rate: 3 (one in 8)
+  Local fTable chars: 6
+  Local sequence length: 57344
+  Local sequence overlap between two consecutive indexes: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  GRCm39.fa
+Reading reference sizes
+  Time reading reference sizes: 00:00:23
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:13
+  Time to read SNPs and splice sites: 00:00:03
+Generation 0 (2654910222 -> 2654910222 nodes, 0 ranks
+COUNTED NEW NODES: 4
+COUNTED TEMP NODES: 0
+RESIZED NODES: 27
+RESIZED NODES: 0
+MADE NEW NODES: 10
+Generation 1 (2655189407 -> 2655189407 nodes, 0 ranks
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 23
+RESIZED NODES: 0
+MADE NEW NODES: 10
+Generation 2 (2655747924 -> 2655747924 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 28
+RESIZED NODES: 0
+MADE NEW NODES: 19
+Generation 3 (2656865484 -> 2656865484 nodes, 0 ranks
+BUILT FROM_INDEX: 18
+COUNTED NEW NODES: 7
+COUNTED TEMP NODES: 0
+RESIZED NODES: 23
+RESIZED NODES: 0
+MADE NEW NODES: 22
+RESIZE NODES: 79
+SORT NODES: 357
+MERGE, UPDATE RANK: 63
+Generation 4 (2659103687 -> 2658568923 nodes, 1095102843 ranks
+  Ran out of memory; automatically trying more memory-economical parameters.
+Generation 0 (2654910222 -> 2654910222 nodes, 0 ranks
+COUNTED NEW NODES: 10
+COUNTED TEMP NODES: 0
+RESIZED NODES: 23
+RESIZED NODES: 0
+MADE NEW NODES: 17
+Generation 1 (2655189407 -> 2655189407 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 26
+RESIZED NODES: 0
+MADE NEW NODES: 19
+Generation 2 (2655747924 -> 2655747924 nodes, 0 ranks
+COUNTED NEW NODES: 7
+COUNTED TEMP NODES: 0
+RESIZED NODES: 24
+RESIZED NODES: 0
+MADE NEW NODES: 22
+Generation 3 (2656865484 -> 2656865484 nodes, 0 ranks
+BUILT FROM_INDEX: 9
+COUNTED NEW NODES: 7
+COUNTED TEMP NODES: 0
+RESIZED NODES: 27
+RESIZED NODES: 0
+MADE NEW NODES: 17
+RESIZE NODES: 75
+SORT NODES: 357
+MERGE, UPDATE RANK: 67
+Generation 4 (2659103687 -> 2658568923 nodes, 1095102843 ranks
+  Ran out of memory; automatically trying more memory-economical parameters.
+Generation 0 (2654910222 -> 2654910222 nodes, 0 ranks
+COUNTED NEW NODES: 7
+COUNTED TEMP NODES: 0
+RESIZED NODES: 24
+RESIZED NODES: 0
+MADE NEW NODES: 22
+Generation 1 (2655189407 -> 2655189407 nodes, 0 ranks
+COUNTED NEW NODES: 8
+COUNTED TEMP NODES: 0
+RESIZED NODES: 29
+RESIZED NODES: 0
+MADE NEW NODES: 24
+Generation 2 (2655747924 -> 2655747924 nodes, 0 ranks
+COUNTED NEW NODES: 7
+COUNTED TEMP NODES: 0
+RESIZED NODES: 24
+RESIZED NODES: 0
+MADE NEW NODES: 25
+Generation 3 (2656865484 -> 2656865484 nodes, 0 ranks
+BUILT FROM_INDEX: 15
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 18
+RESIZED NODES: 0
+MADE NEW NODES: 19
+RESIZE NODES: 66
+SORT NODES: 330
+MERGE, UPDATE RANK: 86
+Generation 4 (2659103687 -> 2658568923 nodes, 1095102843 ranks
+  Ran out of memory; automatically trying more memory-economical parameters.
+Generation 0 (2654910222 -> 2654910222 nodes, 0 ranks
+COUNTED NEW NODES: 4
+COUNTED TEMP NODES: 0
+RESIZED NODES: 30
+RESIZED NODES: 0
+MADE NEW NODES: 10
+Generation 1 (2655189407 -> 2655189407 nodes, 0 ranks
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 25
+RESIZED NODES: 0
+MADE NEW NODES: 10
+Generation 2 (2655747924 -> 2655747924 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 29
+RESIZED NODES: 0
+MADE NEW NODES: 21
+Generation 3 (2656865484 -> 2656865484 nodes, 0 ranks
+BUILT FROM_INDEX: 21
+COUNTED NEW NODES: 7
+COUNTED TEMP NODES: 0
+RESIZED NODES: 25
+RESIZED NODES: 0
+MADE NEW NODES: 24
+RESIZE NODES: 86
+SORT NODES: 389
+MERGE, UPDATE RANK: 82
+Generation 4 (2659103687 -> 2658568923 nodes, 1095102843 ranks
+  Ran out of memory; automatically trying more memory-economical parameters.
+Generation 0 (2654910222 -> 2654910222 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 25
+RESIZED NODES: 0
+MADE NEW NODES: 10
+Generation 1 (2655189407 -> 2655189407 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 25
+RESIZED NODES: 0
+MADE NEW NODES: 14
+Generation 2 (2655747924 -> 2655747924 nodes, 0 ranks
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 25
+RESIZED NODES: 0
+MADE NEW NODES: 16
+Generation 3 (2656865484 -> 2656865484 nodes, 0 ranks
+BUILT FROM_INDEX: 7
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 25
+RESIZED NODES: 0
+MADE NEW NODES: 15
+RESIZE NODES: 72
+SORT NODES: 348
+MERGE, UPDATE RANK: 67
+Generation 4 (2659103687 -> 2658568923 nodes, 1095102843 ranks
+  Ran out of memory; automatically trying more memory-economical parameters.
+Generation 0 (2654910222 -> 2654910222 nodes, 0 ranks
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 22
+RESIZED NODES: 0
+MADE NEW NODES: 11
+Generation 1 (2655189407 -> 2655189407 nodes, 0 ranks
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 22
+RESIZED NODES: 0
+MADE NEW NODES: 10
+Generation 2 (2655747924 -> 2655747924 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 28
+RESIZED NODES: 0
+MADE NEW NODES: 19
+Generation 3 (2656865484 -> 2656865484 nodes, 0 ranks
+BUILT FROM_INDEX: 20
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 23
+RESIZED NODES: 0
+MADE NEW NODES: 22
+RESIZE NODES: 79
+SORT NODES: 357
+MERGE, UPDATE RANK: 69
+Generation 4 (2659103687 -> 2658568923 nodes, 1095102843 ranks
+  Ran out of memory; automatically trying more memory-economical parameters.
+Generation 0 (2654910222 -> 2654910222 nodes, 0 ranks
+COUNTED NEW NODES: 8
+COUNTED TEMP NODES: 0
+RESIZED NODES: 23
+RESIZED NODES: 0
+MADE NEW NODES: 23
+Generation 1 (2655189407 -> 2655189407 nodes, 0 ranks
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 25
+RESIZED NODES: 0
+MADE NEW NODES: 20
+Generation 2 (2655747924 -> 2655747924 nodes, 0 ranks
+COUNTED NEW NODES: 8
+COUNTED TEMP NODES: 0
+RESIZED NODES: 26
+RESIZED NODES: 0
+MADE NEW NODES: 24
+Generation 3 (2656865484 -> 2656865484 nodes, 0 ranks
+BUILT FROM_INDEX: 8
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 17
+RESIZED NODES: 0
+MADE NEW NODES: 18
+RESIZE NODES: 64
+SORT NODES: 338
+MERGE, UPDATE RANK: 74
+Generation 4 (2659103687 -> 2658568923 nodes, 1095102843 ranks
+  Ran out of memory; automatically trying more memory-economical parameters.
+Generation 0 (2654910222 -> 2654910222 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 27
+RESIZED NODES: 0
+MADE NEW NODES: 10
+Generation 1 (2655189407 -> 2655189407 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 21
+RESIZED NODES: 0
+MADE NEW NODES: 25
+Generation 2 (2655747924 -> 2655747924 nodes, 0 ranks
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 20
+RESIZED NODES: 0
+MADE NEW NODES: 23
+Generation 3 (2656865484 -> 2656865484 nodes, 0 ranks
+BUILT FROM_INDEX: 6
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 22
+RESIZED NODES: 0
+MADE NEW NODES: 15
+RESIZE NODES: 69
+SORT NODES: 343
+MERGE, UPDATE RANK: 85
+Generation 4 (2659103687 -> 2658568923 nodes, 1095102843 ranks
+  Ran out of memory; automatically trying more memory-economical parameters.
+Generation 0 (2654910222 -> 2654910222 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 26
+RESIZED NODES: 0
+MADE NEW NODES: 10
+Generation 1 (2655189407 -> 2655189407 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 17
+RESIZED NODES: 0
+MADE NEW NODES: 13
+Generation 2 (2655747924 -> 2655747924 nodes, 0 ranks
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 24
+RESIZED NODES: 0
+MADE NEW NODES: 11
+Generation 3 (2656865484 -> 2656865484 nodes, 0 ranks
+BUILT FROM_INDEX: 7
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 23
+RESIZED NODES: 0
+MADE NEW NODES: 16
+RESIZE NODES: 72
+SORT NODES: 363
+MERGE, UPDATE RANK: 97
+Generation 4 (2659103687 -> 2658568923 nodes, 1095102843 ranks
+  Ran out of memory; automatically trying more memory-economical parameters.
+slurmstepd: error: *** JOB 1090624 ON dmc13 CANCELLED AT 2023-04-30T08:24:25 ***

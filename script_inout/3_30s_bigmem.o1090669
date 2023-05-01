@@ -1,0 +1,306 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: 3_30s.sh
+  The time limit is 360:00:00 HH:MM:SS.
+  The target directory is: /home/aubclsb0323/FunGen23_Age
+  The working directory is:  /scratch-local/aubclsb0323.3_30s_bigmem.1090669
+  The memory limit is: 150gb
+  The job will start running after: 2023-04-30T12:15:19
+  Job Name: 3_30s_bigmem
+  Virtual queue: bigmem
+  QOS: --qos=bigmem
+  Constraints: --constraint=dmc
+  Using  1  cores on master node  dmc85
+  Node list:  dmc85
+  Nodes:  dmc85
+  Command typed:
+/apps/scripts/run_script 3_30s.sh     
+  Queue submit command:
+sbatch --qos=bigmem -J 3_30s_bigmem --begin=2023-04-30T12:15:19 --requeue --mail-user=twm0009@auburn.edu -o 3_30s_bigmem.o1090669 -t 360:00:00 -N 1-1 -n 1 --mem-per-cpu=150000mb --constraint=dmc 
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffcompare"
+   Try: "module spider gffcompare" to see how to load the module(s).
+
+
+
+
+Lmod is automatically replacing "anaconda/2-2019.10" with "python/2.7.1".
+
+
+The following have been reloaded with a version change:
+  1) gcc/7.3.0 => gcc/4.5.2
+
+
+The following have been reloaded with a version change:
+  1) gcc/4.5.2 => gcc/9.3.0
+
+
+The following have been reloaded with a version change:
+  1) gcc/9.3.0 => gcc/4.5.2     2) samtools/1.13 => samtools/0.1.19
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffread"
+   Try: "module spider gffread" to see how to load the module(s).
+
+
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffcompare"
+   Try: "module spider gffcompare" to see how to load the module(s).
+
+
+
++ MyID=aubclsb0323
++ WD=/scratch/aubclsb0323/FinalProject
++ CLEAND=/scratch/aubclsb0323/FinalProject/CleanData2
++ REFD=/scratch/aubclsb0323/FinalProject/GRCm39
++ MAPD=/scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ COUNTSD=/scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ RESULTSD=/home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ REF=GRCm39
++ mkdir -p /scratch/aubclsb0323/FinalProject/GRCm39
++ mkdir -p /scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ mkdir -p /scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ mkdir -p /home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ mkdir -p /scratch/aubclsb0323/FinalProject/CleanData2
++ cd /scratch/aubclsb0323/FinalProject/GRCm39
++ hisat2-build --ss GRCm39.ss --exon GRCm39.exon GRCm39.fa GRCm39
+Settings:
+  Output files: "GRCm39.*.ht2"
+  Line rate: 7 (line is 128 bytes)
+  Lines per side: 1 (side is 128 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Local offset rate: 3 (one in 8)
+  Local fTable chars: 6
+  Local sequence length: 57344
+  Local sequence overlap between two consecutive indexes: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  GRCm39.fa
+Reading reference sizes
+  Time reading reference sizes: 00:00:19
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:14
+  Time to read SNPs and splice sites: 00:00:02
+Generation 0 (2654910222 -> 2654910222 nodes, 0 ranks
+COUNTED NEW NODES: 3
+COUNTED TEMP NODES: 0
+RESIZED NODES: 16
+RESIZED NODES: 0
+MADE NEW NODES: 7
+Generation 1 (2655189407 -> 2655189407 nodes, 0 ranks
+COUNTED NEW NODES: 4
+COUNTED TEMP NODES: 0
+RESIZED NODES: 8
+RESIZED NODES: 0
+MADE NEW NODES: 8
+Generation 2 (2655747924 -> 2655747924 nodes, 0 ranks
+COUNTED NEW NODES: 3
+COUNTED TEMP NODES: 0
+RESIZED NODES: 16
+RESIZED NODES: 0
+MADE NEW NODES: 7
+Generation 3 (2656865484 -> 2656865484 nodes, 0 ranks
+BUILT FROM_INDEX: 4
+COUNTED NEW NODES: 4
+COUNTED TEMP NODES: 0
+RESIZED NODES: 9
+RESIZED NODES: 0
+MADE NEW NODES: 8
+RESIZE NODES: 36
+SORT NODES: 249
+MERGE, UPDATE RANK: 59
+Generation 4 (2659103687 -> 2658568923 nodes, 1095102843 ranks
+ALLOCATE FROM_TABLE: 17
+BUILD TABLE: 147
+BUILD INDEX: 13
+COUNTED NEW NODES: 63
+COUNTED TEMP NODES: 0
+RESIZED NODES: 8
+RESIZED NODES: 0
+MADE NEW NODES: 218
+MERGEUPDATERANK: 53
+TOTAL TIME: 519
+Generation 5 (2660783446 -> 2658300435 nodes, 2235047736 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 154
+BUILD INDEX: 12
+COUNTED NEW NODES: 18
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 55
+MERGEUPDATERANK: 36
+TOTAL TIME: 275
+Generation 6 (2658512332 -> 2658433622 nodes, 2399813197 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 148
+BUILD INDEX: 13
+COUNTED NEW NODES: 16
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 36
+MERGEUPDATERANK: 28
+TOTAL TIME: 241
+Generation 7 (2658643034 -> 2658562414 nodes, 2491576290 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 145
+BUILD INDEX: 13
+COUNTED NEW NODES: 9
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 32
+MERGEUPDATERANK: 30
+TOTAL TIME: 229
+Generation 8 (2658760803 -> 2658664935 nodes, 2547746620 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 146
+BUILD INDEX: 13
+COUNTED NEW NODES: 13
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 27
+MERGEUPDATERANK: 22
+TOTAL TIME: 221
+Generation 9 (2658838464 -> 2658746934 nodes, 2589849569 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 150
+BUILD INDEX: 12
+COUNTED NEW NODES: 8
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 20
+MERGEUPDATERANK: 21
+TOTAL TIME: 211
+Generation 10 (2658903215 -> 2658835753 nodes, 2619100031 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 158
+BUILD INDEX: 12
+COUNTED NEW NODES: 11
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 14
+MERGEUPDATERANK: 23
+TOTAL TIME: 219
+Generation 11 (2658989650 -> 2658936013 nodes, 2636535279 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 148
+BUILD INDEX: 13
+COUNTED NEW NODES: 7
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 15
+MERGEUPDATERANK: 20
+TOTAL TIME: 203
+Generation 12 (2659099028 -> 2659048273 nodes, 2645649871 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 147
+BUILD INDEX: 13
+COUNTED NEW NODES: 10
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 11
+MERGEUPDATERANK: 19
+TOTAL TIME: 200
+Generation 13 (2659243119 -> 2659182190 nodes, 2651019355 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 152
+BUILD INDEX: 13
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 16
+RESIZED NODES: 0
+MADE NEW NODES: 9
+MERGEUPDATERANK: 27
+TOTAL TIME: 222
+Generation 14 (2659401137 -> 2659344751 nodes, 2654859872 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 140
+BUILD INDEX: 13
+COUNTED NEW NODES: 9
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 9
+MERGEUPDATERANK: 19
+TOTAL TIME: 190
+Generation 15 (2659644593 -> 2659557729 nodes, 2657939511 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 148
+BUILD INDEX: 13
+COUNTED NEW NODES: 6
+COUNTED TEMP NODES: 0
+RESIZED NODES: 15
+RESIZED NODES: 0
+MADE NEW NODES: 10
+MERGEUPDATERANK: 22
+TOTAL TIME: 214
+Generation 16 (2659862960 -> 2659704700 nodes, 2659416502 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 143
+BUILD INDEX: 12
+COUNTED NEW NODES: 9
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 7
+MERGEUPDATERANK: 19
+TOTAL TIME: 190
+Generation 17 (2659778410 -> 2659676835 nodes, 2659672694 ranks
+ALLOCATE FROM_TABLE: 0
+BUILD TABLE: 148
+BUILD INDEX: 13
+COUNTED NEW NODES: 5
+COUNTED TEMP NODES: 0
+RESIZED NODES: 0
+RESIZED NODES: 0
+MADE NEW NODES: 11
+MERGEUPDATERANK: 19
+TOTAL TIME: 196
+Generation 18 (2659676835 -> 2659676835 nodes, 2659676835 ranks
+Generating edges... 
+NODE.TO -> GENOME POS: 11
+BUILD FROM_INDEX 5
+COUNTED NEW EDGES: 33
+MADE NEW EDGES: 50
+SORTED NEW EDGES: 158
+RE-SORTED NODES: 172
+PROCESS EDGES: 24
+REMOVE Y: 3
+SORT, Make index: 139
+TOTAL: 595
+Allocating ftab, absorbFtab
+Entering GFM loop
+Exited GFM loop
+fchr[A]: 0
+fchr[C]: 775228621
+fchr[G]: 1329503657
+fchr[T]: 1883822732
+fchr[$]: 2659958061
+Exiting GFM::buildToDisk()
+Returning from initFromVector
+Wrote 1641097262 bytes to primary GFM file: GRCm39.1.ht2
+Wrote 664919216 bytes to secondary GFM file: GRCm39.2.ht2
+Re-opening _in1 and _in2 as input streams
+Returning from GFM constructor
+slurmstepd: error: *** JOB 1090669 ON dmc85 CANCELLED AT 2023-04-30T14:26:45 ***

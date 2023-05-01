@@ -1,0 +1,19 @@
+ 
+============================================================
+=====     Queued job information at submit time        =====
+============================================================
+  The submitted file is: 3_basic.sh
+  The time limit is 360:00:00 HH:MM:SS.
+  The target directory is: /home/aubclsb0323/FunGen23_Age
+  The memory limit is: 500gb
+  The job will start running after: 2023-04-30T20:35:55
+  Job Name: 3_basic_24p500gb_R1
+  Virtual queue: bigmem
+  QOS: --qos=bigmem
+  Constraints: --constraint=dmc
+  Command typed:
+/apps/scripts/run_script 3_basic.sh     
+  Queue submit command:
+sbatch --qos=bigmem -J 3_basic_24p500gb_R1 --begin=2023-04-30T20:35:55 --requeue --mail-user=twm0009@auburn.edu -o 3_basic_24p500gb_R1.o$SLURM_JOB_ID -t 360:00:00 -N 1-1 -n 24 --mem-per-cpu=20833mb --constraint=dmc 
+  Job number: 1090818
+ 

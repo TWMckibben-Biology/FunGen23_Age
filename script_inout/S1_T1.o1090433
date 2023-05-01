@@ -1,0 +1,1246 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: 0_1_downloadSRA_QualityCheck.sh
+  The time limit is 12:00:00 HH:MM:SS.
+  The target directory is: /home/aubclsb0323/FunGen23_Age
+  The working directory is:  /scratch-local/aubclsb0323.S1_T1.1090433
+  The memory limit is: 42gb
+  The job will start running after: 2023-04-28T18:36:05
+  Job Name: S1_T1
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  6  cores on master node  dmc78
+  Node list:  dmc78
+  Nodes:  dmc78 dmc78 dmc78 dmc78 dmc78 dmc78
+  Command typed:
+/apps/scripts/run_script 0_1_downloadSRA_QualityCheck.sh     
+  Queue submit command:
+sbatch --qos=class -J S1_T1 --begin=2023-04-28T18:36:05 --requeue --mail-user=twm0009@auburn.edu -o S1_T1.o1090433 -t 12:00:00 -N 1-1 -n 6 --mem-per-cpu=7000mb --constraint=dmc 
+Prefetch will download to Current Directory when Public User Repository is set
+
+2023-04-28T23:36:37 prefetch.2.10.9: 1) Downloading 'SRR11102034'...
+2023-04-28T23:36:37 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-28T23:37:59 prefetch.2.10.9:  HTTPS download succeed
+2023-04-28T23:38:18 prefetch.2.10.9:  'SRR11102034' is valid
+2023-04-28T23:38:18 prefetch.2.10.9: 1) 'SRR11102034' was downloaded successfully
+Read 22378672 spots for SRR11102034
+Written 22378672 spots for SRR11102034
+
+2023-04-28T23:45:36 prefetch.2.10.9: 1) Downloading 'SRR11102035'...
+2023-04-28T23:45:36 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-28T23:47:24 prefetch.2.10.9:  HTTPS download succeed
+2023-04-28T23:47:42 prefetch.2.10.9:  'SRR11102035' is valid
+2023-04-28T23:47:42 prefetch.2.10.9: 1) 'SRR11102035' was downloaded successfully
+Read 27224280 spots for SRR11102035
+Written 27224280 spots for SRR11102035
+
+2023-04-28T23:52:49 prefetch.2.10.9: 1) Downloading 'SRR11102036'...
+2023-04-28T23:52:49 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-28T23:54:23 prefetch.2.10.9:  HTTPS download succeed
+2023-04-28T23:54:30 prefetch.2.10.9:  'SRR11102036' is valid
+2023-04-28T23:54:30 prefetch.2.10.9: 1) 'SRR11102036' was downloaded successfully
+Read 30824458 spots for SRR11102036
+Written 30824458 spots for SRR11102036
+
+2023-04-28T23:59:37 prefetch.2.10.9: 1) Downloading 'SRR11102037'...
+2023-04-28T23:59:37 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T00:01:35 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T00:01:56 prefetch.2.10.9:  'SRR11102037' is valid
+2023-04-29T00:01:56 prefetch.2.10.9: 1) 'SRR11102037' was downloaded successfully
+Read 27852803 spots for SRR11102037
+Written 27852803 spots for SRR11102037
+
+2023-04-29T00:10:14 prefetch.2.10.9: 1) Downloading 'SRR11102038'...
+2023-04-29T00:10:14 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T00:11:37 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T00:11:47 prefetch.2.10.9:  'SRR11102038' is valid
+2023-04-29T00:11:47 prefetch.2.10.9: 1) 'SRR11102038' was downloaded successfully
+Read 22928504 spots for SRR11102038
+Written 22928504 spots for SRR11102038
+
+2023-04-29T00:17:30 prefetch.2.10.9: 1) Downloading 'SRR11102039'...
+2023-04-29T00:17:30 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T00:19:22 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T00:19:29 prefetch.2.10.9:  'SRR11102039' is valid
+2023-04-29T00:19:29 prefetch.2.10.9: 1) 'SRR11102039' was downloaded successfully
+Read 31764726 spots for SRR11102039
+Written 31764726 spots for SRR11102039
+
+2023-04-29T00:31:10 prefetch.2.10.9: 1) Downloading 'SRR11102040'...
+2023-04-29T00:31:10 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T00:33:20 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T00:33:47 prefetch.2.10.9:  'SRR11102040' is valid
+2023-04-29T00:33:47 prefetch.2.10.9: 1) 'SRR11102040' was downloaded successfully
+Read 26645099 spots for SRR11102040
+Written 26645099 spots for SRR11102040
+
+2023-04-29T00:41:18 prefetch.2.10.9: 1) Downloading 'SRR11102041'...
+2023-04-29T00:41:18 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T00:42:58 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T00:43:04 prefetch.2.10.9:  'SRR11102041' is valid
+2023-04-29T00:43:04 prefetch.2.10.9: 1) 'SRR11102041' was downloaded successfully
+Read 26089108 spots for SRR11102041
+Written 26089108 spots for SRR11102041
+
+2023-04-29T00:48:07 prefetch.2.10.9: 1) Downloading 'SRR11102042'...
+2023-04-29T00:48:07 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T00:49:32 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T00:49:44 prefetch.2.10.9:  'SRR11102042' is valid
+2023-04-29T00:49:44 prefetch.2.10.9: 1) 'SRR11102042' was downloaded successfully
+Read 21891933 spots for SRR11102042
+Written 21891933 spots for SRR11102042
+
+2023-04-29T00:56:14 prefetch.2.10.9: 1) Downloading 'SRR11102043'...
+2023-04-29T00:56:14 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T00:57:58 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T00:58:09 prefetch.2.10.9:  'SRR11102043' is valid
+2023-04-29T00:58:09 prefetch.2.10.9: 1) 'SRR11102043' was downloaded successfully
+Read 21979132 spots for SRR11102043
+Written 21979132 spots for SRR11102043
+
+2023-04-29T01:03:31 prefetch.2.10.9: 1) Downloading 'SRR11102044'...
+2023-04-29T01:03:31 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T01:04:52 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T01:04:57 prefetch.2.10.9:  'SRR11102044' is valid
+2023-04-29T01:04:57 prefetch.2.10.9: 1) 'SRR11102044' was downloaded successfully
+Read 22105872 spots for SRR11102044
+Written 22105872 spots for SRR11102044
+
+2023-04-29T01:08:30 prefetch.2.10.9: 1) Downloading 'SRR11102045'...
+2023-04-29T01:08:30 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T01:10:31 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T01:10:48 prefetch.2.10.9:  'SRR11102045' is valid
+2023-04-29T01:10:48 prefetch.2.10.9: 1) 'SRR11102045' was downloaded successfully
+Read 21777449 spots for SRR11102045
+Written 21777449 spots for SRR11102045
+
+2023-04-29T01:15:08 prefetch.2.10.9: 1) Downloading 'SRR11102046'...
+2023-04-29T01:15:08 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T01:16:37 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T01:16:44 prefetch.2.10.9:  'SRR11102046' is valid
+2023-04-29T01:16:44 prefetch.2.10.9: 1) 'SRR11102046' was downloaded successfully
+Read 21780679 spots for SRR11102046
+Written 21780679 spots for SRR11102046
+
+2023-04-29T01:20:25 prefetch.2.10.9: 1) Downloading 'SRR11102047'...
+2023-04-29T01:20:25 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T01:21:51 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T01:22:01 prefetch.2.10.9:  'SRR11102047' is valid
+2023-04-29T01:22:01 prefetch.2.10.9: 1) 'SRR11102047' was downloaded successfully
+Read 24520989 spots for SRR11102047
+Written 24520989 spots for SRR11102047
+
+2023-04-29T01:26:20 prefetch.2.10.9: 1) Downloading 'SRR11102048'...
+2023-04-29T01:26:20 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T01:28:39 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T01:28:48 prefetch.2.10.9:  'SRR11102048' is valid
+2023-04-29T01:28:48 prefetch.2.10.9: 1) 'SRR11102048' was downloaded successfully
+Read 28383189 spots for SRR11102048
+Written 28383189 spots for SRR11102048
+
+2023-04-29T01:37:07 prefetch.2.10.9: 1) Downloading 'SRR11102049'...
+2023-04-29T01:37:07 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T01:38:54 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T01:39:04 prefetch.2.10.9:  'SRR11102049' is valid
+2023-04-29T01:39:04 prefetch.2.10.9: 1) 'SRR11102049' was downloaded successfully
+Read 21973652 spots for SRR11102049
+Written 21973652 spots for SRR11102049
+
+2023-04-29T01:43:38 prefetch.2.10.9: 1) Downloading 'SRR11102050'...
+2023-04-29T01:43:38 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T01:45:09 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T01:45:14 prefetch.2.10.9:  'SRR11102050' is valid
+2023-04-29T01:45:14 prefetch.2.10.9: 1) 'SRR11102050' was downloaded successfully
+Read 22715822 spots for SRR11102050
+Written 22715822 spots for SRR11102050
+
+2023-04-29T01:50:10 prefetch.2.10.9: 1) Downloading 'SRR11102051'...
+2023-04-29T01:50:10 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T01:51:22 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T01:51:27 prefetch.2.10.9:  'SRR11102051' is valid
+2023-04-29T01:51:27 prefetch.2.10.9: 1) 'SRR11102051' was downloaded successfully
+Read 22978968 spots for SRR11102051
+Written 22978968 spots for SRR11102051
+
+2023-04-29T01:54:35 prefetch.2.10.9: 1) Downloading 'SRR11102052'...
+2023-04-29T01:54:35 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T01:55:50 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T01:55:55 prefetch.2.10.9:  'SRR11102052' is valid
+2023-04-29T01:55:55 prefetch.2.10.9: 1) 'SRR11102052' was downloaded successfully
+Read 22710598 spots for SRR11102052
+Written 22710598 spots for SRR11102052
+
+2023-04-29T01:58:59 prefetch.2.10.9: 1) Downloading 'SRR11102053'...
+2023-04-29T01:58:59 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T02:00:27 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T02:00:33 prefetch.2.10.9:  'SRR11102053' is valid
+2023-04-29T02:00:33 prefetch.2.10.9: 1) 'SRR11102053' was downloaded successfully
+Read 29016264 spots for SRR11102053
+Written 29016264 spots for SRR11102053
+
+2023-04-29T02:07:40 prefetch.2.10.9: 1) Downloading 'SRR11102054'...
+2023-04-29T02:07:40 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T02:09:49 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T02:10:14 prefetch.2.10.9:  'SRR11102054' is valid
+2023-04-29T02:10:14 prefetch.2.10.9: 1) 'SRR11102054' was downloaded successfully
+Read 23166276 spots for SRR11102054
+Written 23166276 spots for SRR11102054
+
+2023-04-29T02:22:07 prefetch.2.10.9: 1) Downloading 'SRR11102055'...
+2023-04-29T02:22:07 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T02:23:48 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T02:23:54 prefetch.2.10.9:  'SRR11102055' is valid
+2023-04-29T02:23:54 prefetch.2.10.9: 1) 'SRR11102055' was downloaded successfully
+Read 25193580 spots for SRR11102055
+Written 25193580 spots for SRR11102055
+
+2023-04-29T02:27:55 prefetch.2.10.9: 1) Downloading 'SRR11102056'...
+2023-04-29T02:27:55 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T02:29:19 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T02:29:26 prefetch.2.10.9:  'SRR11102056' is valid
+2023-04-29T02:29:26 prefetch.2.10.9: 1) 'SRR11102056' was downloaded successfully
+Read 21917944 spots for SRR11102056
+Written 21917944 spots for SRR11102056
+
+2023-04-29T02:39:08 prefetch.2.10.9: 1) Downloading 'SRR11102057'...
+2023-04-29T02:39:08 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T02:40:50 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T02:41:09 prefetch.2.10.9:  'SRR11102057' is valid
+2023-04-29T02:41:09 prefetch.2.10.9: 1) 'SRR11102057' was downloaded successfully
+Read 23592465 spots for SRR11102057
+Written 23592465 spots for SRR11102057
+
+2023-04-29T02:52:02 prefetch.2.10.9: 1) Downloading 'SRR11102058'...
+2023-04-29T02:52:02 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T02:53:55 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T02:54:01 prefetch.2.10.9:  'SRR11102058' is valid
+2023-04-29T02:54:01 prefetch.2.10.9: 1) 'SRR11102058' was downloaded successfully
+Read 22420247 spots for SRR11102058
+Written 22420247 spots for SRR11102058
+
+2023-04-29T02:57:19 prefetch.2.10.9: 1) Downloading 'SRR11102059'...
+2023-04-29T02:57:19 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T02:58:56 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T02:59:01 prefetch.2.10.9:  'SRR11102059' is valid
+2023-04-29T02:59:01 prefetch.2.10.9: 1) 'SRR11102059' was downloaded successfully
+Read 22197745 spots for SRR11102059
+Written 22197745 spots for SRR11102059
+
+2023-04-29T03:04:34 prefetch.2.10.9: 1) Downloading 'SRR11102060'...
+2023-04-29T03:04:34 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T03:06:34 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T03:06:51 prefetch.2.10.9:  'SRR11102060' is valid
+2023-04-29T03:06:51 prefetch.2.10.9: 1) 'SRR11102060' was downloaded successfully
+Read 22729277 spots for SRR11102060
+Written 22729277 spots for SRR11102060
+
+2023-04-29T03:18:52 prefetch.2.10.9: 1) Downloading 'SRR11102061'...
+2023-04-29T03:18:52 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T03:21:09 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T03:21:32 prefetch.2.10.9:  'SRR11102061' is valid
+2023-04-29T03:21:32 prefetch.2.10.9: 1) 'SRR11102061' was downloaded successfully
+Read 21980006 spots for SRR11102061
+Written 21980006 spots for SRR11102061
+
+2023-04-29T03:31:45 prefetch.2.10.9: 1) Downloading 'SRR11102062'...
+2023-04-29T03:31:45 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T03:33:05 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T03:33:10 prefetch.2.10.9:  'SRR11102062' is valid
+2023-04-29T03:33:10 prefetch.2.10.9: 1) 'SRR11102062' was downloaded successfully
+Read 21960839 spots for SRR11102062
+Written 21960839 spots for SRR11102062
+
+2023-04-29T03:36:15 prefetch.2.10.9: 1) Downloading 'SRR11102063'...
+2023-04-29T03:36:15 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T03:38:04 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T03:38:10 prefetch.2.10.9:  'SRR11102063' is valid
+2023-04-29T03:38:10 prefetch.2.10.9: 1) 'SRR11102063' was downloaded successfully
+Read 22079035 spots for SRR11102063
+Written 22079035 spots for SRR11102063
+
+2023-04-29T03:41:11 prefetch.2.10.9: 1) Downloading 'SRR11102064'...
+2023-04-29T03:41:11 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T03:42:33 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T03:42:57 prefetch.2.10.9:  'SRR11102064' is valid
+2023-04-29T03:42:57 prefetch.2.10.9: 1) 'SRR11102064' was downloaded successfully
+Read 21544601 spots for SRR11102064
+Written 21544601 spots for SRR11102064
+
+2023-04-29T03:52:37 prefetch.2.10.9: 1) Downloading 'SRR11102065'...
+2023-04-29T03:52:37 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T03:54:37 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T03:54:55 prefetch.2.10.9:  'SRR11102065' is valid
+2023-04-29T03:54:55 prefetch.2.10.9: 1) 'SRR11102065' was downloaded successfully
+Read 21594433 spots for SRR11102065
+Written 21594433 spots for SRR11102065
+
+2023-04-29T04:05:11 prefetch.2.10.9: 1) Downloading 'SRR11102066'...
+2023-04-29T04:05:11 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T04:07:29 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T04:07:46 prefetch.2.10.9:  'SRR11102066' is valid
+2023-04-29T04:07:46 prefetch.2.10.9: 1) 'SRR11102066' was downloaded successfully
+Read 24460353 spots for SRR11102066
+Written 24460353 spots for SRR11102066
+
+2023-04-29T04:13:03 prefetch.2.10.9: 1) Downloading 'SRR11102067'...
+2023-04-29T04:13:03 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T04:14:34 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T04:14:40 prefetch.2.10.9:  'SRR11102067' is valid
+2023-04-29T04:14:40 prefetch.2.10.9: 1) 'SRR11102067' was downloaded successfully
+Read 22887596 spots for SRR11102067
+Written 22887596 spots for SRR11102067
+
+2023-04-29T04:17:56 prefetch.2.10.9: 1) Downloading 'SRR11102068'...
+2023-04-29T04:17:56 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T04:19:12 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T04:19:35 prefetch.2.10.9:  'SRR11102068' is valid
+2023-04-29T04:19:35 prefetch.2.10.9: 1) 'SRR11102068' was downloaded successfully
+Read 21612053 spots for SRR11102068
+Written 21612053 spots for SRR11102068
+
+2023-04-29T04:29:40 prefetch.2.10.9: 1) Downloading 'SRR11102069'...
+2023-04-29T04:29:40 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T04:32:02 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T04:32:30 prefetch.2.10.9:  'SRR11102069' is valid
+2023-04-29T04:32:30 prefetch.2.10.9: 1) 'SRR11102069' was downloaded successfully
+Read 23032460 spots for SRR11102069
+Written 23032460 spots for SRR11102069
+
+2023-04-29T04:36:47 prefetch.2.10.9: 1) Downloading 'SRR11102070'...
+2023-04-29T04:36:47 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T04:38:30 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T04:38:35 prefetch.2.10.9:  'SRR11102070' is valid
+2023-04-29T04:38:35 prefetch.2.10.9: 1) 'SRR11102070' was downloaded successfully
+Read 22638079 spots for SRR11102070
+Written 22638079 spots for SRR11102070
+
+2023-04-29T04:42:22 prefetch.2.10.9: 1) Downloading 'SRR11102071'...
+2023-04-29T04:42:22 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T04:44:16 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T04:44:23 prefetch.2.10.9:  'SRR11102071' is valid
+2023-04-29T04:44:23 prefetch.2.10.9: 1) 'SRR11102071' was downloaded successfully
+Read 21878176 spots for SRR11102071
+Written 21878176 spots for SRR11102071
+
+2023-04-29T04:50:10 prefetch.2.10.9: 1) Downloading 'SRR11102072'...
+2023-04-29T04:50:10 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T04:51:43 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T04:51:53 prefetch.2.10.9:  'SRR11102072' is valid
+2023-04-29T04:51:53 prefetch.2.10.9: 1) 'SRR11102072' was downloaded successfully
+Read 21883507 spots for SRR11102072
+Written 21883507 spots for SRR11102072
+
+2023-04-29T04:58:19 prefetch.2.10.9: 1) Downloading 'SRR11102073'...
+2023-04-29T04:58:19 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T04:59:33 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T04:59:39 prefetch.2.10.9:  'SRR11102073' is valid
+2023-04-29T04:59:39 prefetch.2.10.9: 1) 'SRR11102073' was downloaded successfully
+Read 22092063 spots for SRR11102073
+Written 22092063 spots for SRR11102073
+
+2023-04-29T05:03:42 prefetch.2.10.9: 1) Downloading 'SRR11102074'...
+2023-04-29T05:03:42 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T05:05:43 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T05:05:49 prefetch.2.10.9:  'SRR11102074' is valid
+2023-04-29T05:05:49 prefetch.2.10.9: 1) 'SRR11102074' was downloaded successfully
+Read 22352186 spots for SRR11102074
+Written 22352186 spots for SRR11102074
+
+2023-04-29T05:10:04 prefetch.2.10.9: 1) Downloading 'SRR11102075'...
+2023-04-29T05:10:04 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T05:11:17 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T05:11:24 prefetch.2.10.9:  'SRR11102075' is valid
+2023-04-29T05:11:24 prefetch.2.10.9: 1) 'SRR11102075' was downloaded successfully
+Read 21286659 spots for SRR11102075
+Written 21286659 spots for SRR11102075
+
+2023-04-29T05:15:22 prefetch.2.10.9: 1) Downloading 'SRR11102076'...
+2023-04-29T05:15:22 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T05:17:41 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T05:17:56 prefetch.2.10.9:  'SRR11102076' is valid
+2023-04-29T05:17:56 prefetch.2.10.9: 1) 'SRR11102076' was downloaded successfully
+Read 24488152 spots for SRR11102076
+Written 24488152 spots for SRR11102076
+
+2023-04-29T05:31:28 prefetch.2.10.9: 1) Downloading 'SRR11102077'...
+2023-04-29T05:31:28 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T05:33:22 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T05:33:36 prefetch.2.10.9:  'SRR11102077' is valid
+2023-04-29T05:33:36 prefetch.2.10.9: 1) 'SRR11102077' was downloaded successfully
+Read 22568619 spots for SRR11102077
+Written 22568619 spots for SRR11102077
+
+2023-04-29T05:42:17 prefetch.2.10.9: 1) Downloading 'SRR11102078'...
+2023-04-29T05:42:17 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T05:43:49 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T05:43:56 prefetch.2.10.9:  'SRR11102078' is valid
+2023-04-29T05:43:56 prefetch.2.10.9: 1) 'SRR11102078' was downloaded successfully
+Read 23478928 spots for SRR11102078
+Written 23478928 spots for SRR11102078
+
+2023-04-29T05:48:06 prefetch.2.10.9: 1) Downloading 'SRR11102079'...
+2023-04-29T05:48:06 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T05:50:00 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T05:50:23 prefetch.2.10.9:  'SRR11102079' is valid
+2023-04-29T05:50:23 prefetch.2.10.9: 1) 'SRR11102079' was downloaded successfully
+Read 22289071 spots for SRR11102079
+Written 22289071 spots for SRR11102079
+
+2023-04-29T06:03:31 prefetch.2.10.9: 1) Downloading 'SRR11102080'...
+2023-04-29T06:03:31 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T06:05:26 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T06:05:41 prefetch.2.10.9:  'SRR11102080' is valid
+2023-04-29T06:05:41 prefetch.2.10.9: 1) 'SRR11102080' was downloaded successfully
+Read 23071957 spots for SRR11102080
+Written 23071957 spots for SRR11102080
+
+2023-04-29T06:15:36 prefetch.2.10.9: 1) Downloading 'SRR11102081'...
+2023-04-29T06:15:36 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T06:17:05 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T06:17:10 prefetch.2.10.9:  'SRR11102081' is valid
+2023-04-29T06:17:10 prefetch.2.10.9: 1) 'SRR11102081' was downloaded successfully
+Read 22073807 spots for SRR11102081
+Written 22073807 spots for SRR11102081
+
+2023-04-29T06:20:25 prefetch.2.10.9: 1) Downloading 'SRR11102082'...
+2023-04-29T06:20:25 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T06:22:09 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T06:22:15 prefetch.2.10.9:  'SRR11102082' is valid
+2023-04-29T06:22:15 prefetch.2.10.9: 1) 'SRR11102082' was downloaded successfully
+Read 23320149 spots for SRR11102082
+Written 23320149 spots for SRR11102082
+
+2023-04-29T06:25:46 prefetch.2.10.9: 1) Downloading 'SRR11102083'...
+2023-04-29T06:25:46 prefetch.2.10.9:  Downloading via HTTPS...
+2023-04-29T06:26:59 prefetch.2.10.9:  HTTPS download succeed
+2023-04-29T06:27:23 prefetch.2.10.9:  'SRR11102083' is valid
+2023-04-29T06:27:23 prefetch.2.10.9: 1) 'SRR11102083' was downloaded successfully
+Read 21648112 spots for SRR11102083
+Written 21648112 spots for SRR11102083
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Started analysis of SRR11102034_1.fastq
+Approx 5% complete for SRR11102034_1.fastq
+Approx 10% complete for SRR11102034_1.fastq
+Approx 15% complete for SRR11102034_1.fastq
+Approx 20% complete for SRR11102034_1.fastq
+Approx 25% complete for SRR11102034_1.fastq
+Approx 30% complete for SRR11102034_1.fastq
+Approx 35% complete for SRR11102034_1.fastq
+Approx 40% complete for SRR11102034_1.fastq
+Approx 45% complete for SRR11102034_1.fastq
+Approx 50% complete for SRR11102034_1.fastq
+Approx 55% complete for SRR11102034_1.fastq
+Approx 60% complete for SRR11102034_1.fastq
+Approx 65% complete for SRR11102034_1.fastq
+Approx 70% complete for SRR11102034_1.fastq
+Approx 75% complete for SRR11102034_1.fastq
+Approx 80% complete for SRR11102034_1.fastq
+Approx 85% complete for SRR11102034_1.fastq
+Approx 90% complete for SRR11102034_1.fastq
+Approx 95% complete for SRR11102034_1.fastq
+Approx 100% complete for SRR11102034_1.fastq
+Analysis complete for SRR11102034_1.fastq
+Started analysis of SRR11102034_2.fastq
+Approx 5% complete for SRR11102034_2.fastq
+Approx 10% complete for SRR11102034_2.fastq
+Approx 15% complete for SRR11102034_2.fastq
+Approx 20% complete for SRR11102034_2.fastq
+Approx 25% complete for SRR11102034_2.fastq
+Approx 30% complete for SRR11102034_2.fastq
+Approx 35% complete for SRR11102034_2.fastq
+Approx 40% complete for SRR11102034_2.fastq
+Approx 45% complete for SRR11102034_2.fastq
+Approx 50% complete for SRR11102034_2.fastq
+Approx 55% complete for SRR11102034_2.fastq
+Approx 60% complete for SRR11102034_2.fastq
+Approx 65% complete for SRR11102034_2.fastq
+Approx 70% complete for SRR11102034_2.fastq
+Approx 75% complete for SRR11102034_2.fastq
+Approx 80% complete for SRR11102034_2.fastq
+Approx 85% complete for SRR11102034_2.fastq
+Approx 90% complete for SRR11102034_2.fastq
+Approx 95% complete for SRR11102034_2.fastq
+Approx 100% complete for SRR11102034_2.fastq
+Analysis complete for SRR11102034_2.fastq
+Started analysis of SRR11102035_1.fastq
+Approx 5% complete for SRR11102035_1.fastq
+Approx 10% complete for SRR11102035_1.fastq
+Approx 15% complete for SRR11102035_1.fastq
+Approx 20% complete for SRR11102035_1.fastq
+Approx 25% complete for SRR11102035_1.fastq
+Approx 30% complete for SRR11102035_1.fastq
+Approx 35% complete for SRR11102035_1.fastq
+Approx 40% complete for SRR11102035_1.fastq
+Approx 45% complete for SRR11102035_1.fastq
+Approx 50% complete for SRR11102035_1.fastq
+Approx 55% complete for SRR11102035_1.fastq
+Approx 60% complete for SRR11102035_1.fastq
+Approx 65% complete for SRR11102035_1.fastq
+Approx 70% complete for SRR11102035_1.fastq
+Approx 75% complete for SRR11102035_1.fastq
+Approx 80% complete for SRR11102035_1.fastq
+Approx 85% complete for SRR11102035_1.fastq
+Approx 90% complete for SRR11102035_1.fastq
+Approx 95% complete for SRR11102035_1.fastq
+Approx 100% complete for SRR11102035_1.fastq
+Analysis complete for SRR11102035_1.fastq
+Started analysis of SRR11102035_2.fastq
+Approx 5% complete for SRR11102035_2.fastq
+Approx 10% complete for SRR11102035_2.fastq
+Approx 15% complete for SRR11102035_2.fastq
+Approx 20% complete for SRR11102035_2.fastq
+Approx 25% complete for SRR11102035_2.fastq
+Approx 30% complete for SRR11102035_2.fastq
+Approx 35% complete for SRR11102035_2.fastq
+Approx 40% complete for SRR11102035_2.fastq
+Approx 45% complete for SRR11102035_2.fastq
+Approx 50% complete for SRR11102035_2.fastq
+Approx 55% complete for SRR11102035_2.fastq
+Approx 60% complete for SRR11102035_2.fastq
+Approx 65% complete for SRR11102035_2.fastq
+Approx 70% complete for SRR11102035_2.fastq
+Approx 75% complete for SRR11102035_2.fastq
+Approx 80% complete for SRR11102035_2.fastq
+Approx 85% complete for SRR11102035_2.fastq
+Approx 90% complete for SRR11102035_2.fastq
+Approx 95% complete for SRR11102035_2.fastq
+Approx 100% complete for SRR11102035_2.fastq
+Analysis complete for SRR11102035_2.fastq
+Started analysis of SRR11102036_1.fastq
+Approx 5% complete for SRR11102036_1.fastq
+Approx 10% complete for SRR11102036_1.fastq
+Approx 15% complete for SRR11102036_1.fastq
+Approx 20% complete for SRR11102036_1.fastq
+Approx 25% complete for SRR11102036_1.fastq
+Approx 30% complete for SRR11102036_1.fastq
+Approx 35% complete for SRR11102036_1.fastq
+Approx 40% complete for SRR11102036_1.fastq
+Approx 45% complete for SRR11102036_1.fastq
+Approx 50% complete for SRR11102036_1.fastq
+Approx 55% complete for SRR11102036_1.fastq
+Approx 60% complete for SRR11102036_1.fastq
+Approx 65% complete for SRR11102036_1.fastq
+Approx 70% complete for SRR11102036_1.fastq
+Approx 75% complete for SRR11102036_1.fastq
+Approx 80% complete for SRR11102036_1.fastq
+Approx 85% complete for SRR11102036_1.fastq
+Approx 90% complete for SRR11102036_1.fastq
+Approx 95% complete for SRR11102036_1.fastq
+Approx 100% complete for SRR11102036_1.fastq
+Analysis complete for SRR11102036_1.fastq
+Started analysis of SRR11102036_2.fastq
+Approx 5% complete for SRR11102036_2.fastq
+Approx 10% complete for SRR11102036_2.fastq
+Approx 15% complete for SRR11102036_2.fastq
+Approx 20% complete for SRR11102036_2.fastq
+Approx 25% complete for SRR11102036_2.fastq
+Approx 30% complete for SRR11102036_2.fastq
+Approx 35% complete for SRR11102036_2.fastq
+Approx 40% complete for SRR11102036_2.fastq
+Approx 45% complete for SRR11102036_2.fastq
+Approx 50% complete for SRR11102036_2.fastq
+Approx 55% complete for SRR11102036_2.fastq
+Approx 60% complete for SRR11102036_2.fastq
+Approx 65% complete for SRR11102036_2.fastq
+Approx 70% complete for SRR11102036_2.fastq
+Approx 75% complete for SRR11102036_2.fastq
+Approx 80% complete for SRR11102036_2.fastq
+Approx 85% complete for SRR11102036_2.fastq
+Approx 90% complete for SRR11102036_2.fastq
+Approx 95% complete for SRR11102036_2.fastq
+Approx 100% complete for SRR11102036_2.fastq
+Analysis complete for SRR11102036_2.fastq
+Started analysis of SRR11102037_1.fastq
+Approx 5% complete for SRR11102037_1.fastq
+Approx 10% complete for SRR11102037_1.fastq
+Approx 15% complete for SRR11102037_1.fastq
+Approx 20% complete for SRR11102037_1.fastq
+Approx 25% complete for SRR11102037_1.fastq
+Approx 30% complete for SRR11102037_1.fastq
+Approx 35% complete for SRR11102037_1.fastq
+Approx 40% complete for SRR11102037_1.fastq
+Approx 45% complete for SRR11102037_1.fastq
+Approx 50% complete for SRR11102037_1.fastq
+Approx 55% complete for SRR11102037_1.fastq
+Approx 60% complete for SRR11102037_1.fastq
+Approx 65% complete for SRR11102037_1.fastq
+Approx 70% complete for SRR11102037_1.fastq
+Approx 75% complete for SRR11102037_1.fastq
+Approx 80% complete for SRR11102037_1.fastq
+Approx 85% complete for SRR11102037_1.fastq
+Approx 90% complete for SRR11102037_1.fastq
+Approx 95% complete for SRR11102037_1.fastq
+Approx 100% complete for SRR11102037_1.fastq
+Analysis complete for SRR11102037_1.fastq
+Started analysis of SRR11102037_2.fastq
+Approx 5% complete for SRR11102037_2.fastq
+Approx 10% complete for SRR11102037_2.fastq
+Approx 15% complete for SRR11102037_2.fastq
+Approx 20% complete for SRR11102037_2.fastq
+Approx 25% complete for SRR11102037_2.fastq
+Approx 30% complete for SRR11102037_2.fastq
+Approx 35% complete for SRR11102037_2.fastq
+Approx 40% complete for SRR11102037_2.fastq
+Approx 45% complete for SRR11102037_2.fastq
+Approx 50% complete for SRR11102037_2.fastq
+Approx 55% complete for SRR11102037_2.fastq
+Approx 60% complete for SRR11102037_2.fastq
+Approx 65% complete for SRR11102037_2.fastq
+Approx 70% complete for SRR11102037_2.fastq
+Approx 75% complete for SRR11102037_2.fastq
+Approx 80% complete for SRR11102037_2.fastq
+Approx 85% complete for SRR11102037_2.fastq
+Approx 90% complete for SRR11102037_2.fastq
+Approx 95% complete for SRR11102037_2.fastq
+Approx 100% complete for SRR11102037_2.fastq
+Analysis complete for SRR11102037_2.fastq
+Started analysis of SRR11102038_1.fastq
+Approx 5% complete for SRR11102038_1.fastq
+Approx 10% complete for SRR11102038_1.fastq
+Approx 15% complete for SRR11102038_1.fastq
+Approx 20% complete for SRR11102038_1.fastq
+Approx 25% complete for SRR11102038_1.fastq
+Approx 30% complete for SRR11102038_1.fastq
+Approx 35% complete for SRR11102038_1.fastq
+Approx 40% complete for SRR11102038_1.fastq
+Approx 45% complete for SRR11102038_1.fastq
+Approx 50% complete for SRR11102038_1.fastq
+Approx 55% complete for SRR11102038_1.fastq
+Approx 60% complete for SRR11102038_1.fastq
+Approx 65% complete for SRR11102038_1.fastq
+Approx 70% complete for SRR11102038_1.fastq
+Approx 75% complete for SRR11102038_1.fastq
+Approx 80% complete for SRR11102038_1.fastq
+Approx 85% complete for SRR11102038_1.fastq
+Approx 90% complete for SRR11102038_1.fastq
+Approx 95% complete for SRR11102038_1.fastq
+Approx 100% complete for SRR11102038_1.fastq
+Analysis complete for SRR11102038_1.fastq
+Started analysis of SRR11102038_2.fastq
+Approx 5% complete for SRR11102038_2.fastq
+Approx 10% complete for SRR11102038_2.fastq
+Approx 15% complete for SRR11102038_2.fastq
+Approx 20% complete for SRR11102038_2.fastq
+Approx 25% complete for SRR11102038_2.fastq
+Approx 30% complete for SRR11102038_2.fastq
+Approx 35% complete for SRR11102038_2.fastq
+Approx 40% complete for SRR11102038_2.fastq
+Approx 45% complete for SRR11102038_2.fastq
+Approx 50% complete for SRR11102038_2.fastq
+Approx 55% complete for SRR11102038_2.fastq
+Approx 60% complete for SRR11102038_2.fastq
+Approx 65% complete for SRR11102038_2.fastq
+Approx 70% complete for SRR11102038_2.fastq
+Approx 75% complete for SRR11102038_2.fastq
+Approx 80% complete for SRR11102038_2.fastq
+Approx 85% complete for SRR11102038_2.fastq
+Approx 90% complete for SRR11102038_2.fastq
+Approx 95% complete for SRR11102038_2.fastq
+Approx 100% complete for SRR11102038_2.fastq
+Analysis complete for SRR11102038_2.fastq
+Started analysis of SRR11102039_1.fastq
+Approx 5% complete for SRR11102039_1.fastq
+Approx 10% complete for SRR11102039_1.fastq
+Approx 15% complete for SRR11102039_1.fastq
+Approx 20% complete for SRR11102039_1.fastq
+Approx 25% complete for SRR11102039_1.fastq
+Approx 30% complete for SRR11102039_1.fastq
+Approx 35% complete for SRR11102039_1.fastq
+Approx 40% complete for SRR11102039_1.fastq
+Approx 45% complete for SRR11102039_1.fastq
+Approx 50% complete for SRR11102039_1.fastq
+Approx 55% complete for SRR11102039_1.fastq
+Approx 60% complete for SRR11102039_1.fastq
+Approx 65% complete for SRR11102039_1.fastq
+Approx 70% complete for SRR11102039_1.fastq
+Approx 75% complete for SRR11102039_1.fastq
+Approx 80% complete for SRR11102039_1.fastq
+Approx 85% complete for SRR11102039_1.fastq
+Approx 90% complete for SRR11102039_1.fastq
+Approx 95% complete for SRR11102039_1.fastq
+Approx 100% complete for SRR11102039_1.fastq
+Analysis complete for SRR11102039_1.fastq
+Started analysis of SRR11102039_2.fastq
+Approx 5% complete for SRR11102039_2.fastq
+Approx 10% complete for SRR11102039_2.fastq
+Approx 15% complete for SRR11102039_2.fastq
+Approx 20% complete for SRR11102039_2.fastq
+Approx 25% complete for SRR11102039_2.fastq
+Approx 30% complete for SRR11102039_2.fastq
+Approx 35% complete for SRR11102039_2.fastq
+Approx 40% complete for SRR11102039_2.fastq
+Approx 45% complete for SRR11102039_2.fastq
+Approx 50% complete for SRR11102039_2.fastq
+Approx 55% complete for SRR11102039_2.fastq
+Approx 60% complete for SRR11102039_2.fastq
+Approx 65% complete for SRR11102039_2.fastq
+Approx 70% complete for SRR11102039_2.fastq
+Approx 75% complete for SRR11102039_2.fastq
+Approx 80% complete for SRR11102039_2.fastq
+Approx 85% complete for SRR11102039_2.fastq
+Approx 90% complete for SRR11102039_2.fastq
+Approx 95% complete for SRR11102039_2.fastq
+Approx 100% complete for SRR11102039_2.fastq
+Analysis complete for SRR11102039_2.fastq
+Started analysis of SRR11102040_1.fastq
+Approx 5% complete for SRR11102040_1.fastq
+Approx 10% complete for SRR11102040_1.fastq
+Approx 15% complete for SRR11102040_1.fastq
+Approx 20% complete for SRR11102040_1.fastq
+Approx 25% complete for SRR11102040_1.fastq
+Approx 30% complete for SRR11102040_1.fastq
+Approx 35% complete for SRR11102040_1.fastq
+Approx 40% complete for SRR11102040_1.fastq
+Approx 45% complete for SRR11102040_1.fastq
+Approx 50% complete for SRR11102040_1.fastq
+Approx 55% complete for SRR11102040_1.fastq
+Approx 60% complete for SRR11102040_1.fastq
+Approx 65% complete for SRR11102040_1.fastq
+Approx 70% complete for SRR11102040_1.fastq
+Approx 75% complete for SRR11102040_1.fastq
+Approx 80% complete for SRR11102040_1.fastq
+Approx 85% complete for SRR11102040_1.fastq
+Approx 90% complete for SRR11102040_1.fastq
+Approx 95% complete for SRR11102040_1.fastq
+Approx 100% complete for SRR11102040_1.fastq
+Analysis complete for SRR11102040_1.fastq
+Started analysis of SRR11102040_2.fastq
+Approx 5% complete for SRR11102040_2.fastq
+Approx 10% complete for SRR11102040_2.fastq
+Approx 15% complete for SRR11102040_2.fastq
+Approx 20% complete for SRR11102040_2.fastq
+Approx 25% complete for SRR11102040_2.fastq
+Approx 30% complete for SRR11102040_2.fastq
+Approx 35% complete for SRR11102040_2.fastq
+Approx 40% complete for SRR11102040_2.fastq
+Approx 45% complete for SRR11102040_2.fastq
+Approx 50% complete for SRR11102040_2.fastq
+Approx 55% complete for SRR11102040_2.fastq
+Approx 60% complete for SRR11102040_2.fastq
+Approx 65% complete for SRR11102040_2.fastq
+Approx 70% complete for SRR11102040_2.fastq
+Approx 75% complete for SRR11102040_2.fastq
+Approx 80% complete for SRR11102040_2.fastq
+Approx 85% complete for SRR11102040_2.fastq
+Approx 90% complete for SRR11102040_2.fastq
+Approx 95% complete for SRR11102040_2.fastq
+Approx 100% complete for SRR11102040_2.fastq
+Analysis complete for SRR11102040_2.fastq
+Started analysis of SRR11102041_1.fastq
+Approx 5% complete for SRR11102041_1.fastq
+Approx 10% complete for SRR11102041_1.fastq
+Approx 15% complete for SRR11102041_1.fastq
+Approx 20% complete for SRR11102041_1.fastq
+Approx 25% complete for SRR11102041_1.fastq
+Approx 30% complete for SRR11102041_1.fastq
+Approx 35% complete for SRR11102041_1.fastq
+Approx 40% complete for SRR11102041_1.fastq
+Approx 45% complete for SRR11102041_1.fastq
+Approx 50% complete for SRR11102041_1.fastq
+Approx 55% complete for SRR11102041_1.fastq
+Approx 60% complete for SRR11102041_1.fastq
+Approx 65% complete for SRR11102041_1.fastq
+Approx 70% complete for SRR11102041_1.fastq
+Approx 75% complete for SRR11102041_1.fastq
+Approx 80% complete for SRR11102041_1.fastq
+Approx 85% complete for SRR11102041_1.fastq
+Approx 90% complete for SRR11102041_1.fastq
+Approx 95% complete for SRR11102041_1.fastq
+Approx 100% complete for SRR11102041_1.fastq
+Analysis complete for SRR11102041_1.fastq
+Started analysis of SRR11102041_2.fastq
+Approx 5% complete for SRR11102041_2.fastq
+Approx 10% complete for SRR11102041_2.fastq
+Approx 15% complete for SRR11102041_2.fastq
+Approx 20% complete for SRR11102041_2.fastq
+Approx 25% complete for SRR11102041_2.fastq
+Approx 30% complete for SRR11102041_2.fastq
+Approx 35% complete for SRR11102041_2.fastq
+Approx 40% complete for SRR11102041_2.fastq
+Approx 45% complete for SRR11102041_2.fastq
+Approx 50% complete for SRR11102041_2.fastq
+Approx 55% complete for SRR11102041_2.fastq
+Approx 60% complete for SRR11102041_2.fastq
+Approx 65% complete for SRR11102041_2.fastq
+Approx 70% complete for SRR11102041_2.fastq
+Approx 75% complete for SRR11102041_2.fastq
+Approx 80% complete for SRR11102041_2.fastq
+Approx 85% complete for SRR11102041_2.fastq
+Approx 90% complete for SRR11102041_2.fastq
+Approx 95% complete for SRR11102041_2.fastq
+Approx 100% complete for SRR11102041_2.fastq
+Analysis complete for SRR11102041_2.fastq
+Started analysis of SRR11102042_1.fastq
+Approx 5% complete for SRR11102042_1.fastq
+Approx 10% complete for SRR11102042_1.fastq
+Approx 15% complete for SRR11102042_1.fastq
+Approx 20% complete for SRR11102042_1.fastq
+Approx 25% complete for SRR11102042_1.fastq
+Approx 30% complete for SRR11102042_1.fastq
+Approx 35% complete for SRR11102042_1.fastq
+Approx 40% complete for SRR11102042_1.fastq
+Approx 45% complete for SRR11102042_1.fastq
+Approx 50% complete for SRR11102042_1.fastq
+Approx 55% complete for SRR11102042_1.fastq
+Approx 60% complete for SRR11102042_1.fastq
+Approx 65% complete for SRR11102042_1.fastq
+Approx 70% complete for SRR11102042_1.fastq
+Approx 75% complete for SRR11102042_1.fastq
+Approx 80% complete for SRR11102042_1.fastq
+Approx 85% complete for SRR11102042_1.fastq
+Approx 90% complete for SRR11102042_1.fastq
+Approx 95% complete for SRR11102042_1.fastq
+Approx 100% complete for SRR11102042_1.fastq
+Analysis complete for SRR11102042_1.fastq
+Started analysis of SRR11102042_2.fastq
+Approx 5% complete for SRR11102042_2.fastq
+Approx 10% complete for SRR11102042_2.fastq
+Approx 15% complete for SRR11102042_2.fastq
+Approx 20% complete for SRR11102042_2.fastq
+Approx 25% complete for SRR11102042_2.fastq
+Approx 30% complete for SRR11102042_2.fastq
+Approx 35% complete for SRR11102042_2.fastq
+Approx 40% complete for SRR11102042_2.fastq
+Approx 45% complete for SRR11102042_2.fastq
+Approx 50% complete for SRR11102042_2.fastq
+Approx 55% complete for SRR11102042_2.fastq
+Approx 60% complete for SRR11102042_2.fastq
+Approx 65% complete for SRR11102042_2.fastq
+Approx 70% complete for SRR11102042_2.fastq
+Approx 75% complete for SRR11102042_2.fastq
+Approx 80% complete for SRR11102042_2.fastq
+Approx 85% complete for SRR11102042_2.fastq
+Approx 90% complete for SRR11102042_2.fastq
+Approx 95% complete for SRR11102042_2.fastq
+Approx 100% complete for SRR11102042_2.fastq
+Analysis complete for SRR11102042_2.fastq
+Started analysis of SRR11102043_1.fastq
+Approx 5% complete for SRR11102043_1.fastq
+Approx 10% complete for SRR11102043_1.fastq
+Approx 15% complete for SRR11102043_1.fastq
+Approx 20% complete for SRR11102043_1.fastq
+Approx 25% complete for SRR11102043_1.fastq
+Approx 30% complete for SRR11102043_1.fastq
+Approx 35% complete for SRR11102043_1.fastq
+Approx 40% complete for SRR11102043_1.fastq
+Approx 45% complete for SRR11102043_1.fastq
+Approx 50% complete for SRR11102043_1.fastq
+Approx 55% complete for SRR11102043_1.fastq
+Approx 60% complete for SRR11102043_1.fastq
+Approx 65% complete for SRR11102043_1.fastq
+Approx 70% complete for SRR11102043_1.fastq
+Approx 75% complete for SRR11102043_1.fastq
+Approx 80% complete for SRR11102043_1.fastq
+Approx 85% complete for SRR11102043_1.fastq
+Approx 90% complete for SRR11102043_1.fastq
+Approx 95% complete for SRR11102043_1.fastq
+Approx 100% complete for SRR11102043_1.fastq
+Analysis complete for SRR11102043_1.fastq
+Started analysis of SRR11102043_2.fastq
+Approx 5% complete for SRR11102043_2.fastq
+Approx 10% complete for SRR11102043_2.fastq
+Approx 15% complete for SRR11102043_2.fastq
+Approx 20% complete for SRR11102043_2.fastq
+Approx 25% complete for SRR11102043_2.fastq
+Approx 30% complete for SRR11102043_2.fastq
+Approx 35% complete for SRR11102043_2.fastq
+Approx 40% complete for SRR11102043_2.fastq
+Approx 45% complete for SRR11102043_2.fastq
+Approx 50% complete for SRR11102043_2.fastq
+Approx 55% complete for SRR11102043_2.fastq
+Approx 60% complete for SRR11102043_2.fastq
+Approx 65% complete for SRR11102043_2.fastq
+Approx 70% complete for SRR11102043_2.fastq
+Approx 75% complete for SRR11102043_2.fastq
+Approx 80% complete for SRR11102043_2.fastq
+Approx 85% complete for SRR11102043_2.fastq
+Approx 90% complete for SRR11102043_2.fastq
+Approx 95% complete for SRR11102043_2.fastq
+Approx 100% complete for SRR11102043_2.fastq
+Analysis complete for SRR11102043_2.fastq
+Started analysis of SRR11102044_1.fastq
+Approx 5% complete for SRR11102044_1.fastq
+Approx 10% complete for SRR11102044_1.fastq
+Approx 15% complete for SRR11102044_1.fastq
+Approx 20% complete for SRR11102044_1.fastq
+Approx 25% complete for SRR11102044_1.fastq
+Approx 30% complete for SRR11102044_1.fastq
+Approx 35% complete for SRR11102044_1.fastq
+Approx 40% complete for SRR11102044_1.fastq
+Approx 45% complete for SRR11102044_1.fastq
+Approx 50% complete for SRR11102044_1.fastq
+Approx 55% complete for SRR11102044_1.fastq
+Approx 60% complete for SRR11102044_1.fastq
+Approx 65% complete for SRR11102044_1.fastq
+Approx 70% complete for SRR11102044_1.fastq
+Approx 75% complete for SRR11102044_1.fastq
+Approx 80% complete for SRR11102044_1.fastq
+Approx 85% complete for SRR11102044_1.fastq
+Approx 90% complete for SRR11102044_1.fastq
+Approx 95% complete for SRR11102044_1.fastq
+Approx 100% complete for SRR11102044_1.fastq
+Analysis complete for SRR11102044_1.fastq
+Started analysis of SRR11102044_2.fastq
+Approx 5% complete for SRR11102044_2.fastq
+Approx 10% complete for SRR11102044_2.fastq
+Approx 15% complete for SRR11102044_2.fastq
+Approx 20% complete for SRR11102044_2.fastq
+Approx 25% complete for SRR11102044_2.fastq
+Approx 30% complete for SRR11102044_2.fastq
+Approx 35% complete for SRR11102044_2.fastq
+Approx 40% complete for SRR11102044_2.fastq
+Approx 45% complete for SRR11102044_2.fastq
+Approx 50% complete for SRR11102044_2.fastq
+Approx 55% complete for SRR11102044_2.fastq
+Approx 60% complete for SRR11102044_2.fastq
+Approx 65% complete for SRR11102044_2.fastq
+Approx 70% complete for SRR11102044_2.fastq
+Approx 75% complete for SRR11102044_2.fastq
+Approx 80% complete for SRR11102044_2.fastq
+Approx 85% complete for SRR11102044_2.fastq
+Approx 90% complete for SRR11102044_2.fastq
+Approx 95% complete for SRR11102044_2.fastq
+Approx 100% complete for SRR11102044_2.fastq
+Analysis complete for SRR11102044_2.fastq
+Started analysis of SRR11102045_1.fastq
+Approx 5% complete for SRR11102045_1.fastq
+Approx 10% complete for SRR11102045_1.fastq
+Approx 15% complete for SRR11102045_1.fastq
+Approx 20% complete for SRR11102045_1.fastq
+Approx 25% complete for SRR11102045_1.fastq
+Approx 30% complete for SRR11102045_1.fastq
+Approx 35% complete for SRR11102045_1.fastq
+Approx 40% complete for SRR11102045_1.fastq
+Approx 45% complete for SRR11102045_1.fastq
+Approx 50% complete for SRR11102045_1.fastq
+Approx 55% complete for SRR11102045_1.fastq
+Approx 60% complete for SRR11102045_1.fastq
+Approx 65% complete for SRR11102045_1.fastq
+Approx 70% complete for SRR11102045_1.fastq
+Approx 75% complete for SRR11102045_1.fastq
+Approx 80% complete for SRR11102045_1.fastq
+Approx 85% complete for SRR11102045_1.fastq
+Approx 90% complete for SRR11102045_1.fastq
+Approx 95% complete for SRR11102045_1.fastq
+Approx 100% complete for SRR11102045_1.fastq
+Analysis complete for SRR11102045_1.fastq
+Started analysis of SRR11102045_2.fastq
+Approx 5% complete for SRR11102045_2.fastq
+Approx 10% complete for SRR11102045_2.fastq
+Approx 15% complete for SRR11102045_2.fastq
+Approx 20% complete for SRR11102045_2.fastq
+Approx 25% complete for SRR11102045_2.fastq
+Approx 30% complete for SRR11102045_2.fastq
+Approx 35% complete for SRR11102045_2.fastq
+Approx 40% complete for SRR11102045_2.fastq
+Approx 45% complete for SRR11102045_2.fastq
+Approx 50% complete for SRR11102045_2.fastq
+Approx 55% complete for SRR11102045_2.fastq
+Approx 60% complete for SRR11102045_2.fastq
+Approx 65% complete for SRR11102045_2.fastq
+Approx 70% complete for SRR11102045_2.fastq
+Approx 75% complete for SRR11102045_2.fastq
+Approx 80% complete for SRR11102045_2.fastq
+Approx 85% complete for SRR11102045_2.fastq
+Approx 90% complete for SRR11102045_2.fastq
+Approx 95% complete for SRR11102045_2.fastq
+Approx 100% complete for SRR11102045_2.fastq
+Analysis complete for SRR11102045_2.fastq
+Started analysis of SRR11102046_1.fastq
+Approx 5% complete for SRR11102046_1.fastq
+Approx 10% complete for SRR11102046_1.fastq
+Approx 15% complete for SRR11102046_1.fastq
+Approx 20% complete for SRR11102046_1.fastq
+Approx 25% complete for SRR11102046_1.fastq
+Approx 30% complete for SRR11102046_1.fastq
+Approx 35% complete for SRR11102046_1.fastq
+Approx 40% complete for SRR11102046_1.fastq
+Approx 45% complete for SRR11102046_1.fastq
+Approx 50% complete for SRR11102046_1.fastq
+Approx 55% complete for SRR11102046_1.fastq
+Approx 60% complete for SRR11102046_1.fastq
+Approx 65% complete for SRR11102046_1.fastq
+Approx 70% complete for SRR11102046_1.fastq
+Approx 75% complete for SRR11102046_1.fastq
+Approx 80% complete for SRR11102046_1.fastq
+Approx 85% complete for SRR11102046_1.fastq
+Approx 90% complete for SRR11102046_1.fastq
+Approx 95% complete for SRR11102046_1.fastq
+Approx 100% complete for SRR11102046_1.fastq
+Analysis complete for SRR11102046_1.fastq
+Started analysis of SRR11102046_2.fastq
+Approx 5% complete for SRR11102046_2.fastq
+Approx 10% complete for SRR11102046_2.fastq
+Approx 15% complete for SRR11102046_2.fastq
+Approx 20% complete for SRR11102046_2.fastq
+Approx 25% complete for SRR11102046_2.fastq
+Approx 30% complete for SRR11102046_2.fastq
+Approx 35% complete for SRR11102046_2.fastq
+Approx 40% complete for SRR11102046_2.fastq
+Approx 45% complete for SRR11102046_2.fastq
+Approx 50% complete for SRR11102046_2.fastq
+Approx 55% complete for SRR11102046_2.fastq
+Approx 60% complete for SRR11102046_2.fastq
+Approx 65% complete for SRR11102046_2.fastq
+Approx 70% complete for SRR11102046_2.fastq
+Approx 75% complete for SRR11102046_2.fastq
+Approx 80% complete for SRR11102046_2.fastq
+Approx 85% complete for SRR11102046_2.fastq
+Approx 90% complete for SRR11102046_2.fastq
+Approx 95% complete for SRR11102046_2.fastq
+Approx 100% complete for SRR11102046_2.fastq
+Analysis complete for SRR11102046_2.fastq
+Started analysis of SRR11102047_1.fastq
+Approx 5% complete for SRR11102047_1.fastq
+Approx 10% complete for SRR11102047_1.fastq
+Approx 15% complete for SRR11102047_1.fastq
+Approx 20% complete for SRR11102047_1.fastq
+Approx 25% complete for SRR11102047_1.fastq
+Approx 30% complete for SRR11102047_1.fastq
+Approx 35% complete for SRR11102047_1.fastq
+Approx 40% complete for SRR11102047_1.fastq
+Approx 45% complete for SRR11102047_1.fastq
+Approx 50% complete for SRR11102047_1.fastq
+Approx 55% complete for SRR11102047_1.fastq
+Approx 60% complete for SRR11102047_1.fastq
+Approx 65% complete for SRR11102047_1.fastq
+Approx 70% complete for SRR11102047_1.fastq
+Approx 75% complete for SRR11102047_1.fastq
+Approx 80% complete for SRR11102047_1.fastq
+Approx 85% complete for SRR11102047_1.fastq
+Approx 90% complete for SRR11102047_1.fastq
+Approx 95% complete for SRR11102047_1.fastq
+Approx 100% complete for SRR11102047_1.fastq
+Analysis complete for SRR11102047_1.fastq
+Started analysis of SRR11102047_2.fastq
+Approx 5% complete for SRR11102047_2.fastq
+Approx 10% complete for SRR11102047_2.fastq
+Approx 15% complete for SRR11102047_2.fastq
+Approx 20% complete for SRR11102047_2.fastq
+Approx 25% complete for SRR11102047_2.fastq
+Approx 30% complete for SRR11102047_2.fastq
+Approx 35% complete for SRR11102047_2.fastq
+Approx 40% complete for SRR11102047_2.fastq
+Approx 45% complete for SRR11102047_2.fastq
+Approx 50% complete for SRR11102047_2.fastq
+Approx 55% complete for SRR11102047_2.fastq
+Approx 60% complete for SRR11102047_2.fastq
+Approx 65% complete for SRR11102047_2.fastq
+Approx 70% complete for SRR11102047_2.fastq
+Approx 75% complete for SRR11102047_2.fastq
+Approx 80% complete for SRR11102047_2.fastq
+Approx 85% complete for SRR11102047_2.fastq
+Approx 90% complete for SRR11102047_2.fastq
+Approx 95% complete for SRR11102047_2.fastq
+Approx 100% complete for SRR11102047_2.fastq
+Analysis complete for SRR11102047_2.fastq
+Started analysis of SRR11102048_1.fastq
+Approx 5% complete for SRR11102048_1.fastq
+Approx 10% complete for SRR11102048_1.fastq
+Approx 15% complete for SRR11102048_1.fastq
+Approx 20% complete for SRR11102048_1.fastq
+Approx 25% complete for SRR11102048_1.fastq
+Approx 30% complete for SRR11102048_1.fastq
+Approx 35% complete for SRR11102048_1.fastq
+Approx 40% complete for SRR11102048_1.fastq
+Approx 45% complete for SRR11102048_1.fastq
+Approx 50% complete for SRR11102048_1.fastq
+Approx 55% complete for SRR11102048_1.fastq
+Approx 60% complete for SRR11102048_1.fastq
+Approx 65% complete for SRR11102048_1.fastq
+Approx 70% complete for SRR11102048_1.fastq
+Approx 75% complete for SRR11102048_1.fastq
+Approx 80% complete for SRR11102048_1.fastq
+Approx 85% complete for SRR11102048_1.fastq
+Approx 90% complete for SRR11102048_1.fastq
+Approx 95% complete for SRR11102048_1.fastq
+Approx 100% complete for SRR11102048_1.fastq
+Analysis complete for SRR11102048_1.fastq
+Started analysis of SRR11102048_2.fastq
+Approx 5% complete for SRR11102048_2.fastq
+Approx 10% complete for SRR11102048_2.fastq
+Approx 15% complete for SRR11102048_2.fastq
+Approx 20% complete for SRR11102048_2.fastq
+Approx 25% complete for SRR11102048_2.fastq
+Approx 30% complete for SRR11102048_2.fastq
+Approx 35% complete for SRR11102048_2.fastq
+Approx 40% complete for SRR11102048_2.fastq
+Approx 45% complete for SRR11102048_2.fastq
+Approx 50% complete for SRR11102048_2.fastq
+Approx 55% complete for SRR11102048_2.fastq
+Approx 60% complete for SRR11102048_2.fastq
+Approx 65% complete for SRR11102048_2.fastq
+Approx 70% complete for SRR11102048_2.fastq
+Approx 75% complete for SRR11102048_2.fastq
+Approx 80% complete for SRR11102048_2.fastq
+Approx 85% complete for SRR11102048_2.fastq
+Approx 90% complete for SRR11102048_2.fastq
+Approx 95% complete for SRR11102048_2.fastq
+Approx 100% complete for SRR11102048_2.fastq
+Analysis complete for SRR11102048_2.fastq
+Started analysis of SRR11102049_1.fastq
+Approx 5% complete for SRR11102049_1.fastq
+Approx 10% complete for SRR11102049_1.fastq
+Approx 15% complete for SRR11102049_1.fastq
+Approx 20% complete for SRR11102049_1.fastq
+Approx 25% complete for SRR11102049_1.fastq
+Approx 30% complete for SRR11102049_1.fastq
+Approx 35% complete for SRR11102049_1.fastq
+Approx 40% complete for SRR11102049_1.fastq
+Approx 45% complete for SRR11102049_1.fastq
+Approx 50% complete for SRR11102049_1.fastq
+Approx 55% complete for SRR11102049_1.fastq
+Approx 60% complete for SRR11102049_1.fastq
+Approx 65% complete for SRR11102049_1.fastq
+Approx 70% complete for SRR11102049_1.fastq
+Approx 75% complete for SRR11102049_1.fastq
+Approx 80% complete for SRR11102049_1.fastq
+Approx 85% complete for SRR11102049_1.fastq
+Approx 90% complete for SRR11102049_1.fastq
+Approx 95% complete for SRR11102049_1.fastq
+Approx 100% complete for SRR11102049_1.fastq
+Analysis complete for SRR11102049_1.fastq
+Started analysis of SRR11102049_2.fastq
+Approx 5% complete for SRR11102049_2.fastq
+Approx 10% complete for SRR11102049_2.fastq
+Approx 15% complete for SRR11102049_2.fastq
+Approx 20% complete for SRR11102049_2.fastq
+Approx 25% complete for SRR11102049_2.fastq
+Approx 30% complete for SRR11102049_2.fastq
+Approx 35% complete for SRR11102049_2.fastq
+Approx 40% complete for SRR11102049_2.fastq
+Approx 45% complete for SRR11102049_2.fastq
+Approx 50% complete for SRR11102049_2.fastq
+Approx 55% complete for SRR11102049_2.fastq
+Approx 60% complete for SRR11102049_2.fastq
+Approx 65% complete for SRR11102049_2.fastq
+Approx 70% complete for SRR11102049_2.fastq
+Approx 75% complete for SRR11102049_2.fastq
+Approx 80% complete for SRR11102049_2.fastq
+Approx 85% complete for SRR11102049_2.fastq
+Approx 90% complete for SRR11102049_2.fastq
+Approx 95% complete for SRR11102049_2.fastq
+Approx 100% complete for SRR11102049_2.fastq
+Analysis complete for SRR11102049_2.fastq
+Started analysis of SRR11102050_1.fastq
+Approx 5% complete for SRR11102050_1.fastq
+Approx 10% complete for SRR11102050_1.fastq
+Approx 15% complete for SRR11102050_1.fastq
+Approx 20% complete for SRR11102050_1.fastq
+Approx 25% complete for SRR11102050_1.fastq
+Approx 30% complete for SRR11102050_1.fastq
+Approx 35% complete for SRR11102050_1.fastq
+Approx 40% complete for SRR11102050_1.fastq
+Approx 45% complete for SRR11102050_1.fastq
+Approx 50% complete for SRR11102050_1.fastq
+Approx 55% complete for SRR11102050_1.fastq
+Approx 60% complete for SRR11102050_1.fastq
+Approx 65% complete for SRR11102050_1.fastq
+Approx 70% complete for SRR11102050_1.fastq
+Approx 75% complete for SRR11102050_1.fastq
+Approx 80% complete for SRR11102050_1.fastq
+Approx 85% complete for SRR11102050_1.fastq
+Approx 90% complete for SRR11102050_1.fastq
+Approx 95% complete for SRR11102050_1.fastq
+Approx 100% complete for SRR11102050_1.fastq
+Analysis complete for SRR11102050_1.fastq
+Started analysis of SRR11102050_2.fastq
+Approx 5% complete for SRR11102050_2.fastq
+Approx 10% complete for SRR11102050_2.fastq
+Approx 15% complete for SRR11102050_2.fastq
+Approx 20% complete for SRR11102050_2.fastq
+Approx 25% complete for SRR11102050_2.fastq
+Approx 30% complete for SRR11102050_2.fastq
+Approx 35% complete for SRR11102050_2.fastq
+Approx 40% complete for SRR11102050_2.fastq
+Approx 45% complete for SRR11102050_2.fastq
+Approx 50% complete for SRR11102050_2.fastq
+Approx 55% complete for SRR11102050_2.fastq
+Approx 60% complete for SRR11102050_2.fastq
+Approx 65% complete for SRR11102050_2.fastq
+Approx 70% complete for SRR11102050_2.fastq
+Approx 75% complete for SRR11102050_2.fastq
+Approx 80% complete for SRR11102050_2.fastq
+Approx 85% complete for SRR11102050_2.fastq
+Approx 90% complete for SRR11102050_2.fastq
+Approx 95% complete for SRR11102050_2.fastq
+Approx 100% complete for SRR11102050_2.fastq
+Analysis complete for SRR11102050_2.fastq
+Started analysis of SRR11102051_1.fastq
+Approx 5% complete for SRR11102051_1.fastq
+Approx 10% complete for SRR11102051_1.fastq
+Approx 15% complete for SRR11102051_1.fastq
+Approx 20% complete for SRR11102051_1.fastq
+Approx 25% complete for SRR11102051_1.fastq
+Approx 30% complete for SRR11102051_1.fastq
+Approx 35% complete for SRR11102051_1.fastq
+Approx 40% complete for SRR11102051_1.fastq
+Approx 45% complete for SRR11102051_1.fastq
+Approx 50% complete for SRR11102051_1.fastq
+Approx 55% complete for SRR11102051_1.fastq
+Approx 60% complete for SRR11102051_1.fastq
+Approx 65% complete for SRR11102051_1.fastq
+Approx 70% complete for SRR11102051_1.fastq
+Approx 75% complete for SRR11102051_1.fastq
+Approx 80% complete for SRR11102051_1.fastq
+Approx 85% complete for SRR11102051_1.fastq
+Approx 90% complete for SRR11102051_1.fastq
+Approx 95% complete for SRR11102051_1.fastq
+Approx 100% complete for SRR11102051_1.fastq
+Analysis complete for SRR11102051_1.fastq
+Started analysis of SRR11102051_2.fastq
+Approx 5% complete for SRR11102051_2.fastq
+Approx 10% complete for SRR11102051_2.fastq
+Approx 15% complete for SRR11102051_2.fastq
+Approx 20% complete for SRR11102051_2.fastq
+Approx 25% complete for SRR11102051_2.fastq
+Approx 30% complete for SRR11102051_2.fastq
+Approx 35% complete for SRR11102051_2.fastq
+Approx 40% complete for SRR11102051_2.fastq
+Approx 45% complete for SRR11102051_2.fastq
+Approx 50% complete for SRR11102051_2.fastq
+Approx 55% complete for SRR11102051_2.fastq
+Approx 60% complete for SRR11102051_2.fastq
+Approx 65% complete for SRR11102051_2.fastq
+Approx 70% complete for SRR11102051_2.fastq
+Approx 75% complete for SRR11102051_2.fastq
+Approx 80% complete for SRR11102051_2.fastq
+Approx 85% complete for SRR11102051_2.fastq
+Approx 90% complete for SRR11102051_2.fastq
+Approx 95% complete for SRR11102051_2.fastq
+Approx 100% complete for SRR11102051_2.fastq
+Analysis complete for SRR11102051_2.fastq
+Started analysis of SRR11102052_1.fastq
+Approx 5% complete for SRR11102052_1.fastq
+Approx 10% complete for SRR11102052_1.fastq
+Approx 15% complete for SRR11102052_1.fastq
+Approx 20% complete for SRR11102052_1.fastq
+Approx 25% complete for SRR11102052_1.fastq
+Approx 30% complete for SRR11102052_1.fastq
+Approx 35% complete for SRR11102052_1.fastq
+Approx 40% complete for SRR11102052_1.fastq
+Approx 45% complete for SRR11102052_1.fastq
+Approx 50% complete for SRR11102052_1.fastq
+Approx 55% complete for SRR11102052_1.fastq
+Approx 60% complete for SRR11102052_1.fastq
+Approx 65% complete for SRR11102052_1.fastq
+Approx 70% complete for SRR11102052_1.fastq
+Approx 75% complete for SRR11102052_1.fastq
+Approx 80% complete for SRR11102052_1.fastq
+Approx 85% complete for SRR11102052_1.fastq
+Approx 90% complete for SRR11102052_1.fastq
+Approx 95% complete for SRR11102052_1.fastq
+Approx 100% complete for SRR11102052_1.fastq
+Analysis complete for SRR11102052_1.fastq
+Started analysis of SRR11102052_2.fastq
+slurmstepd: error: *** JOB 1090433 ON dmc78 CANCELLED AT 2023-04-29T06:36:27 DUE TO TIME LIMIT ***

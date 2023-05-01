@@ -1,0 +1,120 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: 3_30s.sh
+  The time limit is 360:00:00 HH:MM:SS.
+  The target directory is: /home/aubclsb0323/FunGen23_Age
+  The working directory is:  /scratch-local/aubclsb0323.3_30s.1090606
+  The memory limit is: 60gb
+  The job will start running after: 2023-04-29T20:34:21
+  Job Name: 3_30s
+  Virtual queue: large
+  QOS: --qos=large
+  Constraints: --constraint=dmc
+  Using  6  cores on master node  dmc6
+  Node list:  dmc6
+  Nodes:  dmc6 dmc6 dmc6 dmc6 dmc6 dmc6
+  Command typed:
+/apps/scripts/run_script 3_30s.sh     
+  Queue submit command:
+sbatch --qos=large -J 3_30s --begin=2023-04-29T20:34:21 --requeue --mail-user=twm0009@auburn.edu -o 3_30s.o1090606 -t 360:00:00 -N 1-1 -n 6 --mem-per-cpu=10000mb --constraint=dmc 
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffcompare"
+   Try: "module spider gffcompare" to see how to load the module(s).
+
+
+
+
+Lmod is automatically replacing "anaconda/2-2019.10" with "python/2.7.1".
+
+
+The following have been reloaded with a version change:
+  1) gcc/7.3.0 => gcc/4.5.2
+
+
+The following have been reloaded with a version change:
+  1) gcc/4.5.2 => gcc/9.3.0
+
+
+The following have been reloaded with a version change:
+  1) gcc/9.3.0 => gcc/4.5.2     2) samtools/1.13 => samtools/0.1.19
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffread"
+   Try: "module spider gffread" to see how to load the module(s).
+
+
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "gffcompare"
+   Try: "module spider gffcompare" to see how to load the module(s).
+
+
+
++ MyID=aubclsb0323
++ WD=/scratch/aubclsb0323/FinalProject
++ CLEAND=/scratch/aubclsb0323/FinalProject/CleanData2
++ REFD=/scratch/aubclsb0323/FinalProject/GRCm39
++ MAPD=/scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ COUNTSD=/scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ RESULTSD=/home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ REF=GRCm39
++ mkdir -p /scratch/aubclsb0323/FinalProject/GRCm39
++ mkdir -p /scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ mkdir -p /scratch/aubclsb0323/FinalProject/Counts_StringTie_6
++ mkdir -p /home/aubclsb0323/FunGen23_Age/Counts_H_S_6
++ mkdir -p /scratch/aubclsb0323/FinalProject/CleanData2
++ cd /scratch/aubclsb0323/FinalProject/GRCm39
++ extract_splice_sites.py GRCm39.gtf
++ extract_exons.py GRCm39.gtf
++ hisat2-build --ss GRCm39.ss --exon GRCm39.exon GRCm39.fa GRCm39
+Settings:
+  Output files: "GRCm39.*.ht2"
+  Line rate: 7 (line is 128 bytes)
+  Lines per side: 1 (side is 128 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Local offset rate: 3 (one in 8)
+  Local fTable chars: 6
+  Local sequence length: 57344
+  Local sequence overlap between two consecutive indexes: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  GRCm39.fa
+Reading reference sizes
+  Time reading reference sizes: 00:00:44
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:20
+  Time to read SNPs and splice sites: 00:00:05
+./3_30s.sh: line 67: 11855 Killed                  hisat2-build --ss $REF.ss --exon $REF.exon $REF.fa $REF
++ cd /scratch/aubclsb0323/FinalProject/CleanData2
++ cp /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102034_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102034_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102035_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102035_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102036_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102036_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102037_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102037_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102038_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102038_2_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102039_1_paired.fastq /scratch/aubclsb0323/FinalProject/CleanData/30s/SRR11102039_2_paired.fastq .
++ ls
++ grep .fastq
++ cut -d _ -f 1
++ sort
++ uniq
++ cd /scratch/aubclsb0323/FinalProject/Map_HiSat2_6
++ mv /scratch/aubclsb0323/FinalProject/CleanData2/list .
++ read i
++ hisat2 -p 6 --dta --phred33 -x /scratch/aubclsb0323/FinalProject/GRCm39/GRCm39 -1 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102034_1_paired.fastq -2 /scratch/aubclsb0323/FinalProject/CleanData2/SRR11102034_2_paired.fastq -S SRR11102034.sam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+slurmstepd: error: *** JOB 1090606 ON dmc6 CANCELLED AT 2023-04-29T22:39:40 ***
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=1090606.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.
